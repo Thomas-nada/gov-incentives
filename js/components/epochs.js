@@ -144,7 +144,7 @@ function epochRow(epoch) {
           ${epoch.epoch}
         </div>
         <div class="text-xs text-slate-400 mt-0.5 ml-5 whitespace-nowrap">
-          ${subLabel} · ${epoch.action_count ?? 0} action${(epoch.action_count ?? 0) !== 1 ? 's' : ''} · ${formatAda(epoch.rewards_generated)} ₳ yield
+          ${subLabel} · ${epoch.action_count ?? 0} action${(epoch.action_count ?? 0) !== 1 ? 's' : ''} · ${formatAda(epoch.rewards_generated)} yield
         </div>
       </td>
       <td class="px-5 py-3 text-right font-medium text-slate-700 dark:text-slate-300">
@@ -154,10 +154,10 @@ function epochRow(epoch) {
         ${hasPayout ? epoch.cc_rewarded : dash}
       </td>
       <td class="px-5 py-3 text-right hidden sm:table-cell font-medium ${hasPayout ? 'text-brand-600 dark:text-brand-400' : ''}">
-        ${hasPayout ? formatAda(epoch.ada_distributed) + ' ₳' : dash}
+        ${hasPayout ? formatAda(epoch.ada_distributed) : dash}
       </td>
       <td class="px-5 py-3 text-right hidden md:table-cell font-medium ${hasPayout ? 'text-emerald-600 dark:text-emerald-400' : ''}">
-        ${hasPayout ? formatAda(epoch.reserve_added) + ' ₳' : dash}
+        ${hasPayout ? formatAda(epoch.reserve_added) : dash}
       </td>
       <td class="px-5 py-3 text-center">
         ${isOpen && isClaim

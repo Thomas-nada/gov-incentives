@@ -52,12 +52,9 @@ export function hexToStakeAddress(hex) {
   }
 }
 
-export function formatAda(lovelace, decimals = 0) {
-  if (lovelace === undefined || lovelace === null) return '—';
-  const ada = typeof lovelace === 'number' && lovelace > 1_000_000
-    ? lovelace / 1_000_000
-    : lovelace;
-  return Math.max(0, ada).toLocaleString('en-US', { maximumFractionDigits: decimals }) + ' ₳';
+export function formatAda(amountAda, decimals = 0) {
+  if (amountAda === undefined || amountAda === null) return '—';
+  return Math.max(0, amountAda).toLocaleString('en-US', { maximumFractionDigits: decimals }) + ' ₳';
 }
 
 export function formatVotingPower(ada) {
