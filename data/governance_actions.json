@@ -1,0 +1,1274 @@
+{
+  "451": [
+    {
+      "id": "GA-2024-001",
+      "title": "Treasury Withdrawal \u2014 Community Education Initiative",
+      "type": "TreasuryWithdrawal"
+    },
+    {
+      "id": "GA-2024-002",
+      "title": "Protocol Parameter Change \u2014 Pool Pledge Factor",
+      "type": "ParameterChange"
+    },
+    {
+      "id": "GA-2024-003",
+      "title": "Info \u2014 Hard Fork Readiness Poll",
+      "type": "Info"
+    }
+  ],
+  "452": [
+    {
+      "id": "GA-2024-004",
+      "title": "Protocol Parameter Change \u2014 Timelock Policy Update",
+      "type": "ParameterChange"
+    },
+    {
+      "id": "GA-2024-005",
+      "title": "Treasury Withdrawal \u2014 Mithril Node Subsidy",
+      "type": "TreasuryWithdrawal"
+    },
+    {
+      "id": "GA-2024-006",
+      "title": "Protocol Parameter Change \u2014 Treasury Growth Rate",
+      "type": "ParameterChange"
+    },
+    {
+      "id": "GA-2024-007",
+      "title": "Info \u2014 CC Charter Endorsement",
+      "type": "Info"
+    }
+  ],
+  "453": [
+    {
+      "id": "GA-2024-008",
+      "title": "Info \u2014 Midnight Integration Readiness",
+      "type": "Info"
+    },
+    {
+      "id": "GA-2024-009",
+      "title": "Update to the Constitution \u2014 Technical Constitution Addendum",
+      "type": "UpdateConstitution"
+    },
+    {
+      "id": "GA-2024-010",
+      "title": "Treasury Withdrawal \u2014 Community Hub Grants",
+      "type": "TreasuryWithdrawal"
+    },
+    {
+      "id": "GA-2024-011",
+      "title": "Treasury Withdrawal \u2014 Hydra Development Grant",
+      "type": "TreasuryWithdrawal"
+    }
+  ],
+  "454": [
+    {
+      "id": "GA-2024-012",
+      "title": "New Constitutional Committee \u2014 CC Composition Refresh",
+      "type": "NewCommittee"
+    },
+    {
+      "id": "GA-2024-013",
+      "title": "Info \u2014 Cardano Vision Statement",
+      "type": "Info"
+    },
+    {
+      "id": "GA-2024-014",
+      "title": "Protocol Parameter Change \u2014 Minfee B Parameter",
+      "type": "ParameterChange"
+    }
+  ],
+  "455": [
+    {
+      "id": "GA-2024-015",
+      "title": "Info \u2014 Node Upgrade Signal",
+      "type": "Info"
+    }
+  ],
+  "456": [
+    {
+      "id": "GA-2024-016",
+      "title": "New Constitutional Committee \u2014 Committee Size Adjustment",
+      "type": "NewCommittee"
+    },
+    {
+      "id": "GA-2024-017",
+      "title": "Treasury Withdrawal \u2014 Governance Bootstrap",
+      "type": "TreasuryWithdrawal"
+    }
+  ],
+  "457": [
+    {
+      "id": "GA-2024-018",
+      "title": "Info \u2014 Community Ratification Signal",
+      "type": "Info"
+    },
+    {
+      "id": "GA-2024-019",
+      "title": "Protocol Parameter Change \u2014 Collateral Percentage",
+      "type": "ParameterChange"
+    },
+    {
+      "id": "GA-2024-020",
+      "title": "New Constitutional Committee \u2014 Committee Threshold Change",
+      "type": "NewCommittee"
+    },
+    {
+      "id": "GA-2024-021",
+      "title": "Info \u2014 Cardano Sustainability Signal",
+      "type": "Info"
+    },
+    {
+      "id": "GA-2024-022",
+      "title": "Info \u2014 CC Term Renewal Signal",
+      "type": "Info"
+    }
+  ],
+  "458": [
+    {
+      "id": "GA-2024-023",
+      "title": "Info \u2014 DRep Code of Conduct Endorsement",
+      "type": "Info"
+    },
+    {
+      "id": "GA-2024-024",
+      "title": "Treasury Withdrawal \u2014 Cardano Foundation Budget",
+      "type": "TreasuryWithdrawal"
+    },
+    {
+      "id": "GA-2024-025",
+      "title": "Protocol Parameter Change \u2014 Plutus V3 Cost Model",
+      "type": "ParameterChange"
+    },
+    {
+      "id": "GA-2024-026",
+      "title": "Treasury Withdrawal \u2014 Plutus Migration Support",
+      "type": "TreasuryWithdrawal"
+    },
+    {
+      "id": "GA-2024-027",
+      "title": "Info \u2014 DRep Working Group Formation",
+      "type": "Info"
+    },
+    {
+      "id": "GA-2024-028",
+      "title": "Protocol Parameter Change \u2014 Stake Pool Min Fee Revision",
+      "type": "ParameterChange"
+    }
+  ],
+  "459": [
+    {
+      "id": "GA-2024-029",
+      "title": "Treasury Withdrawal \u2014 Stablecoin Research Initiative",
+      "type": "TreasuryWithdrawal"
+    },
+    {
+      "id": "GA-2024-030",
+      "title": "Treasury Withdrawal \u2014 Catalyst Fund 14 Allocation",
+      "type": "TreasuryWithdrawal"
+    },
+    {
+      "id": "GA-2024-031",
+      "title": "Info \u2014 Annual Report Acknowledgement",
+      "type": "Info"
+    }
+  ],
+  "460": [
+    {
+      "id": "GA-2024-032",
+      "title": "Protocol Parameter Change \u2014 Script Execution Units",
+      "type": "ParameterChange"
+    },
+    {
+      "id": "GA-2024-033",
+      "title": "Protocol Parameter Change \u2014 Reference Script Fee",
+      "type": "ParameterChange"
+    }
+  ],
+  "461": [
+    {
+      "id": "GA-2024-034",
+      "title": "Treasury Withdrawal \u2014 Identity Infrastructure Fund",
+      "type": "TreasuryWithdrawal"
+    },
+    {
+      "id": "GA-2024-035",
+      "title": "Update to the Constitution \u2014 Proposal Policy Update",
+      "type": "UpdateConstitution"
+    },
+    {
+      "id": "GA-2024-036",
+      "title": "Info \u2014 Intersect Membership Drive",
+      "type": "Info"
+    }
+  ],
+  "462": [
+    {
+      "id": "GA-2024-037",
+      "title": "Protocol Parameter Change \u2014 Block Size Increase",
+      "type": "ParameterChange"
+    },
+    {
+      "id": "GA-2024-038",
+      "title": "Treasury Withdrawal \u2014 Intersect MBO Operations",
+      "type": "TreasuryWithdrawal"
+    },
+    {
+      "id": "GA-2024-039",
+      "title": "Treasury Withdrawal \u2014 IOG Infrastructure Grant",
+      "type": "TreasuryWithdrawal"
+    },
+    {
+      "id": "GA-2024-040",
+      "title": "Protocol Parameter Change \u2014 Max Transaction Size",
+      "type": "ParameterChange"
+    }
+  ],
+  "463": [
+    {
+      "id": "GA-2024-041",
+      "title": "Protocol Parameter Change \u2014 K Parameter Adjustment",
+      "type": "ParameterChange"
+    },
+    {
+      "id": "GA-2024-042",
+      "title": "Info \u2014 Technical Steering Committee Formation",
+      "type": "Info"
+    },
+    {
+      "id": "GA-2024-043",
+      "title": "Protocol Parameter Change \u2014 Pool Deposit Amount",
+      "type": "ParameterChange"
+    },
+    {
+      "id": "GA-2024-044",
+      "title": "Treasury Withdrawal \u2014 DRep Campaign Fund",
+      "type": "TreasuryWithdrawal"
+    },
+    {
+      "id": "GA-2024-045",
+      "title": "Protocol Parameter Change \u2014 DRep Activity Window",
+      "type": "ParameterChange"
+    }
+  ],
+  "464": [
+    {
+      "id": "GA-2024-046",
+      "title": "Treasury Withdrawal \u2014 Layer 2 Research Grant",
+      "type": "TreasuryWithdrawal"
+    },
+    {
+      "id": "GA-2024-047",
+      "title": "Protocol Parameter Change \u2014 D Parameter Update",
+      "type": "ParameterChange"
+    },
+    {
+      "id": "GA-2024-048",
+      "title": "Hard Fork Initiation \u2014 Valentine Hard Fork",
+      "type": "HardForkInitiation"
+    },
+    {
+      "id": "GA-2024-049",
+      "title": "Protocol Parameter Change \u2014 Max Epoch Rollback Depth",
+      "type": "ParameterChange"
+    }
+  ],
+  "465": [
+    {
+      "id": "GA-2024-050",
+      "title": "Treasury Withdrawal \u2014 Governance Tooling Fund",
+      "type": "TreasuryWithdrawal"
+    },
+    {
+      "id": "GA-2024-051",
+      "title": "Motion of No-Confidence \u2014 No-Confidence \u2014 Quorum Failure",
+      "type": "NoConfidence"
+    },
+    {
+      "id": "GA-2024-052",
+      "title": "Update to the Constitution \u2014 Interim Constitution Ratification",
+      "type": "UpdateConstitution"
+    }
+  ],
+  "466": [
+    {
+      "id": "GA-2024-053",
+      "title": "Hard Fork Initiation \u2014 Chang+1 Upgrade",
+      "type": "HardForkInitiation"
+    },
+    {
+      "id": "GA-2024-054",
+      "title": "Info \u2014 Community Budget Signal",
+      "type": "Info"
+    }
+  ],
+  "467": [
+    {
+      "id": "GA-2024-055",
+      "title": "Info \u2014 Developer Relations Survey",
+      "type": "Info"
+    }
+  ],
+  "468": [
+    {
+      "id": "GA-2024-056",
+      "title": "Hard Fork Initiation \u2014 Chang+2 Upgrade",
+      "type": "HardForkInitiation"
+    },
+    {
+      "id": "GA-2024-057",
+      "title": "Protocol Parameter Change \u2014 DRep Deposit Amount",
+      "type": "ParameterChange"
+    }
+  ],
+  "469": [
+    {
+      "id": "GA-2024-058",
+      "title": "Treasury Withdrawal \u2014 Atala PRISM Integration",
+      "type": "TreasuryWithdrawal"
+    },
+    {
+      "id": "GA-2024-059",
+      "title": "Protocol Parameter Change \u2014 Committee Term Length",
+      "type": "ParameterChange"
+    },
+    {
+      "id": "GA-2024-060",
+      "title": "Treasury Withdrawal \u2014 DeFi Ecosystem Grant",
+      "type": "TreasuryWithdrawal"
+    },
+    {
+      "id": "GA-2024-061",
+      "title": "Update to the Constitution \u2014 Constitutional Amendment \u2014 Governance Rights",
+      "type": "UpdateConstitution"
+    }
+  ],
+  "470": [
+    {
+      "id": "GA-2024-062",
+      "title": "Protocol Parameter Change \u2014 Minfee A Parameter",
+      "type": "ParameterChange"
+    },
+    {
+      "id": "GA-2024-063",
+      "title": "Protocol Parameter Change \u2014 Max Block Header Size",
+      "type": "ParameterChange"
+    },
+    {
+      "id": "GA-2024-064",
+      "title": "Protocol Parameter Change \u2014 Tx Metadata Max Size",
+      "type": "ParameterChange"
+    },
+    {
+      "id": "GA-2024-065",
+      "title": "Hard Fork Initiation \u2014 Voltaire Phase 2",
+      "type": "HardForkInitiation"
+    }
+  ],
+  "471": [
+    {
+      "id": "GA-2024-066",
+      "title": "Info \u2014 Governance Calendar Endorsement",
+      "type": "Info"
+    },
+    {
+      "id": "GA-2024-067",
+      "title": "Treasury Withdrawal \u2014 Documentation Working Group",
+      "type": "TreasuryWithdrawal"
+    }
+  ],
+  "472": [
+    {
+      "id": "GA-2024-068",
+      "title": "Protocol Parameter Change \u2014 Min ADA in UTxO",
+      "type": "ParameterChange"
+    },
+    {
+      "id": "GA-2024-069",
+      "title": "Info \u2014 Governance Roadmap Acknowledgement",
+      "type": "Info"
+    },
+    {
+      "id": "GA-2024-070",
+      "title": "Update to the Constitution \u2014 Amended Constitution v1.1",
+      "type": "UpdateConstitution"
+    },
+    {
+      "id": "GA-2024-071",
+      "title": "Info \u2014 CF Strategy Endorsement",
+      "type": "Info"
+    },
+    {
+      "id": "GA-2024-072",
+      "title": "Info \u2014 Leios Readiness Survey",
+      "type": "Info"
+    }
+  ],
+  "473": [
+    {
+      "id": "GA-2024-073",
+      "title": "Update to the Constitution \u2014 Voltaire Constitution v2",
+      "type": "UpdateConstitution"
+    },
+    {
+      "id": "GA-2024-074",
+      "title": "Protocol Parameter Change \u2014 Transaction Fee Policy",
+      "type": "ParameterChange"
+    },
+    {
+      "id": "GA-2024-075",
+      "title": "Protocol Parameter Change \u2014 Script Execution Units",
+      "type": "ParameterChange"
+    }
+  ],
+  "474": [],
+  "475": [
+    {
+      "id": "GA-2024-076",
+      "title": "Info \u2014 Leios Readiness Survey",
+      "type": "Info"
+    },
+    {
+      "id": "GA-2024-077",
+      "title": "Protocol Parameter Change \u2014 K Parameter Adjustment",
+      "type": "ParameterChange"
+    },
+    {
+      "id": "GA-2024-078",
+      "title": "Motion of No-Confidence \u2014 No-Confidence Vote \u2014 CC Term Expiry",
+      "type": "NoConfidence"
+    }
+  ],
+  "476": [
+    {
+      "id": "GA-2024-079",
+      "title": "Info \u2014 CF Strategy Endorsement",
+      "type": "Info"
+    },
+    {
+      "id": "GA-2024-080",
+      "title": "Info \u2014 Intersect Membership Drive",
+      "type": "Info"
+    },
+    {
+      "id": "GA-2024-081",
+      "title": "Treasury Withdrawal \u2014 Open Source Developer Fund",
+      "type": "TreasuryWithdrawal"
+    },
+    {
+      "id": "GA-2024-082",
+      "title": "New Constitutional Committee \u2014 CC Term Extension \u2014 Transitional Period",
+      "type": "NewCommittee"
+    }
+  ],
+  "477": [
+    {
+      "id": "GA-2024-083",
+      "title": "Treasury Withdrawal \u2014 Security Audit Fund",
+      "type": "TreasuryWithdrawal"
+    }
+  ],
+  "478": [
+    {
+      "id": "GA-2024-084",
+      "title": "Protocol Parameter Change \u2014 Reference Script Fee",
+      "type": "ParameterChange"
+    },
+    {
+      "id": "GA-2024-085",
+      "title": "Info \u2014 Community Budget Signal",
+      "type": "Info"
+    },
+    {
+      "id": "GA-2024-086",
+      "title": "Treasury Withdrawal \u2014 Developer Bootcamp Fund",
+      "type": "TreasuryWithdrawal"
+    }
+  ],
+  "479": [
+    {
+      "id": "GA-2024-087",
+      "title": "Info \u2014 DRep Working Group Formation",
+      "type": "Info"
+    },
+    {
+      "id": "GA-2024-088",
+      "title": "Info \u2014 CC Term Renewal Signal",
+      "type": "Info"
+    },
+    {
+      "id": "GA-2024-089",
+      "title": "Protocol Parameter Change \u2014 Pool Pledge Factor",
+      "type": "ParameterChange"
+    },
+    {
+      "id": "GA-2024-090",
+      "title": "Update to the Constitution \u2014 Constitution Hash Update \u2014 Ratification",
+      "type": "UpdateConstitution"
+    },
+    {
+      "id": "GA-2024-091",
+      "title": "Update to the Constitution \u2014 Interim Constitution v1",
+      "type": "UpdateConstitution"
+    },
+    {
+      "id": "GA-2024-092",
+      "title": "Protocol Parameter Change \u2014 Collateral Percentage",
+      "type": "ParameterChange"
+    },
+    {
+      "id": "GA-2024-093",
+      "title": "Protocol Parameter Change \u2014 Committee Term Length",
+      "type": "ParameterChange"
+    }
+  ],
+  "480": [
+    {
+      "id": "GA-2024-094",
+      "title": "Info \u2014 Annual Report Acknowledgement",
+      "type": "Info"
+    },
+    {
+      "id": "GA-2024-095",
+      "title": "Protocol Parameter Change \u2014 Max Block Header Size",
+      "type": "ParameterChange"
+    }
+  ],
+  "481": [
+    {
+      "id": "GA-2025-001",
+      "title": "Info \u2014 Cardano Sustainability Signal",
+      "type": "Info"
+    },
+    {
+      "id": "GA-2025-002",
+      "title": "Info \u2014 DRep Code of Conduct Endorsement",
+      "type": "Info"
+    },
+    {
+      "id": "GA-2025-003",
+      "title": "Protocol Parameter Change \u2014 Max Epoch Rollback Depth",
+      "type": "ParameterChange"
+    },
+    {
+      "id": "GA-2025-004",
+      "title": "Protocol Parameter Change \u2014 DRep Activity Window",
+      "type": "ParameterChange"
+    }
+  ],
+  "482": [
+    {
+      "id": "GA-2025-005",
+      "title": "Protocol Parameter Change \u2014 DRep Deposit Amount",
+      "type": "ParameterChange"
+    },
+    {
+      "id": "GA-2025-006",
+      "title": "Info \u2014 Community Ratification Signal",
+      "type": "Info"
+    },
+    {
+      "id": "GA-2025-007",
+      "title": "Info \u2014 Technical Steering Committee Formation",
+      "type": "Info"
+    }
+  ],
+  "483": [
+    {
+      "id": "GA-2025-008",
+      "title": "Treasury Withdrawal \u2014 Partner Chain Integration",
+      "type": "TreasuryWithdrawal"
+    },
+    {
+      "id": "GA-2025-009",
+      "title": "Protocol Parameter Change \u2014 Transaction Fee Policy",
+      "type": "ParameterChange"
+    }
+  ],
+  "484": [
+    {
+      "id": "GA-2025-010",
+      "title": "Update to the Constitution \u2014 Constitution Hash Update \u2014 Ratification",
+      "type": "UpdateConstitution"
+    },
+    {
+      "id": "GA-2025-011",
+      "title": "Treasury Withdrawal \u2014 Lace Wallet Maintenance",
+      "type": "TreasuryWithdrawal"
+    }
+  ],
+  "485": [
+    {
+      "id": "GA-2025-012",
+      "title": "Info \u2014 Node Upgrade Signal",
+      "type": "Info"
+    },
+    {
+      "id": "GA-2025-013",
+      "title": "Treasury Withdrawal \u2014 NFT Standards Fund",
+      "type": "TreasuryWithdrawal"
+    },
+    {
+      "id": "GA-2025-014",
+      "title": "Treasury Withdrawal \u2014 NFT Standards Fund",
+      "type": "TreasuryWithdrawal"
+    }
+  ],
+  "486": [
+    {
+      "id": "GA-2025-015",
+      "title": "Treasury Withdrawal \u2014 Identity Infrastructure Fund",
+      "type": "TreasuryWithdrawal"
+    },
+    {
+      "id": "GA-2025-016",
+      "title": "Treasury Withdrawal \u2014 Security Audit Fund",
+      "type": "TreasuryWithdrawal"
+    }
+  ],
+  "487": [
+    {
+      "id": "GA-2025-017",
+      "title": "Treasury Withdrawal \u2014 Cardano Foundation Budget",
+      "type": "TreasuryWithdrawal"
+    },
+    {
+      "id": "GA-2025-018",
+      "title": "Info \u2014 Governance Roadmap Acknowledgement",
+      "type": "Info"
+    },
+    {
+      "id": "GA-2025-019",
+      "title": "Info \u2014 Governance Calendar Endorsement",
+      "type": "Info"
+    },
+    {
+      "id": "GA-2025-020",
+      "title": "New Constitutional Committee \u2014 CC Membership Update \u2014 New Term",
+      "type": "NewCommittee"
+    }
+  ],
+  "488": [
+    {
+      "id": "GA-2025-021",
+      "title": "Treasury Withdrawal \u2014 Open Source Developer Fund",
+      "type": "TreasuryWithdrawal"
+    },
+    {
+      "id": "GA-2025-022",
+      "title": "Hard Fork Initiation \u2014 Chang Hard Fork",
+      "type": "HardForkInitiation"
+    },
+    {
+      "id": "GA-2025-023",
+      "title": "Info \u2014 Cardano Vision Statement",
+      "type": "Info"
+    },
+    {
+      "id": "GA-2025-024",
+      "title": "Info \u2014 Midnight Integration Readiness",
+      "type": "Info"
+    }
+  ],
+  "489": [
+    {
+      "id": "GA-2025-025",
+      "title": "Update to the Constitution \u2014 Proposal Policy Update",
+      "type": "UpdateConstitution"
+    },
+    {
+      "id": "GA-2025-026",
+      "title": "Protocol Parameter Change \u2014 Plutus V3 Cost Model",
+      "type": "ParameterChange"
+    }
+  ],
+  "490": [
+    {
+      "id": "GA-2025-027",
+      "title": "Info \u2014 Hard Fork Readiness Poll",
+      "type": "Info"
+    },
+    {
+      "id": "GA-2025-028",
+      "title": "Info \u2014 Developer Relations Survey",
+      "type": "Info"
+    },
+    {
+      "id": "GA-2025-029",
+      "title": "Hard Fork Initiation \u2014 Ouroboros Leios Preview",
+      "type": "HardForkInitiation"
+    },
+    {
+      "id": "GA-2025-030",
+      "title": "Treasury Withdrawal \u2014 Intersect MBO Operations",
+      "type": "TreasuryWithdrawal"
+    }
+  ],
+  "491": [
+    {
+      "id": "GA-2025-031",
+      "title": "Treasury Withdrawal \u2014 Lace Wallet Maintenance",
+      "type": "TreasuryWithdrawal"
+    },
+    {
+      "id": "GA-2025-032",
+      "title": "Info \u2014 CC Charter Endorsement",
+      "type": "Info"
+    },
+    {
+      "id": "GA-2025-033",
+      "title": "Protocol Parameter Change \u2014 Tx Metadata Max Size",
+      "type": "ParameterChange"
+    },
+    {
+      "id": "GA-2025-034",
+      "title": "Info \u2014 DRep Working Group Formation",
+      "type": "Info"
+    }
+  ],
+  "492": [
+    {
+      "id": "GA-2025-035",
+      "title": "Info \u2014 Cardano Vision Statement",
+      "type": "Info"
+    },
+    {
+      "id": "GA-2025-036",
+      "title": "Update to the Constitution \u2014 Amended Constitution v1.1",
+      "type": "UpdateConstitution"
+    },
+    {
+      "id": "GA-2025-037",
+      "title": "Update to the Constitution \u2014 Constitutional Amendment \u2014 Governance Rights",
+      "type": "UpdateConstitution"
+    }
+  ],
+  "493": [
+    {
+      "id": "GA-2025-038",
+      "title": "Protocol Parameter Change \u2014 Minfee A Parameter",
+      "type": "ParameterChange"
+    },
+    {
+      "id": "GA-2025-039",
+      "title": "Info \u2014 Midnight Integration Readiness",
+      "type": "Info"
+    },
+    {
+      "id": "GA-2025-040",
+      "title": "Treasury Withdrawal \u2014 Layer 2 Research Grant",
+      "type": "TreasuryWithdrawal"
+    },
+    {
+      "id": "GA-2025-041",
+      "title": "Treasury Withdrawal \u2014 Governance Tooling Fund",
+      "type": "TreasuryWithdrawal"
+    }
+  ],
+  "494": [
+    {
+      "id": "GA-2025-042",
+      "title": "Hard Fork Initiation \u2014 Node 10.0 Migration",
+      "type": "HardForkInitiation"
+    },
+    {
+      "id": "GA-2025-043",
+      "title": "Protocol Parameter Change \u2014 D Parameter Update",
+      "type": "ParameterChange"
+    },
+    {
+      "id": "GA-2025-044",
+      "title": "Protocol Parameter Change \u2014 Block Size Increase",
+      "type": "ParameterChange"
+    },
+    {
+      "id": "GA-2025-045",
+      "title": "Treasury Withdrawal \u2014 IOG Infrastructure Grant",
+      "type": "TreasuryWithdrawal"
+    },
+    {
+      "id": "GA-2025-046",
+      "title": "Info \u2014 Cardano Sustainability Signal",
+      "type": "Info"
+    }
+  ],
+  "495": [
+    {
+      "id": "GA-2025-047",
+      "title": "Info \u2014 Governance Calendar Endorsement",
+      "type": "Info"
+    },
+    {
+      "id": "GA-2025-048",
+      "title": "Hard Fork Initiation \u2014 Chang Hard Fork",
+      "type": "HardForkInitiation"
+    },
+    {
+      "id": "GA-2025-049",
+      "title": "Protocol Parameter Change \u2014 Max Transaction Size",
+      "type": "ParameterChange"
+    },
+    {
+      "id": "GA-2025-050",
+      "title": "Info \u2014 Intersect Membership Drive",
+      "type": "Info"
+    },
+    {
+      "id": "GA-2025-051",
+      "title": "Treasury Withdrawal \u2014 Hydra Development Grant",
+      "type": "TreasuryWithdrawal"
+    }
+  ],
+  "496": [],
+  "497": [
+    {
+      "id": "GA-2025-052",
+      "title": "Protocol Parameter Change \u2014 Minfee B Parameter",
+      "type": "ParameterChange"
+    },
+    {
+      "id": "GA-2025-053",
+      "title": "Protocol Parameter Change \u2014 Min ADA in UTxO",
+      "type": "ParameterChange"
+    },
+    {
+      "id": "GA-2025-054",
+      "title": "Treasury Withdrawal \u2014 Stablecoin Research Initiative",
+      "type": "TreasuryWithdrawal"
+    },
+    {
+      "id": "GA-2025-055",
+      "title": "New Constitutional Committee \u2014 New CC Election \u2014 Post No-Confidence",
+      "type": "NewCommittee"
+    },
+    {
+      "id": "GA-2025-056",
+      "title": "Protocol Parameter Change \u2014 Treasury Growth Rate",
+      "type": "ParameterChange"
+    }
+  ],
+  "498": [
+    {
+      "id": "GA-2025-057",
+      "title": "Info \u2014 Hard Fork Readiness Poll",
+      "type": "Info"
+    },
+    {
+      "id": "GA-2025-058",
+      "title": "Treasury Withdrawal \u2014 Catalyst Fund 14 Allocation",
+      "type": "TreasuryWithdrawal"
+    }
+  ],
+  "499": [
+    {
+      "id": "GA-2025-059",
+      "title": "Treasury Withdrawal \u2014 Documentation Working Group",
+      "type": "TreasuryWithdrawal"
+    },
+    {
+      "id": "GA-2025-060",
+      "title": "Info \u2014 Community Ratification Signal",
+      "type": "Info"
+    },
+    {
+      "id": "GA-2025-061",
+      "title": "New Constitutional Committee \u2014 CC Term Extension \u2014 Transitional Period",
+      "type": "NewCommittee"
+    },
+    {
+      "id": "GA-2025-062",
+      "title": "Treasury Withdrawal \u2014 Partner Chain Integration",
+      "type": "TreasuryWithdrawal"
+    },
+    {
+      "id": "GA-2025-063",
+      "title": "Treasury Withdrawal \u2014 DRep Campaign Fund",
+      "type": "TreasuryWithdrawal"
+    }
+  ],
+  "500": [
+    {
+      "id": "GA-2025-064",
+      "title": "Motion of No-Confidence \u2014 Motion of No-Confidence \u2014 Current CC",
+      "type": "NoConfidence"
+    },
+    {
+      "id": "GA-2025-065",
+      "title": "Treasury Withdrawal \u2014 Plutus Migration Support",
+      "type": "TreasuryWithdrawal"
+    },
+    {
+      "id": "GA-2025-066",
+      "title": "Protocol Parameter Change \u2014 Stake Pool Min Fee Revision",
+      "type": "ParameterChange"
+    }
+  ],
+  "501": [
+    {
+      "id": "GA-2025-067",
+      "title": "Info \u2014 Node Upgrade Signal",
+      "type": "Info"
+    },
+    {
+      "id": "GA-2025-068",
+      "title": "Protocol Parameter Change \u2014 Pool Deposit Amount",
+      "type": "ParameterChange"
+    },
+    {
+      "id": "GA-2025-069",
+      "title": "Info \u2014 CF Strategy Endorsement",
+      "type": "Info"
+    }
+  ],
+  "502": [
+    {
+      "id": "GA-2025-070",
+      "title": "Hard Fork Initiation \u2014 Voltaire Phase 2",
+      "type": "HardForkInitiation"
+    },
+    {
+      "id": "GA-2025-071",
+      "title": "Info \u2014 CC Term Renewal Signal",
+      "type": "Info"
+    }
+  ],
+  "503": [
+    {
+      "id": "GA-2025-072",
+      "title": "Info \u2014 CC Charter Endorsement",
+      "type": "Info"
+    },
+    {
+      "id": "GA-2025-073",
+      "title": "Treasury Withdrawal \u2014 Atala PRISM Integration",
+      "type": "TreasuryWithdrawal"
+    }
+  ],
+  "504": [
+    {
+      "id": "GA-2025-074",
+      "title": "Info \u2014 Annual Report Acknowledgement",
+      "type": "Info"
+    },
+    {
+      "id": "GA-2025-075",
+      "title": "Hard Fork Initiation \u2014 Ouroboros Leios Preview",
+      "type": "HardForkInitiation"
+    }
+  ],
+  "505": [
+    {
+      "id": "GA-2025-076",
+      "title": "Protocol Parameter Change \u2014 Timelock Policy Update",
+      "type": "ParameterChange"
+    }
+  ],
+  "506": [
+    {
+      "id": "GA-2025-077",
+      "title": "Protocol Parameter Change \u2014 D Parameter Update",
+      "type": "ParameterChange"
+    },
+    {
+      "id": "GA-2025-078",
+      "title": "Info \u2014 Governance Roadmap Acknowledgement",
+      "type": "Info"
+    },
+    {
+      "id": "GA-2025-079",
+      "title": "Protocol Parameter Change \u2014 Reference Script Fee",
+      "type": "ParameterChange"
+    },
+    {
+      "id": "GA-2025-080",
+      "title": "Protocol Parameter Change \u2014 Script Execution Units",
+      "type": "ParameterChange"
+    }
+  ],
+  "507": [
+    {
+      "id": "GA-2025-081",
+      "title": "Info \u2014 DRep Code of Conduct Endorsement",
+      "type": "Info"
+    }
+  ],
+  "508": [
+    {
+      "id": "GA-2025-082",
+      "title": "Protocol Parameter Change \u2014 DRep Activity Window",
+      "type": "ParameterChange"
+    },
+    {
+      "id": "GA-2025-083",
+      "title": "Info \u2014 Community Budget Signal",
+      "type": "Info"
+    },
+    {
+      "id": "GA-2025-084",
+      "title": "Protocol Parameter Change \u2014 DRep Deposit Amount",
+      "type": "ParameterChange"
+    }
+  ],
+  "509": [],
+  "510": [
+    {
+      "id": "GA-2025-085",
+      "title": "Treasury Withdrawal \u2014 DeFi Ecosystem Grant",
+      "type": "TreasuryWithdrawal"
+    },
+    {
+      "id": "GA-2025-086",
+      "title": "Treasury Withdrawal \u2014 Governance Bootstrap",
+      "type": "TreasuryWithdrawal"
+    },
+    {
+      "id": "GA-2025-087",
+      "title": "Protocol Parameter Change \u2014 Minfee A Parameter",
+      "type": "ParameterChange"
+    }
+  ],
+  "511": [
+    {
+      "id": "GA-2026-091",
+      "title": "Treasury Withdrawal \u2014 Community Education Initiative",
+      "type": "TreasuryWithdrawal"
+    },
+    {
+      "id": "GA-2026-092",
+      "title": "Motion of No-Confidence \u2014 Motion of No-Confidence \u2014 Current CC",
+      "type": "NoConfidence"
+    },
+    {
+      "id": "GA-2026-093",
+      "title": "Protocol Parameter Change \u2014 Min ADA in UTxO",
+      "type": "ParameterChange"
+    }
+  ],
+  "512": [
+    {
+      "id": "GA-2026-094",
+      "title": "Hard Fork Initiation \u2014 Node 10.0 Migration",
+      "type": "HardForkInitiation"
+    },
+    {
+      "id": "GA-2026-095",
+      "title": "Treasury Withdrawal \u2014 Mithril Node Subsidy",
+      "type": "TreasuryWithdrawal"
+    },
+    {
+      "id": "GA-2026-096",
+      "title": "Update to the Constitution \u2014 Technical Constitution Addendum",
+      "type": "UpdateConstitution"
+    },
+    {
+      "id": "GA-2026-097",
+      "title": "Info \u2014 Leios Readiness Survey",
+      "type": "Info"
+    }
+  ],
+  "513": [],
+  "514": [
+    {
+      "id": "GA-2026-098",
+      "title": "Treasury Withdrawal \u2014 Community Hub Grants",
+      "type": "TreasuryWithdrawal"
+    },
+    {
+      "id": "GA-2026-099",
+      "title": "Info \u2014 Developer Relations Survey",
+      "type": "Info"
+    }
+  ],
+  "515": [
+    {
+      "id": "GA-2026-100",
+      "title": "Protocol Parameter Change \u2014 Max Epoch Rollback Depth",
+      "type": "ParameterChange"
+    },
+    {
+      "id": "GA-2026-101",
+      "title": "Treasury Withdrawal \u2014 Developer Bootcamp Fund",
+      "type": "TreasuryWithdrawal"
+    },
+    {
+      "id": "GA-2026-102",
+      "title": "Protocol Parameter Change \u2014 Minfee B Parameter",
+      "type": "ParameterChange"
+    },
+    {
+      "id": "GA-2026-103",
+      "title": "Update to the Constitution \u2014 Voltaire Constitution v2",
+      "type": "UpdateConstitution"
+    }
+  ],
+  "516": [
+    {
+      "id": "GA-2026-104",
+      "title": "Protocol Parameter Change \u2014 Timelock Policy Update",
+      "type": "ParameterChange"
+    },
+    {
+      "id": "GA-2026-105",
+      "title": "Protocol Parameter Change \u2014 Block Size Increase",
+      "type": "ParameterChange"
+    },
+    {
+      "id": "GA-2026-106",
+      "title": "Protocol Parameter Change \u2014 Collateral Percentage",
+      "type": "ParameterChange"
+    },
+    {
+      "id": "GA-2026-107",
+      "title": "Treasury Withdrawal \u2014 Catalyst Fund 14 Allocation",
+      "type": "TreasuryWithdrawal"
+    },
+    {
+      "id": "GA-2026-108",
+      "title": "Treasury Withdrawal \u2014 Developer Bootcamp Fund",
+      "type": "TreasuryWithdrawal"
+    }
+  ],
+  "517": [
+    {
+      "id": "GA-2026-109",
+      "title": "Protocol Parameter Change \u2014 Committee Term Length",
+      "type": "ParameterChange"
+    },
+    {
+      "id": "GA-2026-110",
+      "title": "Info \u2014 Technical Steering Committee Formation",
+      "type": "Info"
+    },
+    {
+      "id": "GA-2026-111",
+      "title": "Treasury Withdrawal \u2014 Community Hub Grants",
+      "type": "TreasuryWithdrawal"
+    },
+    {
+      "id": "GA-2026-112",
+      "title": "Protocol Parameter Change \u2014 Stake Pool Min Fee Revision",
+      "type": "ParameterChange"
+    }
+  ],
+  "518": [
+    {
+      "id": "GA-2026-113",
+      "title": "Protocol Parameter Change \u2014 Plutus V3 Cost Model",
+      "type": "ParameterChange"
+    },
+    {
+      "id": "GA-2026-114",
+      "title": "Treasury Withdrawal \u2014 Governance Tooling Fund",
+      "type": "TreasuryWithdrawal"
+    },
+    {
+      "id": "GA-2026-115",
+      "title": "Protocol Parameter Change \u2014 Tx Metadata Max Size",
+      "type": "ParameterChange"
+    },
+    {
+      "id": "GA-2026-116",
+      "title": "Protocol Parameter Change \u2014 Max Block Header Size",
+      "type": "ParameterChange"
+    }
+  ],
+  "519": [
+    {
+      "id": "GA-2026-117",
+      "title": "New Constitutional Committee \u2014 Committee Size Adjustment",
+      "type": "NewCommittee"
+    },
+    {
+      "id": "GA-2026-118",
+      "title": "Info \u2014 Governance Roadmap Acknowledgement",
+      "type": "Info"
+    },
+    {
+      "id": "GA-2026-119",
+      "title": "Update to the Constitution \u2014 Interim Constitution Ratification",
+      "type": "UpdateConstitution"
+    }
+  ],
+  "520": [
+    {
+      "id": "GA-2026-120",
+      "title": "Treasury Withdrawal \u2014 Documentation Working Group",
+      "type": "TreasuryWithdrawal"
+    },
+    {
+      "id": "GA-2026-121",
+      "title": "Protocol Parameter Change \u2014 Pool Deposit Amount",
+      "type": "ParameterChange"
+    },
+    {
+      "id": "GA-2026-122",
+      "title": "Protocol Parameter Change \u2014 K Parameter Adjustment",
+      "type": "ParameterChange"
+    },
+    {
+      "id": "GA-2026-123",
+      "title": "Treasury Withdrawal \u2014 DRep Campaign Fund",
+      "type": "TreasuryWithdrawal"
+    }
+  ],
+  "521": [
+    {
+      "id": "GA-2026-080",
+      "title": "Treasury Withdrawal \u2014 Catalyst Fund 13 Allocation",
+      "type": "TreasuryWithdrawal"
+    },
+    {
+      "id": "GA-2026-081",
+      "title": "Parameter Change \u2014 Pool Pledge Influence Factor",
+      "type": "ParameterChange"
+    },
+    {
+      "id": "GA-2026-082",
+      "title": "Info \u2014 Ouroboros Leios Readiness Survey",
+      "type": "Info"
+    },
+    {
+      "id": "GA-2026-083",
+      "title": "Update to the Constitution \u2014 Interim Constitution Ratification",
+      "type": "UpdateConstitution"
+    }
+  ],
+  "522": [
+    {
+      "id": "GA-2026-084",
+      "title": "Treasury Withdrawal \u2014 DRep Registration Campaign",
+      "type": "TreasuryWithdrawal"
+    },
+    {
+      "id": "GA-2026-085",
+      "title": "Info \u2014 Constitutional Committee Term Renewal",
+      "type": "Info"
+    },
+    {
+      "id": "GA-2026-086",
+      "title": "Parameter Change \u2014 DRep Activity Window Update",
+      "type": "ParameterChange"
+    }
+  ],
+  "523": [
+    {
+      "id": "GA-2026-087",
+      "title": "Treasury Withdrawal \u2014 Governance Tooling Fund",
+      "type": "TreasuryWithdrawal"
+    },
+    {
+      "id": "GA-2026-088",
+      "title": "Parameter Change \u2014 Stake Pool Min Fee Adjustment",
+      "type": "ParameterChange"
+    },
+    {
+      "id": "GA-2026-089",
+      "title": "Info \u2014 Community Ratification Signal",
+      "type": "Info"
+    },
+    {
+      "id": "GA-2026-090",
+      "title": "Hard Fork Initiation \u2014 Chang+1 Upgrade",
+      "type": "HardForkInitiation"
+    }
+  ]
+}

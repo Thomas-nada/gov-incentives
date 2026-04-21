@@ -1,0 +1,1002 @@
+[
+  {
+    "epoch": 522,
+    "stake_address": "stake1ux7fe7j9hpuflnnjgmflzf66e83htkfqjulyyg9u9mvs0rcg5qvgp",
+    "type": "drep",
+    "amount": 398,
+    "tx_hash": "01266a90153a1fde22c426426a1f4dbcb0917247dd8d442438c3583620bb9166",
+    "timestamp": "2025-09-01T12:00:00Z"
+  },
+  {
+    "epoch": 522,
+    "stake_address": "stake1u8fnjkm3pq9xa7wv4l5e6d0strgyc4hz3wp8qv4xd9r5jk2n3p6qs",
+    "type": "drep",
+    "amount": 398,
+    "tx_hash": "10d133244da395f3687f7932bb8a33c8672528c4092615a458bc180e6a0a7686",
+    "timestamp": "2025-09-02T12:00:00Z"
+  },
+  {
+    "epoch": 522,
+    "stake_address": "stake1uxk3n5d8r7gm2pq9wl4v6zjfahcts5e3y8md4xl7pnqr2w9fk5j8p",
+    "type": "drep",
+    "amount": 398,
+    "tx_hash": "9d613c24106999ff4e2ed4bcd0843824b1f0771e3807ce82afc8003b0387a0b9",
+    "timestamp": "2025-09-03T12:00:00Z"
+  },
+  {
+    "epoch": 522,
+    "stake_address": "stake1u4wml9nq7rhx5p3kd8g2a6vj4etsycf3mz7xu5nd8lk4r9p2q6w5t",
+    "type": "drep",
+    "amount": 398,
+    "tx_hash": "2a22dc7d0dd4aa9df729b2ec95daf4871bb4978c042afd2d45524c087b75a529",
+    "timestamp": "2025-09-04T12:00:00Z"
+  },
+  {
+    "epoch": 522,
+    "stake_address": "stake1uydlj8mhqxjr84mgsgzwf5ljhsyvcrfynaz5zqv4wn4kqxcjtlfcq",
+    "type": "cc",
+    "amount": 727,
+    "tx_hash": "889c78c6565fb1fcc6fbf3100a6b45028a9a5b2e75dff778947710ea3506fdb2",
+    "timestamp": "2025-09-05T12:00:00Z"
+  },
+  {
+    "epoch": 522,
+    "stake_address": "stake1u9r3kfg4mn5pq8wl7x2d0vjycts6e4zh3wp9qv5xd8r4jk3n2p7qm",
+    "type": "cc",
+    "amount": 727,
+    "tx_hash": "ce8fef02b23c0b0033ff3c2455e54a190dec6ccd5b7ac777495f06e5eb259afe",
+    "timestamp": "2025-09-06T12:00:00Z"
+  },
+  {
+    "epoch": 522,
+    "stake_address": "stake1uuag96467z4zzxtmlmpyg395m2v0e9ke44yftyy5j8apga6z3qj",
+    "type": "drep",
+    "amount": 398,
+    "tx_hash": "375fdd3ed76d3fe40357b1b003d6123110d4d55796785124d9aa08b3748b12cc",
+    "timestamp": "2025-09-07T12:00:00Z"
+  },
+  {
+    "epoch": 522,
+    "stake_address": "stake1u9y56j7gexsaqn4wgjgw3hwtl08smuzuznussd4ef9tupncht75",
+    "type": "drep",
+    "amount": 398,
+    "tx_hash": "797253a499b797a7d2e40705c62882cd983dc11e48ecebf97d935b0fcbbe3370",
+    "timestamp": "2025-09-08T12:00:00Z"
+  },
+  {
+    "epoch": 522,
+    "stake_address": "stake1ux6wgmpxzv3kyjuezz208szvs0me2dj29y8d0uktnp04q4dpxzj",
+    "type": "drep",
+    "amount": 398,
+    "tx_hash": "a73186236db51ca038ee2e835345cea2f1f90eb840c02de60a99963d722c571f",
+    "timestamp": "2025-09-09T12:00:00Z"
+  },
+  {
+    "epoch": 522,
+    "stake_address": "stake1unhnycy88uh5qg0xwmfsuae48e2qkdqseuvut8htknyrptpkfgh",
+    "type": "drep",
+    "amount": 398,
+    "tx_hash": "3011d841d3bd51f4d1efcb5b9ecd1091388eadb275d71f06e4be91c99336200c",
+    "timestamp": "2025-09-10T12:00:00Z"
+  },
+  {
+    "epoch": 522,
+    "stake_address": "stake1u27wkx8dhju862phz4p6v8jznutudgxfwetmen805yxh3m7wfmt",
+    "type": "drep",
+    "amount": 398,
+    "tx_hash": "444469cdd66f93078d3158934f9617e33a28e3f22cf5418a6ee34489a50ded2d",
+    "timestamp": "2025-09-11T12:00:00Z"
+  },
+  {
+    "epoch": 522,
+    "stake_address": "stake1udtv0vwcux0rr4ymfewvqapljpvf2v3yedxyp0upzvpj2k8tsgj",
+    "type": "drep",
+    "amount": 398,
+    "tx_hash": "8b0f2ab07a210421cc73bd04960f9dbd9a9e24251b6438e7bf22456a2661488a",
+    "timestamp": "2025-09-12T12:00:00Z"
+  },
+  {
+    "epoch": 522,
+    "stake_address": "stake1u8vqfh4nn0s7qeex6r9sqahgxxchd7kxt5td6ka6yqf4hugj4ac",
+    "type": "drep",
+    "amount": 398,
+    "tx_hash": "8bc6b1d823bdf16951d5075b6361d11b955fade523049a2a794aac01ccded9e5",
+    "timestamp": "2025-09-13T12:00:00Z"
+  },
+  {
+    "epoch": 522,
+    "stake_address": "stake1u5h6q67kcwg29ftuvmd024aw97t9pp4j66vezgpgy6lgrj6fvqy",
+    "type": "drep",
+    "amount": 398,
+    "tx_hash": "bad71002a4c115dfed42b179b380df1d03685674d7d73ad3808ffd7f98eaa953",
+    "timestamp": "2025-09-14T12:00:00Z"
+  },
+  {
+    "epoch": 522,
+    "stake_address": "stake1ucxdmhrst2mht3c5nu9px4t3535v6fefmdw2mju8ehpgmwc0d80",
+    "type": "drep",
+    "amount": 398,
+    "tx_hash": "d566f4e52efcd6782dc8496feabb8a7f2182ee3ffb6fdedf79891cd526343489",
+    "timestamp": "2025-09-15T12:00:00Z"
+  },
+  {
+    "epoch": 522,
+    "stake_address": "stake1u9re3rvz4zzwcsmksejdtdrwse8ntm05kfuc0apgrca5kvrxdma",
+    "type": "drep",
+    "amount": 398,
+    "tx_hash": "4a87c2834ab574727e9d46ee78127b84f9673b80001d69a111994ecd58a64008",
+    "timestamp": "2025-09-16T12:00:00Z"
+  },
+  {
+    "epoch": 522,
+    "stake_address": "stake1u4jak56nxqknl8drjatr4cyztej5kcmtsnwcaflky4mqp3f0e45",
+    "type": "drep",
+    "amount": 398,
+    "tx_hash": "e1189f3d1fadddbc69cb8ce0bd361c4de3a4121290e1fc9fa9640cea9177f3cd",
+    "timestamp": "2025-09-17T12:00:00Z"
+  },
+  {
+    "epoch": 522,
+    "stake_address": "stake1ua4wzae44c6nt8zsn9tmf5pw36eqq7c94ej7zny9kjwjcx8pg64",
+    "type": "drep",
+    "amount": 398,
+    "tx_hash": "d4adcc52612915c70dc3a82373f93c1e1a660b18588f69a8d0afa5bfc4d0f3eb",
+    "timestamp": "2025-09-18T12:00:00Z"
+  },
+  {
+    "epoch": 522,
+    "stake_address": "stake1unctpmhqe379qth70adqafxce22re7k5k3xxgd0s9xjn7n0euq0",
+    "type": "drep",
+    "amount": 398,
+    "tx_hash": "360b0bb3b48dd3c223564d57f8e0f76bad1b45b956447350d306e7642e72ff9c",
+    "timestamp": "2025-09-19T12:00:00Z"
+  },
+  {
+    "epoch": 522,
+    "stake_address": "stake1uu6ynrn533ffdpqq2hn6kmdn22ms6rlmlych77mrrcezk9akv60",
+    "type": "drep",
+    "amount": 398,
+    "tx_hash": "26c18897f9c7d03b087a8c7e831130995b1884528a976d08d2bd007f1b470d62",
+    "timestamp": "2025-09-20T12:00:00Z"
+  },
+  {
+    "epoch": 522,
+    "stake_address": "stake1upk4upxkhxf2gzk7s6mka0g3xt79kvf235x4ejtzph9p9gkds6q",
+    "type": "drep",
+    "amount": 398,
+    "tx_hash": "85cfbbf7f5ea710c72b9a1b398de55b49b5df8a37d27f0dc47d8b301a68b75bc",
+    "timestamp": "2025-09-21T12:00:00Z"
+  },
+  {
+    "epoch": 522,
+    "stake_address": "stake1ugqamwu0ks2pcj8xvx7gymhlrwhjr5d75rz84fs8f0whrp6x2z5",
+    "type": "drep",
+    "amount": 398,
+    "tx_hash": "f9e565d764942a465c1cfb72cbd18a4bac79872be2bd920bc7ab83ec9d9d52c3",
+    "timestamp": "2025-09-22T12:00:00Z"
+  },
+  {
+    "epoch": 522,
+    "stake_address": "stake1ulhy7lf9wsmmhxwgnqzv22ktfwrrr9gju0ccsk2jtk5jf6gg8pu",
+    "type": "cc",
+    "amount": 727,
+    "tx_hash": "934203df06f8f214627b80e1058fc67b3e77601ab9920e4343bec38904acec38",
+    "timestamp": "2025-09-23T12:00:00Z"
+  },
+  {
+    "epoch": 522,
+    "stake_address": "stake1ukaccm9g2mh49s7dklepujvshzxccun8c4m8gestgck6286pfep",
+    "type": "cc",
+    "amount": 727,
+    "tx_hash": "fd83fb5d391eea2f77ceaa8b8b29d98421997a252d72af24430ca785b8ede6c0",
+    "timestamp": "2025-09-24T12:00:00Z"
+  },
+  {
+    "epoch": 522,
+    "stake_address": "stake1ur4e2u58h95en9rdgvhxt3qhrfp8pzrrphx6t4tzxfu8lc6qmx9",
+    "type": "cc",
+    "amount": 727,
+    "tx_hash": "19863b4706d4df7fca24da1f08f4719dda4df6c172fcb0de23ab7c15a01d4bf5",
+    "timestamp": "2025-09-25T12:00:00Z"
+  },
+  {
+    "epoch": 519,
+    "stake_address": "stake1ux7fe7j9hpuflnnjgmflzf66e83htkfqjulyyg9u9mvs0rcg5qvgp",
+    "type": "drep",
+    "amount": 393,
+    "tx_hash": "9427629f5e6fe642027b362e0da2fa2dbd718dac5ef4213a4d625eaee2bb30e3",
+    "timestamp": "2025-10-01T12:00:00Z"
+  },
+  {
+    "epoch": 519,
+    "stake_address": "stake1u8fnjkm3pq9xa7wv4l5e6d0strgyc4hz3wp8qv4xd9r5jk2n3p6qs",
+    "type": "drep",
+    "amount": 393,
+    "tx_hash": "d6031d19a2a72fdc4f698bd8e4b562f8e25e1467032a0dfff2b3053515cfd5f5",
+    "timestamp": "2025-10-02T12:00:00Z"
+  },
+  {
+    "epoch": 519,
+    "stake_address": "stake1uxk3n5d8r7gm2pq9wl4v6zjfahcts5e3y8md4xl7pnqr2w9fk5j8p",
+    "type": "drep",
+    "amount": 393,
+    "tx_hash": "d16a8bd59623ee848455a53263d62c9d621aa1ccc1200261f1d75f13e0037781",
+    "timestamp": "2025-10-03T12:00:00Z"
+  },
+  {
+    "epoch": 519,
+    "stake_address": "stake1uzg9kl5nm4qrwx7p3dv2a0scyft6e3jh5xu9md7k4r8p2n6qw5j3e",
+    "type": "drep",
+    "amount": 393,
+    "tx_hash": "b97abbfdd29458c6da14f43798bf3ebf1fe8423aac5228a34b9e578146f3aeb5",
+    "timestamp": "2025-10-04T12:00:00Z"
+  },
+  {
+    "epoch": 519,
+    "stake_address": "stake1uydlj8mhqxjr84mgsgzwf5ljhsyvcrfynaz5zqv4wn4kqxcjtlfcq",
+    "type": "cc",
+    "amount": 718,
+    "tx_hash": "b16b13bc472689f7049ab92e0d3c186c60fa60e474335903fd4b2bfbe585d4c2",
+    "timestamp": "2025-10-05T12:00:00Z"
+  },
+  {
+    "epoch": 519,
+    "stake_address": "stake1ure5xre2ttxh5grxgqysal2x5z9amms03x92f26mde2ca3kkfhf",
+    "type": "drep",
+    "amount": 393,
+    "tx_hash": "4f535d35b21a0b2a6a97a9f2949d3a88dccd47f79dcc9fbff736e5f8a62224d4",
+    "timestamp": "2025-10-06T12:00:00Z"
+  },
+  {
+    "epoch": 519,
+    "stake_address": "stake1ud9yrsqr5uw7tc6hyydtmgkd6ecqtek32mgtcruta23737x2j7t",
+    "type": "drep",
+    "amount": 393,
+    "tx_hash": "fb77fe586914b294c2d6efc1579235873072493a00d49d65f5cbafb27c52145e",
+    "timestamp": "2025-10-07T12:00:00Z"
+  },
+  {
+    "epoch": 519,
+    "stake_address": "stake1uj9ez9wu96zj6k2uhjguplxkp7d9r7hyh74mfhxnzjwyfxh4ara",
+    "type": "drep",
+    "amount": 393,
+    "tx_hash": "1df418621952221ff898e33126ffb1183464ddc20f9ae1900ae2ebce8302a980",
+    "timestamp": "2025-10-08T12:00:00Z"
+  },
+  {
+    "epoch": 519,
+    "stake_address": "stake1u55kanga72y6th0a235ut4cy8heh4q038xw89c3mdxft795ns90",
+    "type": "drep",
+    "amount": 393,
+    "tx_hash": "b2165cfa525c33102325b94885a864f359a98f95653cb0f7a72e8d5f55b830b3",
+    "timestamp": "2025-10-09T12:00:00Z"
+  },
+  {
+    "epoch": 519,
+    "stake_address": "stake1uded2tyllutls69tlceal2l3naefs7rwkn7csafvz7tt90l2n5q",
+    "type": "drep",
+    "amount": 393,
+    "tx_hash": "25ee1cbc772e373ee524cc58dda1595eaa8a11c28d5754f78ac8c1cc50e9ec2f",
+    "timestamp": "2025-10-10T12:00:00Z"
+  },
+  {
+    "epoch": 519,
+    "stake_address": "stake1uz8m40tf6mmge24g8m3hc8mf44jefpa42vc6fmxhev0ljdlyuy6",
+    "type": "drep",
+    "amount": 393,
+    "tx_hash": "98548c06edbcc07ed8565ef0aa47f58f0dc81aead283a1f77e66bec355f11d39",
+    "timestamp": "2025-10-11T12:00:00Z"
+  },
+  {
+    "epoch": 519,
+    "stake_address": "stake1ugv8rstqdz2rcxndh9uyl35tjglwh8lsf80tgf8er9yksxjt9mv",
+    "type": "drep",
+    "amount": 393,
+    "tx_hash": "04de9a55cb109e85263f332cf8110978164ca5df320a5ae4f7b9156f26497cac",
+    "timestamp": "2025-10-12T12:00:00Z"
+  },
+  {
+    "epoch": 519,
+    "stake_address": "stake1ue2sremjyu3m8yv43g58tw8jgjm5gy0anxfm8slrwasmy5lfklg",
+    "type": "drep",
+    "amount": 393,
+    "tx_hash": "681a00b993bb913ada592a05e801d9be05ab897dc0a2f39dba9031e8e94f59d7",
+    "timestamp": "2025-10-13T12:00:00Z"
+  },
+  {
+    "epoch": 519,
+    "stake_address": "stake1uyjw49mtpvydfdqv9yzcpeufp84ue8477txplpcgt8wpkhmglkh",
+    "type": "drep",
+    "amount": 393,
+    "tx_hash": "3f3cee4712d89207a69c5ba30ea389e76e5f07da52898b3e360c6af839fbea03",
+    "timestamp": "2025-10-14T12:00:00Z"
+  },
+  {
+    "epoch": 519,
+    "stake_address": "stake1ufwsw9mukjlehdw3pqvzl8g0pc2qe2hc0juzc58wfyvmkc3drnp",
+    "type": "drep",
+    "amount": 393,
+    "tx_hash": "a20728651bffe86308f1fb7a19162d1ffb9422d5d67a71b1868704747679b0f5",
+    "timestamp": "2025-10-15T12:00:00Z"
+  },
+  {
+    "epoch": 519,
+    "stake_address": "stake1uqauyl482sxdntu8c9x7amgpsjnv94p7sl8d33j5n6ajgktmnvt",
+    "type": "drep",
+    "amount": 393,
+    "tx_hash": "441b49b54f51a93ad3750a4b2928df37cb3bbc7a1731769dcb836499031b9b49",
+    "timestamp": "2025-10-16T12:00:00Z"
+  },
+  {
+    "epoch": 519,
+    "stake_address": "stake1uzys22y96r5wm5zn2ae03m2p2j3pz0zxn2fffsrpjpz78dvjv0d",
+    "type": "drep",
+    "amount": 393,
+    "tx_hash": "4fd98e2f58634acb96ba3f86ff4acd18accc8d7f853a636df57b0c8c96e4f945",
+    "timestamp": "2025-10-17T12:00:00Z"
+  },
+  {
+    "epoch": 519,
+    "stake_address": "stake1ukjqmfyq0a6m5s2sjavvd57706n9698wgxqdzuwftxwvdn9yk6m",
+    "type": "drep",
+    "amount": 393,
+    "tx_hash": "44efcd29dae9a5377a0faf6f1505b4652d13a95fbacc1f87088fb553cb240c0a",
+    "timestamp": "2025-10-18T12:00:00Z"
+  },
+  {
+    "epoch": 519,
+    "stake_address": "stake1u4t2tgs26k49a4r0glt0t3whq4fg3ksjmryv0j2eh9spfsrw84e",
+    "type": "drep",
+    "amount": 393,
+    "tx_hash": "bec126b48f8f0d28320a9108a3ce5bdfc6937f6f424bfd6ee1b07b9de678fcac",
+    "timestamp": "2025-10-19T12:00:00Z"
+  },
+  {
+    "epoch": 519,
+    "stake_address": "stake1un7k8h50vk43ex9fnp90dcg3jkppq5wg4cam6rfq3pxzcntws27",
+    "type": "drep",
+    "amount": 393,
+    "tx_hash": "8ae41b5ecd82f179a20d62c76be334c8b4e4ecadd54d9f56c8be0e331f8b34be",
+    "timestamp": "2025-10-20T12:00:00Z"
+  },
+  {
+    "epoch": 519,
+    "stake_address": "stake1u3c9m7vx2vm2ssnd4m00w22exhmu3a5p5vl3hyxc9tt2x44traz",
+    "type": "drep",
+    "amount": 393,
+    "tx_hash": "948101928caf759ba7616ca3dd66aea9893b910fdafb66569771c5d7418f894d",
+    "timestamp": "2025-10-21T12:00:00Z"
+  },
+  {
+    "epoch": 519,
+    "stake_address": "stake1u5vgx4z53lqsd9l46f99ua5dcy9e5wh8k6znxeay96m37eejs9l",
+    "type": "drep",
+    "amount": 393,
+    "tx_hash": "d3c9139001d3609f3ee8f6d25023e9abd16203d7367e47786fe9812d999360f9",
+    "timestamp": "2025-10-22T12:00:00Z"
+  },
+  {
+    "epoch": 519,
+    "stake_address": "stake1uja0efx4wmhgq6url3c57jv877f2zhm0pvp3gseve4qjp88cxal",
+    "type": "cc",
+    "amount": 718,
+    "tx_hash": "4e5d36eb5dafa77fc6797c089d80aad16433016d09bc08505378b21f68156367",
+    "timestamp": "2025-10-23T12:00:00Z"
+  },
+  {
+    "epoch": 519,
+    "stake_address": "stake1ue7m2crqje3kkmxkvxffyztm39kv67pzaqqdzzc3z9atlvhxycr",
+    "type": "cc",
+    "amount": 718,
+    "tx_hash": "058389efccf074a8d221e5fedfb0dc190fab023fb376d7247258384e98965228",
+    "timestamp": "2025-10-24T12:00:00Z"
+  },
+  {
+    "epoch": 519,
+    "stake_address": "stake1useuzalxq3ldyrm6twn4sd2yeuczz987q6npltr9kjwnqa3kv9z",
+    "type": "cc",
+    "amount": 718,
+    "tx_hash": "9aa33aade58defd13e897b4911a3d2259fab285223294ece6415087088622562",
+    "timestamp": "2025-10-25T12:00:00Z"
+  },
+  {
+    "epoch": 516,
+    "stake_address": "stake1ux7fe7j9hpuflnnjgmflzf66e83htkfqjulyyg9u9mvs0rcg5qvgp",
+    "type": "drep",
+    "amount": 411,
+    "tx_hash": "a280d952760f5fdee18c9a8d636ed32d8037020e561615988b1b8c1f4c1ce893",
+    "timestamp": "2025-11-01T12:00:00Z"
+  },
+  {
+    "epoch": 516,
+    "stake_address": "stake1u8fnjkm3pq9xa7wv4l5e6d0strgyc4hz3wp8qv4xd9r5jk2n3p6qs",
+    "type": "drep",
+    "amount": 411,
+    "tx_hash": "25ba89633a6bf6c270748525d332954308cfa5a491264191f5f5158afd8369ab",
+    "timestamp": "2025-11-02T12:00:00Z"
+  },
+  {
+    "epoch": 516,
+    "stake_address": "stake1u4wml9nq7rhx5p3kd8g2a6vj4etsycf3mz7xu5nd8lk4r9p2q6w5t",
+    "type": "drep",
+    "amount": 411,
+    "tx_hash": "8954d73c59f672841a2480c4fd7ca528b8dc05c27314cff89326cc2d3818c733",
+    "timestamp": "2025-11-03T12:00:00Z"
+  },
+  {
+    "epoch": 516,
+    "stake_address": "stake1uydlj8mhqxjr84mgsgzwf5ljhsyvcrfynaz5zqv4wn4kqxcjtlfcq",
+    "type": "cc",
+    "amount": 749,
+    "tx_hash": "78445d92882966eb5bcbc6b658564014298b0e7394ef758b9bf8f0f8ea4d0573",
+    "timestamp": "2025-11-04T12:00:00Z"
+  },
+  {
+    "epoch": 516,
+    "stake_address": "stake1u9r3kfg4mn5pq8wl7x2d0vjycts6e4zh3wp9qv5xd8r4jk3n2p7qm",
+    "type": "cc",
+    "amount": 749,
+    "tx_hash": "1b9773c917932498cd3aa91a19a7e9c08ecb4758385f1930289e6d3c73688e27",
+    "timestamp": "2025-11-05T12:00:00Z"
+  },
+  {
+    "epoch": 516,
+    "stake_address": "stake1ugc8k3mxle69sv2mp33f7fs8s40n5mcmnudppn3rqd0qgamuk8z",
+    "type": "drep",
+    "amount": 411,
+    "tx_hash": "796453be4d3d2acff2c043034c723d5f95860689a3d3e13918aa0475dc08fb62",
+    "timestamp": "2025-11-06T12:00:00Z"
+  },
+  {
+    "epoch": 516,
+    "stake_address": "stake1u78ayhvwqc7s6n7ecvv3fwaf3hz6q9zr54z6fgpdxl3cjud8rds",
+    "type": "drep",
+    "amount": 411,
+    "tx_hash": "3f07f9caf9f81cafe4a4f01357899f9e1e46c5413cd54339fa85267e1b432da9",
+    "timestamp": "2025-11-07T12:00:00Z"
+  },
+  {
+    "epoch": 516,
+    "stake_address": "stake1uwm92ze2y8nu69ekkemc5f8q80mzpn667krtf2gnkdx8zkytpsp",
+    "type": "drep",
+    "amount": 411,
+    "tx_hash": "63003ecb8f878f58ee23b6b035c585be9543be8a4fb384c23bf061b12a0bc59a",
+    "timestamp": "2025-11-08T12:00:00Z"
+  },
+  {
+    "epoch": 516,
+    "stake_address": "stake1ugq5pvzdaste2eas6sdjucr2quflh7cx45wlw07srm5lxhj8eyh",
+    "type": "drep",
+    "amount": 411,
+    "tx_hash": "fb998efd6e98fa46100d4690aa18b3a2b336bec53de18b67ad0497c117243df0",
+    "timestamp": "2025-11-09T12:00:00Z"
+  },
+  {
+    "epoch": 516,
+    "stake_address": "stake1u4e9guajvkjwmuj27vqleuvvdgpa2j3ahpct5qq09f8k4rn2448",
+    "type": "drep",
+    "amount": 411,
+    "tx_hash": "f1638360ad6c901b1502a6d58a0a77862726c41ae8cab6b367cc4a8f999716a0",
+    "timestamp": "2025-11-10T12:00:00Z"
+  },
+  {
+    "epoch": 516,
+    "stake_address": "stake1ul80q06sr305sg973mnjcetaln3cf0k3cnpqkhed8s6h8gkwrqn",
+    "type": "drep",
+    "amount": 411,
+    "tx_hash": "f80a6b3e890d76954a8013e37ec9accc44af45421342c663ddd6e145ca599341",
+    "timestamp": "2025-11-11T12:00:00Z"
+  },
+  {
+    "epoch": 516,
+    "stake_address": "stake1ux0q6xkxxghx03kzvwy9hndvdwfq47yavsdmv64ec3famzge8yg",
+    "type": "drep",
+    "amount": 411,
+    "tx_hash": "383ee5a292a6aeec9dad926c381f234fbfcce4f1884f5a1feb081c5c7fee2247",
+    "timestamp": "2025-11-12T12:00:00Z"
+  },
+  {
+    "epoch": 516,
+    "stake_address": "stake1umjy5utzs78wu5skkrhz54c7pcqthw3mxkkd8ef2rrj9m95nfey",
+    "type": "drep",
+    "amount": 411,
+    "tx_hash": "715ecb1cc1d5bfd34822c84c9e6d87c70fdbf6db4398a2d94e3adb558692ff86",
+    "timestamp": "2025-11-13T12:00:00Z"
+  },
+  {
+    "epoch": 516,
+    "stake_address": "stake1u4ykevpw2492682dll3e7zz8a6xuk4xsz8n4aq02cezt9f787x9",
+    "type": "drep",
+    "amount": 411,
+    "tx_hash": "a3646c22134fa0ae344a48f57e50469b13ac9fa9475a0d6c96b1bd97a9bb4375",
+    "timestamp": "2025-11-14T12:00:00Z"
+  },
+  {
+    "epoch": 516,
+    "stake_address": "stake1upv24lc7ycntjn8c73hlvxp4w5ud3c74fwmzycsrctu0g2vcsc7",
+    "type": "drep",
+    "amount": 411,
+    "tx_hash": "0bbb461d7318b04dbcf5e288d7249285ca8d1b9589ce58a2746c35019724b23f",
+    "timestamp": "2025-11-15T12:00:00Z"
+  },
+  {
+    "epoch": 516,
+    "stake_address": "stake1uez6ujln2nm473uew580vhfscs8tvswretkea7ld09fygw5n5vn",
+    "type": "drep",
+    "amount": 411,
+    "tx_hash": "b03925783768502eb01012b0b649d3d224aa794ca490f124b97fd7a5d72f58a8",
+    "timestamp": "2025-11-16T12:00:00Z"
+  },
+  {
+    "epoch": 516,
+    "stake_address": "stake1uau3ca56huf2ny3ywn3v267x30mypz387tjc0p58da3590kr33s",
+    "type": "drep",
+    "amount": 411,
+    "tx_hash": "25c4e27e4576494ce4f5a709be2e1555e84cbcb33e7bf6e4a8efeb5b7abcc2ca",
+    "timestamp": "2025-11-17T12:00:00Z"
+  },
+  {
+    "epoch": 516,
+    "stake_address": "stake1u37z8254z5lk5s9uv5t0utav8dkdg0a2vr992th90n4ywcmzs5g",
+    "type": "drep",
+    "amount": 411,
+    "tx_hash": "d0f9203b020237465a6efdf817d923071726d193d64cef33fd61df2f3b3824ed",
+    "timestamp": "2025-11-18T12:00:00Z"
+  },
+  {
+    "epoch": 516,
+    "stake_address": "stake1ugfcak7d6yk06wec6a6dnujhrpcxdxp5fmyyl4kg7q74gryjshl",
+    "type": "drep",
+    "amount": 411,
+    "tx_hash": "6a2fcf2ef7b0f85c65d92ea0b825f45e72087d4c41518d16b23a2f6417078419",
+    "timestamp": "2025-11-19T12:00:00Z"
+  },
+  {
+    "epoch": 516,
+    "stake_address": "stake1uklhjyemk7r4fpplrjzd06f7vmcgl7kv9gq4sn7gh6y6qz5759q",
+    "type": "drep",
+    "amount": 411,
+    "tx_hash": "c07335395204b3b0fdd4500b94d62cfc6083c7c8b5d83634edc8938ff489c1db",
+    "timestamp": "2025-11-20T12:00:00Z"
+  },
+  {
+    "epoch": 516,
+    "stake_address": "stake1u8u4n6ewypqlk0vmh8xd7p8d9q3x4amsf2lh7nrllguknk86uqq",
+    "type": "drep",
+    "amount": 411,
+    "tx_hash": "dd95e7305611ce1fcd2d65413b61238b345ce00b23fec5f1dcdaece0c5e8d9df",
+    "timestamp": "2025-11-21T12:00:00Z"
+  },
+  {
+    "epoch": 516,
+    "stake_address": "stake1udhaqnxr2wy28fjt7q7snasfe2n4qm6n6q33jy9jc53vfu5tauk",
+    "type": "drep",
+    "amount": 411,
+    "tx_hash": "52f3c08cf44b0d89f86cacdb839e4a9b1c225f57fdd538c529bc43b81d4dcaf9",
+    "timestamp": "2025-11-22T12:00:00Z"
+  },
+  {
+    "epoch": 516,
+    "stake_address": "stake1uskk7tgguhs4gsh0xmrf9fr7m8wpgum9y0y674gcuc3sf08qgpa",
+    "type": "cc",
+    "amount": 749,
+    "tx_hash": "769226adfc04593fa6f390cb76b96868826d85f0ca3a8df3cbb9a93eec2bf7de",
+    "timestamp": "2025-11-23T12:00:00Z"
+  },
+  {
+    "epoch": 516,
+    "stake_address": "stake1ujfm54w5jhtmu7gx0vwxlmmftygca5l78ve508pret2nj0jh88x",
+    "type": "cc",
+    "amount": 749,
+    "tx_hash": "60fce31ac6ef255a820a5edab284bdb058a6a74935e52777f0a857fe32e381d1",
+    "timestamp": "2025-11-24T12:00:00Z"
+  },
+  {
+    "epoch": 516,
+    "stake_address": "stake1ucpdnpx0g7cr4730wltk7f6azkjk2r97jywr4dmqa3wmwr4xhtl",
+    "type": "cc",
+    "amount": 749,
+    "tx_hash": "0a78e7c1eaf42dc4d8d6e957a2934952817dd30aeca4ffed2a48d7a08b3ccd16",
+    "timestamp": "2025-11-25T12:00:00Z"
+  },
+  {
+    "epoch": 513,
+    "stake_address": "stake1ux7fe7j9hpuflnnjgmflzf66e83htkfqjulyyg9u9mvs0rcg5qvgp",
+    "type": "drep",
+    "amount": 350,
+    "tx_hash": "df2241d8a4804a72eeb0f5a2f18c2ec10b6f7795c5709785e35e94c1eabf2640",
+    "timestamp": "2025-12-01T12:00:00Z"
+  },
+  {
+    "epoch": 513,
+    "stake_address": "stake1uxk3n5d8r7gm2pq9wl4v6zjfahcts5e3y8md4xl7pnqr2w9fk5j8p",
+    "type": "drep",
+    "amount": 350,
+    "tx_hash": "315fda7c4dc23d48e32048a6a7a57cc07e0b7d9ea0ea07bc115aef3c86ec7242",
+    "timestamp": "2025-12-02T12:00:00Z"
+  },
+  {
+    "epoch": 513,
+    "stake_address": "stake1uzg9kl5nm4qrwx7p3dv2a0scyft6e3jh5xu9md7k4r8p2n6qw5j3e",
+    "type": "drep",
+    "amount": 350,
+    "tx_hash": "790cfefb37f9d33aa681b6fead2511799251e4b573812ba09411f1a6b46cc449",
+    "timestamp": "2025-12-03T12:00:00Z"
+  },
+  {
+    "epoch": 513,
+    "stake_address": "stake1uydlj8mhqxjr84mgsgzwf5ljhsyvcrfynaz5zqv4wn4kqxcjtlfcq",
+    "type": "cc",
+    "amount": 638,
+    "tx_hash": "ad70ff2ac1bee2b9a430adc8c5f824da9159287fc5204b075fd08fb60438fb09",
+    "timestamp": "2025-12-04T12:00:00Z"
+  },
+  {
+    "epoch": 513,
+    "stake_address": "stake1ultn9wkr0pvkfalm3e07wzzjfjupdlpr6ug7087gagcselt334j",
+    "type": "drep",
+    "amount": 350,
+    "tx_hash": "14f55fa4ad2fd27aa62cb6a1d9b0f860f59ba3a0ef9bf446f89f882aaa7f7137",
+    "timestamp": "2025-12-05T12:00:00Z"
+  },
+  {
+    "epoch": 513,
+    "stake_address": "stake1uu7v3xuup6zru4qfgfg324lmvn59rkwj9sdmwqjm8hvz8vc0066",
+    "type": "drep",
+    "amount": 350,
+    "tx_hash": "5b734c6993c93a470213698ffdd3b7a0984806b59e728c63bbeb5bac8ddb66b3",
+    "timestamp": "2025-12-06T12:00:00Z"
+  },
+  {
+    "epoch": 513,
+    "stake_address": "stake1uwu00mr7933knqlz60s7r2a6gc8uk7ek4zn34745shpvnjp8wwr",
+    "type": "drep",
+    "amount": 350,
+    "tx_hash": "04def248f8718cf3e3498bcc61f5cb706780ada81335e06090397e3162904761",
+    "timestamp": "2025-12-07T12:00:00Z"
+  },
+  {
+    "epoch": 513,
+    "stake_address": "stake1usttd2ee76mryngljeu08yrv0yfswf0wq7c79pegtqgx8nzaxmv",
+    "type": "drep",
+    "amount": 350,
+    "tx_hash": "47c3bc55988fcb99fc743c963c83f50eaf31feabeb8980079d4dd26d3e41bc7d",
+    "timestamp": "2025-12-08T12:00:00Z"
+  },
+  {
+    "epoch": 513,
+    "stake_address": "stake1utaysenn3ezr89lvrt59hs6qhcrmnll0s2surpzgszh8lxxqv9d",
+    "type": "drep",
+    "amount": 350,
+    "tx_hash": "1cad9ccee6e05361320b93692a1f63f72fa4d86537ea788fc9261770e141634a",
+    "timestamp": "2025-12-09T12:00:00Z"
+  },
+  {
+    "epoch": 513,
+    "stake_address": "stake1um7enzge64waakhfnf3xnz378qjedjefafxltjyn8x9nveaa875",
+    "type": "drep",
+    "amount": 350,
+    "tx_hash": "8403e075a464579a35cfaec621c6f297d44ab6a4acb8fe910496be8f7c91ded4",
+    "timestamp": "2025-12-10T12:00:00Z"
+  },
+  {
+    "epoch": 513,
+    "stake_address": "stake1u73sjm7phnvj5ckp9jf4yhvvfv0p7njdnepggaxd8c9yye4jtxy",
+    "type": "drep",
+    "amount": 350,
+    "tx_hash": "a6c10c0c1416fe884f2b48b9e9b6a7c9498cd922787a2f95023b84949364544e",
+    "timestamp": "2025-12-11T12:00:00Z"
+  },
+  {
+    "epoch": 513,
+    "stake_address": "stake1ufa2z37kfuke4xscth5zj5jmgzfvlmv0cxradgz5kryxc74y7d8",
+    "type": "drep",
+    "amount": 350,
+    "tx_hash": "b42f8248eb5e5d649fa4e41dfa3adfe3124392f4f3f94e0a4bf3664c9f8c832e",
+    "timestamp": "2025-12-12T12:00:00Z"
+  },
+  {
+    "epoch": 513,
+    "stake_address": "stake1uhsvpdg5q6jwl6vynp3q3tcs6t9fchwkeh3xpr37zqq2tggneyw",
+    "type": "drep",
+    "amount": 350,
+    "tx_hash": "c6c1f22c7f4da78d2abf5f8216d66a60ee0bed21f99618305b53c5d9ecd8d36a",
+    "timestamp": "2025-12-13T12:00:00Z"
+  },
+  {
+    "epoch": 513,
+    "stake_address": "stake1uxleuyl7e8w8s2a5d88c7zzy6j2fu4z3j3e344zqdq7yktmpx3q",
+    "type": "drep",
+    "amount": 350,
+    "tx_hash": "2d67bc5b1bb9c7b040c6fb75ebdfd4df9e677045262af4616055fe810b2df418",
+    "timestamp": "2025-12-14T12:00:00Z"
+  },
+  {
+    "epoch": 513,
+    "stake_address": "stake1ugwssqv0z4nc3ju9ercxryejwfffp669z3pgs74cuw4p8xnrcyn",
+    "type": "drep",
+    "amount": 350,
+    "tx_hash": "a47e73e4319152754697662ce6f644df478889b479f0b5f8a505e1fd30e5c924",
+    "timestamp": "2025-12-15T12:00:00Z"
+  },
+  {
+    "epoch": 513,
+    "stake_address": "stake1uykxh3qf9ljjdayqpgglc4rrfze7ccq8r07kstgryntc6k52ekz",
+    "type": "drep",
+    "amount": 350,
+    "tx_hash": "85d1dadc453fc604c0e569f5ac07fa76b90c8aa0d383864b228ea700ae8b4cd3",
+    "timestamp": "2025-12-16T12:00:00Z"
+  },
+  {
+    "epoch": 513,
+    "stake_address": "stake1udyyd5592aqv3p7xc92jtmtcwjmwdk938h58557us7wjdcpxxaa",
+    "type": "drep",
+    "amount": 350,
+    "tx_hash": "7279fb597b8d6596e423a1d5758b3b7bc560a8ebed605f46edb73f907ad37157",
+    "timestamp": "2025-12-17T12:00:00Z"
+  },
+  {
+    "epoch": 513,
+    "stake_address": "stake1usz83htkx2jlrecvgfhvvvqmfc3gjwge42cxef8y7lh4m8nkn7d",
+    "type": "drep",
+    "amount": 350,
+    "tx_hash": "4cfa7c96b9bacd91ef7938db1bb1272a1783f701acaa310c9a941cfc69fb6a4f",
+    "timestamp": "2025-12-18T12:00:00Z"
+  },
+  {
+    "epoch": 513,
+    "stake_address": "stake1uvxrv9kzlgu6patd74ns64amgxdeq0y8wkzdqsehqfx36zza474",
+    "type": "drep",
+    "amount": 350,
+    "tx_hash": "e291a300cf4ea7e6659a7089c079dc4dc3191515c9971fe3f8ba1ee4f10e8eaa",
+    "timestamp": "2025-12-19T12:00:00Z"
+  },
+  {
+    "epoch": 513,
+    "stake_address": "stake1uld89mmemvmsx79rn4nujjpprqgcazaj6a6ke6pfm7f2d4hkx80",
+    "type": "drep",
+    "amount": 350,
+    "tx_hash": "d8e8ea89de28d0a3bf14fb69dd59ec14e674a84b7cee56fe30437699f7bf63d9",
+    "timestamp": "2025-12-20T12:00:00Z"
+  },
+  {
+    "epoch": 513,
+    "stake_address": "stake1u0944kdgsqd4ds8hjmdhfm88pv55fet5uf3khs2ud4mcd6krnak",
+    "type": "drep",
+    "amount": 350,
+    "tx_hash": "f23a748dc2ae767b704ecd73217adaad7a50a79d71e991026cc560baea36c328",
+    "timestamp": "2025-12-21T12:00:00Z"
+  },
+  {
+    "epoch": 513,
+    "stake_address": "stake1uat4a0seaa6hp2g442jpjtljn3c3jpvz4hkaun6ue2u5cxqf7aw",
+    "type": "drep",
+    "amount": 350,
+    "tx_hash": "7bcc0cc249407a984bb350fe9dcf8a0c08e1df13af53cce00ac3c3c6950b24ca",
+    "timestamp": "2025-12-22T12:00:00Z"
+  },
+  {
+    "epoch": 513,
+    "stake_address": "stake1ue753hl7ek4cpve0w23cmq067zpee70ak9s7j374dsam86kv6wu",
+    "type": "cc",
+    "amount": 638,
+    "tx_hash": "cb0f27cc8c0c3d7bad04c2eb2aedce5a98d450ec99b368bfd628315a699c7c51",
+    "timestamp": "2025-12-23T12:00:00Z"
+  },
+  {
+    "epoch": 513,
+    "stake_address": "stake1u76r48arvp59telnv2lzwluz7jwzc340nef48h6mrh7zj5r24vy",
+    "type": "cc",
+    "amount": 638,
+    "tx_hash": "1fd4aa06b9db39a032b07f19601a37f26c169d9f1778151612af013803f41d58",
+    "timestamp": "2025-12-24T12:00:00Z"
+  },
+  {
+    "epoch": 513,
+    "stake_address": "stake1u9e2zywvamklfaj0fgvtyrkj78xj5ve65rkgm9p7cwtgn7heynu",
+    "type": "cc",
+    "amount": 638,
+    "tx_hash": "97f9bf87954e2354176102452c39af248d0ebf736c4b14d53b5fcbaa327cf9c3",
+    "timestamp": "2025-12-25T12:00:00Z"
+  },
+  {
+    "epoch": 510,
+    "stake_address": "stake1ux7fe7j9hpuflnnjgmflzf66e83htkfqjulyyg9u9mvs0rcg5qvgp",
+    "type": "drep",
+    "amount": 410,
+    "tx_hash": "3d9093f2f3632367fdea634c735ace7ccd1eaaea649b4f87a9744218decbd62e",
+    "timestamp": "2025-13-01T12:00:00Z"
+  },
+  {
+    "epoch": 510,
+    "stake_address": "stake1u8fnjkm3pq9xa7wv4l5e6d0strgyc4hz3wp8qv4xd9r5jk2n3p6qs",
+    "type": "drep",
+    "amount": 410,
+    "tx_hash": "e625a7821ea9e4689d136a5cf8dbcda67ac07c82666ca4f87f3ba9465eb1a10d",
+    "timestamp": "2025-13-02T12:00:00Z"
+  },
+  {
+    "epoch": 510,
+    "stake_address": "stake1uxk3n5d8r7gm2pq9wl4v6zjfahcts5e3y8md4xl7pnqr2w9fk5j8p",
+    "type": "drep",
+    "amount": 410,
+    "tx_hash": "c7524e7417c4abc8548958b02c63f862c4cfe3eaead669744e6726b35ae00f45",
+    "timestamp": "2025-13-03T12:00:00Z"
+  },
+  {
+    "epoch": 510,
+    "stake_address": "stake1u4wml9nq7rhx5p3kd8g2a6vj4etsycf3mz7xu5nd8lk4r9p2q6w5t",
+    "type": "drep",
+    "amount": 410,
+    "tx_hash": "23a279cf327ee19c94b26112e4676535e3bc0d83a5f2e14c3be36f34bcd3f6e0",
+    "timestamp": "2025-13-04T12:00:00Z"
+  },
+  {
+    "epoch": 510,
+    "stake_address": "stake1uydlj8mhqxjr84mgsgzwf5ljhsyvcrfynaz5zqv4wn4kqxcjtlfcq",
+    "type": "cc",
+    "amount": 748,
+    "tx_hash": "02f2f02bca678901eea2a9133c3026c7d6839edea74949e54ec713779b249879",
+    "timestamp": "2025-13-05T12:00:00Z"
+  },
+  {
+    "epoch": 510,
+    "stake_address": "stake1ugmvm5cfap3dl4x66aggc4seslktcaaey4yh8dgk8hfk7tem9u6",
+    "type": "drep",
+    "amount": 410,
+    "tx_hash": "db482722adfe6c7fd75b8b3f00ec5547fdc43b1b266b2ec0c5c595a44814ce93",
+    "timestamp": "2025-13-06T12:00:00Z"
+  },
+  {
+    "epoch": 510,
+    "stake_address": "stake1unx83yx6dalydx73hvn8ru03ll7v0xp7uj7a8a3fy7e27p6fj2m",
+    "type": "drep",
+    "amount": 410,
+    "tx_hash": "49eff2d2bd84e4a37ad9d8ac42e7823cbd37afaea216fa116e71551653b8fc17",
+    "timestamp": "2025-13-07T12:00:00Z"
+  },
+  {
+    "epoch": 510,
+    "stake_address": "stake1ue5we8x0xuaj43e9rm7skykkapwacse4d9zeg5dm58xjeudtynv",
+    "type": "drep",
+    "amount": 410,
+    "tx_hash": "48328d2853fffc400c12ae17a6f8a3ec51a82596df607a3185e4f231f6bf8664",
+    "timestamp": "2025-13-08T12:00:00Z"
+  },
+  {
+    "epoch": 510,
+    "stake_address": "stake1ukqzar4prxp3ykvl4m4m7fkjerj6uydwm57u3v9x55whne2t82c",
+    "type": "drep",
+    "amount": 410,
+    "tx_hash": "cf4353e4f380046c57d6926fa25107aca05d6744310d7c644d30381ce0d6dc30",
+    "timestamp": "2025-13-09T12:00:00Z"
+  },
+  {
+    "epoch": 510,
+    "stake_address": "stake1ukxf7r9mgjswa9mzzmfy7md3m6xzrmn9ukshre3pl7xe53f9us3",
+    "type": "drep",
+    "amount": 410,
+    "tx_hash": "a4072b51dd5863eb91b14e3b2bfab5a01259d029fd0218a60abb5cecb6f1f7b9",
+    "timestamp": "2025-13-10T12:00:00Z"
+  },
+  {
+    "epoch": 510,
+    "stake_address": "stake1ukh3a95lxn9t29ymw84gcl4varfq6lnf55gczcfsy0gfgw3swq7",
+    "type": "drep",
+    "amount": 410,
+    "tx_hash": "f3a96d7be0d3ff2a93b248dcca3a9477a1068706bb08196f0f04a72f8cf217ec",
+    "timestamp": "2025-13-11T12:00:00Z"
+  },
+  {
+    "epoch": 510,
+    "stake_address": "stake1udt60m6yjlj20p58yhtz7c3yyxtq52vmff6g6cacqugfg04x653",
+    "type": "drep",
+    "amount": 410,
+    "tx_hash": "49e2a54b8a7cdd6761d3f1fc7cdb895987611ba0b15a10fd9617e4a671fbce70",
+    "timestamp": "2025-13-12T12:00:00Z"
+  },
+  {
+    "epoch": 510,
+    "stake_address": "stake1uwkktdyphknkwkxdv6qkaepxp96vrh4te7r99u0d7v645w9jqk5",
+    "type": "drep",
+    "amount": 410,
+    "tx_hash": "aeea2a854d1ff6f34b38b3c2fcf30a908b2f511dd10ec4d96be1a7064467c267",
+    "timestamp": "2025-13-13T12:00:00Z"
+  },
+  {
+    "epoch": 510,
+    "stake_address": "stake1u0jwmfnrh09u2vhtfv037ktppj87jh375kgs288g43eh7pnxka5",
+    "type": "drep",
+    "amount": 410,
+    "tx_hash": "1cd1b428b61a370b35570294aacb1ba0c123d717ca1b551fbf31a210dd811a4a",
+    "timestamp": "2025-13-14T12:00:00Z"
+  },
+  {
+    "epoch": 510,
+    "stake_address": "stake1uc3fxykjw7l4n633am4hxwjv6qu5jgn65zegypvyy2x25glp9zr",
+    "type": "drep",
+    "amount": 410,
+    "tx_hash": "13e5ce820846e79bccf22a5852cfc8f692920938da68537b7a55050d3a865514",
+    "timestamp": "2025-13-15T12:00:00Z"
+  },
+  {
+    "epoch": 510,
+    "stake_address": "stake1u90elrp53tz2pn855nyctw30qsgml7wz5udn3fldlpqcencu5t8",
+    "type": "drep",
+    "amount": 410,
+    "tx_hash": "2cbb6e7a238fbab914a1b7a30299e43f2001db996460cd85e8fc2cdc2155f701",
+    "timestamp": "2025-13-16T12:00:00Z"
+  },
+  {
+    "epoch": 510,
+    "stake_address": "stake1uewc5zd4cckxd2x7e8ze9j3gr2y883asf2k9ah8kpk338t0clug",
+    "type": "drep",
+    "amount": 410,
+    "tx_hash": "7c222279b04e7c69b55c1a06f8c8cd0a1dcda4032bd44f09aea370e00ab9a6be",
+    "timestamp": "2025-13-17T12:00:00Z"
+  },
+  {
+    "epoch": 510,
+    "stake_address": "stake1uup2ztyjwld90f2n69lww2yemr2hv5pgw6t40kk8g8dw2j5ypeh",
+    "type": "drep",
+    "amount": 410,
+    "tx_hash": "f7c72cb9a20476f037642dfe24c380c4c013c78f78a8dc210de3ce47a565c2c5",
+    "timestamp": "2025-13-18T12:00:00Z"
+  },
+  {
+    "epoch": 510,
+    "stake_address": "stake1uw873vyzmf95ty3cm5qlj0rsjlp6suhvkmue3yztjk88mk0a42d",
+    "type": "drep",
+    "amount": 410,
+    "tx_hash": "78bc0eacea1c42f83d4719fc441ad63dd6d0943afe358e250222ae0c4dc72678",
+    "timestamp": "2025-13-19T12:00:00Z"
+  },
+  {
+    "epoch": 510,
+    "stake_address": "stake1uqyrlycphlnlu8uuzh3t8kcmw3metk6047nufwya7ht2d284f05",
+    "type": "drep",
+    "amount": 410,
+    "tx_hash": "1630a93a5f1f74a4f87c8c94580b906390cd5e5470430c7d03d124d9b1ca3a15",
+    "timestamp": "2025-13-20T12:00:00Z"
+  },
+  {
+    "epoch": 510,
+    "stake_address": "stake1udy96shrfjzx2a0sxl5ulf806skd3vh2esxtp4dw0segfxsrxh6",
+    "type": "drep",
+    "amount": 410,
+    "tx_hash": "491756c85bb139aecb96785fb9f088b6d3459e2a88faed9c6748e65c1fc709e8",
+    "timestamp": "2025-13-21T12:00:00Z"
+  },
+  {
+    "epoch": 510,
+    "stake_address": "stake1uvq3gt5xh67y7la43jsgcvcgvk09yk3yzkjn4kejrwdx06k4whd",
+    "type": "drep",
+    "amount": 410,
+    "tx_hash": "07a0fee9aa8fa0969825723b12db79dabb19857069292f08254e62d6aafc8127",
+    "timestamp": "2025-13-22T12:00:00Z"
+  },
+  {
+    "epoch": 510,
+    "stake_address": "stake1u7nx6wk707p8tclwvg4cquc5uzy48f4phmfevru3c86axtqesp6",
+    "type": "cc",
+    "amount": 748,
+    "tx_hash": "babae0f65be7ea95330e2ea9a856a934aa3d95c5ee4dba7e6d15853dd41055ca",
+    "timestamp": "2025-13-23T12:00:00Z"
+  },
+  {
+    "epoch": 510,
+    "stake_address": "stake1ua6wqd2gtvls65027xdrhlvvalgdmyqhz3428szutjunyvefqt7",
+    "type": "cc",
+    "amount": 748,
+    "tx_hash": "3920ca01b48ae4acb29d428d6f7b6f5883f7b024ac5666283de5f9ea7f9d84fc",
+    "timestamp": "2025-13-24T12:00:00Z"
+  },
+  {
+    "epoch": 510,
+    "stake_address": "stake1uzzkjpg6smuka3jnk892yjw9h32ks48wzh2tlppgf44sm3lra42",
+    "type": "cc",
+    "amount": 748,
+    "tx_hash": "be059675d47952d6511dc84bc07606044ecb947006289f8ae3cc2584ab286b69",
+    "timestamp": "2025-13-25T12:00:00Z"
+  }
+]

@@ -1,0 +1,730 @@
+{
+  "stake1ux7fe7j9hpuflnnjgmflzf66e83htkfqjulyyg9u9mvs0rcg5qvgp": [
+    {
+      "window_label": "Closed window ending epoch 522",
+      "epochs": [
+        520,
+        521,
+        522
+      ],
+      "payout_epoch": 522,
+      "status": "paid",
+      "eligible": true,
+      "voted_actions": 11,
+      "total_actions": 11,
+      "amount": 398,
+      "ineligible_reason": null,
+      "type": "drep",
+      "sort_order": 522
+    },
+    {
+      "window_label": "Closed window ending epoch 519",
+      "epochs": [
+        517,
+        518,
+        519
+      ],
+      "payout_epoch": 519,
+      "status": "paid",
+      "eligible": true,
+      "voted_actions": 11,
+      "total_actions": 11,
+      "amount": 393,
+      "ineligible_reason": null,
+      "type": "drep",
+      "sort_order": 519
+    },
+    {
+      "window_label": "Closed window ending epoch 516",
+      "epochs": [
+        514,
+        515,
+        516
+      ],
+      "payout_epoch": 516,
+      "status": "paid",
+      "eligible": true,
+      "voted_actions": 11,
+      "total_actions": 11,
+      "amount": 411,
+      "ineligible_reason": null,
+      "type": "drep",
+      "sort_order": 516
+    },
+    {
+      "window_label": "Closed window ending epoch 513",
+      "epochs": [
+        511,
+        512,
+        513
+      ],
+      "payout_epoch": 513,
+      "status": "paid",
+      "eligible": true,
+      "voted_actions": 7,
+      "total_actions": 7,
+      "amount": 350,
+      "ineligible_reason": null,
+      "type": "drep",
+      "sort_order": 513
+    },
+    {
+      "window_label": "Closed window ending epoch 510",
+      "epochs": [
+        508,
+        509,
+        510
+      ],
+      "payout_epoch": 510,
+      "status": "paid",
+      "eligible": true,
+      "voted_actions": 6,
+      "total_actions": 6,
+      "amount": 410,
+      "ineligible_reason": null,
+      "type": "drep",
+      "sort_order": 510
+    },
+    {
+      "window_label": "Current window 521-523",
+      "epochs": [
+        521,
+        522,
+        523
+      ],
+      "payout_epoch": 523,
+      "status": "current",
+      "eligible": true,
+      "voted_actions": 11,
+      "total_actions": 11,
+      "amount": 395,
+      "ineligible_reason": null,
+      "type": "drep",
+      "sort_order": 1523
+    }
+  ],
+  "stake1u8fnjkm3pq9xa7wv4l5e6d0strgyc4hz3wp8qv4xd9r5jk2n3p6qs": [
+    {
+      "window_label": "Closed window ending epoch 522",
+      "epochs": [
+        520,
+        521,
+        522
+      ],
+      "payout_epoch": 522,
+      "status": "paid",
+      "eligible": true,
+      "voted_actions": 11,
+      "total_actions": 11,
+      "amount": 398,
+      "ineligible_reason": null,
+      "type": "drep",
+      "sort_order": 522
+    },
+    {
+      "window_label": "Closed window ending epoch 519",
+      "epochs": [
+        517,
+        518,
+        519
+      ],
+      "payout_epoch": 519,
+      "status": "paid",
+      "eligible": true,
+      "voted_actions": 11,
+      "total_actions": 11,
+      "amount": 393,
+      "ineligible_reason": null,
+      "type": "drep",
+      "sort_order": 519
+    },
+    {
+      "window_label": "Closed window ending epoch 516",
+      "epochs": [
+        514,
+        515,
+        516
+      ],
+      "payout_epoch": 516,
+      "status": "paid",
+      "eligible": true,
+      "voted_actions": 11,
+      "total_actions": 11,
+      "amount": 411,
+      "ineligible_reason": null,
+      "type": "drep",
+      "sort_order": 516
+    },
+    {
+      "window_label": "Closed window ending epoch 513",
+      "epochs": [
+        511,
+        512,
+        513
+      ],
+      "payout_epoch": 513,
+      "status": "not_paid",
+      "eligible": false,
+      "voted_actions": 6,
+      "total_actions": 7,
+      "amount": 0,
+      "ineligible_reason": "incomplete_votes",
+      "type": "drep",
+      "sort_order": 513
+    },
+    {
+      "window_label": "Closed window ending epoch 510",
+      "epochs": [
+        508,
+        509,
+        510
+      ],
+      "payout_epoch": 510,
+      "status": "paid",
+      "eligible": true,
+      "voted_actions": 6,
+      "total_actions": 6,
+      "amount": 410,
+      "ineligible_reason": null,
+      "type": "drep",
+      "sort_order": 510
+    },
+    {
+      "window_label": "Current window 521-523",
+      "epochs": [
+        521,
+        522,
+        523
+      ],
+      "payout_epoch": 523,
+      "status": "current",
+      "eligible": true,
+      "voted_actions": 11,
+      "total_actions": 11,
+      "amount": 395,
+      "ineligible_reason": null,
+      "type": "drep",
+      "sort_order": 1523
+    }
+  ],
+  "stake1uxk3n5d8r7gm2pq9wl4v6zjfahcts5e3y8md4xl7pnqr2w9fk5j8p": [
+    {
+      "window_label": "Closed window ending epoch 522",
+      "epochs": [
+        520,
+        521,
+        522
+      ],
+      "payout_epoch": 522,
+      "status": "paid",
+      "eligible": true,
+      "voted_actions": 11,
+      "total_actions": 11,
+      "amount": 398,
+      "ineligible_reason": null,
+      "type": "drep",
+      "sort_order": 522
+    },
+    {
+      "window_label": "Closed window ending epoch 519",
+      "epochs": [
+        517,
+        518,
+        519
+      ],
+      "payout_epoch": 519,
+      "status": "paid",
+      "eligible": true,
+      "voted_actions": 11,
+      "total_actions": 11,
+      "amount": 393,
+      "ineligible_reason": null,
+      "type": "drep",
+      "sort_order": 519
+    },
+    {
+      "window_label": "Closed window ending epoch 516",
+      "epochs": [
+        514,
+        515,
+        516
+      ],
+      "payout_epoch": 516,
+      "status": "not_paid",
+      "eligible": false,
+      "voted_actions": 9,
+      "total_actions": 11,
+      "amount": 0,
+      "ineligible_reason": "incomplete_votes",
+      "type": "drep",
+      "sort_order": 516
+    },
+    {
+      "window_label": "Closed window ending epoch 513",
+      "epochs": [
+        511,
+        512,
+        513
+      ],
+      "payout_epoch": 513,
+      "status": "paid",
+      "eligible": true,
+      "voted_actions": 7,
+      "total_actions": 7,
+      "amount": 350,
+      "ineligible_reason": null,
+      "type": "drep",
+      "sort_order": 513
+    },
+    {
+      "window_label": "Closed window ending epoch 510",
+      "epochs": [
+        508,
+        509,
+        510
+      ],
+      "payout_epoch": 510,
+      "status": "paid",
+      "eligible": true,
+      "voted_actions": 6,
+      "total_actions": 6,
+      "amount": 410,
+      "ineligible_reason": null,
+      "type": "drep",
+      "sort_order": 510
+    },
+    {
+      "window_label": "Current window 521-523",
+      "epochs": [
+        521,
+        522,
+        523
+      ],
+      "payout_epoch": 523,
+      "status": "current",
+      "eligible": true,
+      "voted_actions": 11,
+      "total_actions": 11,
+      "amount": 395,
+      "ineligible_reason": null,
+      "type": "drep",
+      "sort_order": 1523
+    }
+  ],
+  "stake1u4wml9nq7rhx5p3kd8g2a6vj4etsycf3mz7xu5nd8lk4r9p2q6w5t": [
+    {
+      "window_label": "Closed window ending epoch 522",
+      "epochs": [
+        520,
+        521,
+        522
+      ],
+      "payout_epoch": 522,
+      "status": "paid",
+      "eligible": true,
+      "voted_actions": 11,
+      "total_actions": 11,
+      "amount": 398,
+      "ineligible_reason": null,
+      "type": "drep",
+      "sort_order": 522
+    },
+    {
+      "window_label": "Closed window ending epoch 519",
+      "epochs": [
+        517,
+        518,
+        519
+      ],
+      "payout_epoch": 519,
+      "status": "not_paid",
+      "eligible": false,
+      "voted_actions": 11,
+      "total_actions": 11,
+      "amount": 0,
+      "ineligible_reason": "outside_top_200",
+      "type": "drep",
+      "sort_order": 519
+    },
+    {
+      "window_label": "Closed window ending epoch 516",
+      "epochs": [
+        514,
+        515,
+        516
+      ],
+      "payout_epoch": 516,
+      "status": "paid",
+      "eligible": true,
+      "voted_actions": 11,
+      "total_actions": 11,
+      "amount": 411,
+      "ineligible_reason": null,
+      "type": "drep",
+      "sort_order": 516
+    },
+    {
+      "window_label": "Closed window ending epoch 513",
+      "epochs": [
+        511,
+        512,
+        513
+      ],
+      "payout_epoch": 513,
+      "status": "not_paid",
+      "eligible": false,
+      "voted_actions": 7,
+      "total_actions": 7,
+      "amount": 0,
+      "ineligible_reason": "outside_top_200",
+      "type": "drep",
+      "sort_order": 513
+    },
+    {
+      "window_label": "Closed window ending epoch 510",
+      "epochs": [
+        508,
+        509,
+        510
+      ],
+      "payout_epoch": 510,
+      "status": "paid",
+      "eligible": true,
+      "voted_actions": 6,
+      "total_actions": 6,
+      "amount": 410,
+      "ineligible_reason": null,
+      "type": "drep",
+      "sort_order": 510
+    },
+    {
+      "window_label": "Current window 521-523",
+      "epochs": [
+        521,
+        522,
+        523
+      ],
+      "payout_epoch": 523,
+      "status": "current",
+      "eligible": false,
+      "voted_actions": 11,
+      "total_actions": 11,
+      "amount": 0,
+      "ineligible_reason": "outside_top_200",
+      "type": "drep",
+      "sort_order": 1523
+    }
+  ],
+  "stake1uzg9kl5nm4qrwx7p3dv2a0scyft6e3jh5xu9md7k4r8p2n6qw5j3e": [
+    {
+      "window_label": "Closed window ending epoch 522",
+      "epochs": [
+        520,
+        521,
+        522
+      ],
+      "payout_epoch": 522,
+      "status": "not_paid",
+      "eligible": false,
+      "voted_actions": 7,
+      "total_actions": 11,
+      "amount": 0,
+      "ineligible_reason": "incomplete_votes",
+      "type": "drep",
+      "sort_order": 522
+    },
+    {
+      "window_label": "Closed window ending epoch 519",
+      "epochs": [
+        517,
+        518,
+        519
+      ],
+      "payout_epoch": 519,
+      "status": "paid",
+      "eligible": true,
+      "voted_actions": 11,
+      "total_actions": 11,
+      "amount": 393,
+      "ineligible_reason": null,
+      "type": "drep",
+      "sort_order": 519
+    },
+    {
+      "window_label": "Closed window ending epoch 516",
+      "epochs": [
+        514,
+        515,
+        516
+      ],
+      "payout_epoch": 516,
+      "status": "not_paid",
+      "eligible": false,
+      "voted_actions": 7,
+      "total_actions": 11,
+      "amount": 0,
+      "ineligible_reason": "incomplete_votes",
+      "type": "drep",
+      "sort_order": 516
+    },
+    {
+      "window_label": "Closed window ending epoch 513",
+      "epochs": [
+        511,
+        512,
+        513
+      ],
+      "payout_epoch": 513,
+      "status": "paid",
+      "eligible": true,
+      "voted_actions": 7,
+      "total_actions": 7,
+      "amount": 350,
+      "ineligible_reason": null,
+      "type": "drep",
+      "sort_order": 513
+    },
+    {
+      "window_label": "Closed window ending epoch 510",
+      "epochs": [
+        508,
+        509,
+        510
+      ],
+      "payout_epoch": 510,
+      "status": "not_paid",
+      "eligible": false,
+      "voted_actions": 2,
+      "total_actions": 6,
+      "amount": 0,
+      "ineligible_reason": "incomplete_votes",
+      "type": "drep",
+      "sort_order": 510
+    },
+    {
+      "window_label": "Current window 521-523",
+      "epochs": [
+        521,
+        522,
+        523
+      ],
+      "payout_epoch": 523,
+      "status": "current",
+      "eligible": false,
+      "voted_actions": 7,
+      "total_actions": 11,
+      "amount": 0,
+      "ineligible_reason": "incomplete_votes",
+      "type": "drep",
+      "sort_order": 1523
+    }
+  ],
+  "stake1uydlj8mhqxjr84mgsgzwf5ljhsyvcrfynaz5zqv4wn4kqxcjtlfcq": [
+    {
+      "window_label": "Closed window ending epoch 522",
+      "epochs": [
+        520,
+        521,
+        522
+      ],
+      "payout_epoch": 522,
+      "status": "paid",
+      "eligible": true,
+      "voted_actions": 11,
+      "total_actions": 11,
+      "amount": 727,
+      "ineligible_reason": null,
+      "type": "cc",
+      "sort_order": 522
+    },
+    {
+      "window_label": "Closed window ending epoch 519",
+      "epochs": [
+        517,
+        518,
+        519
+      ],
+      "payout_epoch": 519,
+      "status": "paid",
+      "eligible": true,
+      "voted_actions": 11,
+      "total_actions": 11,
+      "amount": 718,
+      "ineligible_reason": null,
+      "type": "cc",
+      "sort_order": 519
+    },
+    {
+      "window_label": "Closed window ending epoch 516",
+      "epochs": [
+        514,
+        515,
+        516
+      ],
+      "payout_epoch": 516,
+      "status": "paid",
+      "eligible": true,
+      "voted_actions": 11,
+      "total_actions": 11,
+      "amount": 749,
+      "ineligible_reason": null,
+      "type": "cc",
+      "sort_order": 516
+    },
+    {
+      "window_label": "Closed window ending epoch 513",
+      "epochs": [
+        511,
+        512,
+        513
+      ],
+      "payout_epoch": 513,
+      "status": "paid",
+      "eligible": true,
+      "voted_actions": 7,
+      "total_actions": 7,
+      "amount": 638,
+      "ineligible_reason": null,
+      "type": "cc",
+      "sort_order": 513
+    },
+    {
+      "window_label": "Closed window ending epoch 510",
+      "epochs": [
+        508,
+        509,
+        510
+      ],
+      "payout_epoch": 510,
+      "status": "paid",
+      "eligible": true,
+      "voted_actions": 6,
+      "total_actions": 6,
+      "amount": 748,
+      "ineligible_reason": null,
+      "type": "cc",
+      "sort_order": 510
+    },
+    {
+      "window_label": "Current window 521-523",
+      "epochs": [
+        521,
+        522,
+        523
+      ],
+      "payout_epoch": 523,
+      "status": "current",
+      "eligible": true,
+      "voted_actions": 11,
+      "total_actions": 11,
+      "amount": 721,
+      "ineligible_reason": null,
+      "type": "cc",
+      "sort_order": 1523
+    }
+  ],
+  "stake1u9r3kfg4mn5pq8wl7x2d0vjycts6e4zh3wp9qv5xd8r4jk3n2p7qm": [
+    {
+      "window_label": "Closed window ending epoch 522",
+      "epochs": [
+        520,
+        521,
+        522
+      ],
+      "payout_epoch": 522,
+      "status": "paid",
+      "eligible": true,
+      "voted_actions": 11,
+      "total_actions": 11,
+      "amount": 727,
+      "ineligible_reason": null,
+      "type": "cc",
+      "sort_order": 522
+    },
+    {
+      "window_label": "Closed window ending epoch 519",
+      "epochs": [
+        517,
+        518,
+        519
+      ],
+      "payout_epoch": 519,
+      "status": "not_paid",
+      "eligible": false,
+      "voted_actions": 9,
+      "total_actions": 11,
+      "amount": 0,
+      "ineligible_reason": "incomplete_votes",
+      "type": "cc",
+      "sort_order": 519
+    },
+    {
+      "window_label": "Closed window ending epoch 516",
+      "epochs": [
+        514,
+        515,
+        516
+      ],
+      "payout_epoch": 516,
+      "status": "paid",
+      "eligible": true,
+      "voted_actions": 11,
+      "total_actions": 11,
+      "amount": 749,
+      "ineligible_reason": null,
+      "type": "cc",
+      "sort_order": 516
+    },
+    {
+      "window_label": "Closed window ending epoch 513",
+      "epochs": [
+        511,
+        512,
+        513
+      ],
+      "payout_epoch": 513,
+      "status": "not_paid",
+      "eligible": false,
+      "voted_actions": 5,
+      "total_actions": 7,
+      "amount": 0,
+      "ineligible_reason": "incomplete_votes",
+      "type": "cc",
+      "sort_order": 513
+    },
+    {
+      "window_label": "Closed window ending epoch 510",
+      "epochs": [
+        508,
+        509,
+        510
+      ],
+      "payout_epoch": 510,
+      "status": "not_paid",
+      "eligible": false,
+      "voted_actions": 4,
+      "total_actions": 6,
+      "amount": 0,
+      "ineligible_reason": "incomplete_votes",
+      "type": "cc",
+      "sort_order": 510
+    },
+    {
+      "window_label": "Current window 521-523",
+      "epochs": [
+        521,
+        522,
+        523
+      ],
+      "payout_epoch": 523,
+      "status": "current",
+      "eligible": false,
+      "voted_actions": 9,
+      "total_actions": 11,
+      "amount": 0,
+      "ineligible_reason": "incomplete_votes",
+      "type": "cc",
+      "sort_order": 1523
+    }
+  ]
+}
