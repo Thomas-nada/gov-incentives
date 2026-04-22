@@ -156,7 +156,7 @@ TITLES = {
     'TreasuryWithdrawal': [
         'Governance Tooling Fund','Catalyst Fund 14 Allocation','DRep Campaign Fund',
         'IOG Infrastructure Grant','Open Source Developer Fund','Community Education Initiative',
-        'Cardano Foundation Budget','Intersect MBO Operations','Security Audit Fund',
+        'Cardano Foundation Budget','an independent entity MBO Operations','Security Audit Fund',
         'Layer 2 Research Grant','Documentation Working Group','Developer Bootcamp Fund',
         'DeFi Ecosystem Grant','NFT Standards Fund','Stablecoin Research Initiative',
         'Plutus Migration Support','Identity Infrastructure Fund','Governance Bootstrap',
@@ -179,7 +179,7 @@ TITLES = {
         'CC Term Renewal Signal','Leios Readiness Survey',
         'CC Charter Endorsement','DRep Working Group Formation',
         'Hard Fork Readiness Poll','Node Upgrade Signal',
-        'Intersect Membership Drive','Community Budget Signal',
+        'an independent entity Membership Drive','Community Budget Signal',
         'Cardano Sustainability Signal','Developer Relations Survey',
         'Midnight Integration Readiness','CF Strategy Endorsement',
         'Governance Calendar Endorsement','Annual Report Acknowledgement',

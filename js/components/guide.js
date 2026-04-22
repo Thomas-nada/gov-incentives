@@ -189,9 +189,10 @@ export function renderGuide(app) {
             <li>Per-share amounts are rounded down to the nearest whole ₳. The small remainder left over by floor division accumulates in the reserve over time.</li>
           </ul>
           <p>Once the claim window closes, any rewards that were allocated but never claimed are also returned to the reserve. The running balance is displayed in the UI and is available to supplement future windows.</p>
-          <p>The reserve is also intended to fund programme enhancements over time. Planned uses include:</p>
+          <p>The reserve is also intended to fund programme enhancements over time. Planned uses could include:</p>
           <ul>
             <li>Bonus rewards for governance participants who attach a rationale to their votes — encouraging transparent, well-reasoned governance rather than silent participation.</li>
+            <li>Delegation based rewards, where governance participants gets compensated based on their delegation on top of the base compensation.</li>
             <li>Supplementing windows where staking yield is lower than usual, ensuring a consistent baseline reward even during periods of reduced pool performance.</li>
             <li>An optional annual contribution back to the Cardano Treasury — returning surplus funds to the ecosystem if the reserve grows beyond what the programme needs to operate sustainably.</li>
           </ul>
