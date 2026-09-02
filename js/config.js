@@ -25,6 +25,7 @@ export const STORAGE = {
   theme:  'govrewards.theme.v1',
   banner: 'govrewards.banner-dismissed.v1',
   addressBook: 'govrewards.payout-address.v1',
+  simulation: 'govrewards.treasury-sim.v1',
 };
 
 /** Human labels and palette for each CIP-1694 governance action type. */

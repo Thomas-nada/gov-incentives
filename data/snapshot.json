@@ -17,8 +17,9 @@
       "pool_id": "pool18mtmdp4nsrrg2ne9u0zsnalyzr35ppavm50f70kag6tfzl7ma2j",
       "delegated_lovelace": 75000000000000,
       "saturation_pct": 32.4,
-      "lifetime_roa_pct": 2.94,
-      "blocks_lifetime": 1284
+      "lifetime_roa_pct": 2.74,
+      "par_roa_pct": 2.74,
+      "blocks_lifetime": 5211
     },
     "payout_script_address": "addr1qwfhtg06g8cyc8mscj50y5y2ahgk3gegtvxzwt4pvdt0dytxpxmpyct0jf3m9q6jrx4kh4g6npzu4u4pakh2dfrpjltl0",
     "support_email": "support@govrewards.example",
@@ -72,5 +73,5 @@
     "reserve_balance_lovelace": 286050371776,
     "payout_records": 267
   },
-  "generated_at": "2026-09-02T06:59:59Z"
+  "generated_at": "2026-09-02T07:56:56Z"
 }

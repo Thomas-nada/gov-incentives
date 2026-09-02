@@ -8,8 +8,6 @@
     "first_block": 10265566,
     "blocks_minted": 21456,
     "active_stake_lovelace": 21649224316000000,
-    "pool_blocks": 9,
-    "pool_roa_pct": 3.12,
     "action_count": 3,
     "dreps_rewarded": 167,
     "cc_rewarded": 7,
@@ -19,7 +17,10 @@
     "cc_share_lovelace": 809166347,
     "rewards_generated_lovelace": 30120090122,
     "status": "closed",
-    "claim_open": false
+    "claim_open": false,
+    "pool_expected_blocks": 74.3,
+    "pool_blocks": 79,
+    "pool_roa_pct": 2.93
   },
   {
     "epoch": 452,
@@ -28,10 +29,8 @@
     "end_time": "2025-09-10T21:44:51Z",
     "first_slot": 137808000,
     "first_block": 10287166,
-    "blocks_minted": 21558,
-    "active_stake_lovelace": 21906752473000000,
-    "pool_blocks": 11,
-    "pool_roa_pct": 3.08,
+    "blocks_minted": 21676,
+    "active_stake_lovelace": 22954047830000000,
     "action_count": 2,
     "dreps_rewarded": 0,
     "cc_rewarded": 0,
@@ -41,7 +40,10 @@
     "cc_share_lovelace": 0,
     "rewards_generated_lovelace": 29973445140,
     "status": "closed",
-    "claim_open": false
+    "claim_open": false,
+    "pool_expected_blocks": 70.8,
+    "pool_blocks": 75,
+    "pool_roa_pct": 2.92
   },
   {
     "epoch": 453,
@@ -50,10 +52,8 @@
     "end_time": "2025-09-15T21:44:51Z",
     "first_slot": 138240000,
     "first_block": 10308766,
-    "blocks_minted": 21275,
-    "active_stake_lovelace": 21843895835000000,
-    "pool_blocks": 14,
-    "pool_roa_pct": 2.85,
+    "blocks_minted": 21558,
+    "active_stake_lovelace": 22297786049000000,
     "action_count": 4,
     "dreps_rewarded": 0,
     "cc_rewarded": 0,
@@ -63,7 +63,10 @@
     "cc_share_lovelace": 0,
     "rewards_generated_lovelace": 28926061981,
     "status": "closed",
-    "claim_open": false
+    "claim_open": false,
+    "pool_expected_blocks": 72.5,
+    "pool_blocks": 74,
+    "pool_roa_pct": 2.82
   },
   {
     "epoch": 454,
@@ -72,10 +75,8 @@
     "end_time": "2025-09-20T21:44:51Z",
     "first_slot": 138672000,
     "first_block": 10330366,
-    "blocks_minted": 21454,
-    "active_stake_lovelace": 21778747685000000,
-    "pool_blocks": 25,
-    "pool_roa_pct": 2.83,
+    "blocks_minted": 21612,
+    "active_stake_lovelace": 22867652551000000,
     "action_count": 2,
     "dreps_rewarded": 180,
     "cc_rewarded": 4,
@@ -85,7 +86,10 @@
     "cc_share_lovelace": 755080638,
     "rewards_generated_lovelace": 29193234083,
     "status": "closed",
-    "claim_open": false
+    "claim_open": false,
+    "pool_expected_blocks": 70.9,
+    "pool_blocks": 73,
+    "pool_roa_pct": 2.84
   },
   {
     "epoch": 455,
@@ -94,10 +98,8 @@
     "end_time": "2025-09-25T21:44:51Z",
     "first_slot": 139104000,
     "first_block": 10351966,
-    "blocks_minted": 21676,
-    "active_stake_lovelace": 21779170844000000,
-    "pool_blocks": 15,
-    "pool_roa_pct": 3.15,
+    "blocks_minted": 21430,
+    "active_stake_lovelace": 22837260910000000,
     "action_count": 4,
     "dreps_rewarded": 0,
     "cc_rewarded": 0,
@@ -107,7 +109,10 @@
     "cc_share_lovelace": 0,
     "rewards_generated_lovelace": 25723605136,
     "status": "closed",
-    "claim_open": false
+    "claim_open": false,
+    "pool_expected_blocks": 70.4,
+    "pool_blocks": 64,
+    "pool_roa_pct": 2.5
   },
   {
     "epoch": 456,
@@ -116,10 +121,8 @@
     "end_time": "2025-09-30T21:44:51Z",
     "first_slot": 139536000,
     "first_block": 10373566,
-    "blocks_minted": 21657,
-    "active_stake_lovelace": 22791166003000000,
-    "pool_blocks": 16,
-    "pool_roa_pct": 2.74,
+    "blocks_minted": 21071,
+    "active_stake_lovelace": 22023389645000000,
     "action_count": 5,
     "dreps_rewarded": 0,
     "cc_rewarded": 0,
@@ -129,7 +132,10 @@
     "cc_share_lovelace": 0,
     "rewards_generated_lovelace": 26630231821,
     "status": "closed",
-    "claim_open": false
+    "claim_open": false,
+    "pool_expected_blocks": 71.8,
+    "pool_blocks": 68,
+    "pool_roa_pct": 2.59
   },
   {
     "epoch": 457,
@@ -138,10 +144,8 @@
     "end_time": "2025-10-05T21:44:51Z",
     "first_slot": 139968000,
     "first_block": 10395166,
-    "blocks_minted": 21648,
-    "active_stake_lovelace": 22237729132000000,
-    "pool_blocks": 9,
-    "pool_roa_pct": 3.27,
+    "blocks_minted": 21128,
+    "active_stake_lovelace": 22004683488000000,
     "action_count": 2,
     "dreps_rewarded": 175,
     "cc_rewarded": 5,
@@ -151,7 +155,10 @@
     "cc_share_lovelace": 681744735,
     "rewards_generated_lovelace": 27183048845,
     "status": "closed",
-    "claim_open": false
+    "claim_open": false,
+    "pool_expected_blocks": 72.0,
+    "pool_blocks": 69,
+    "pool_roa_pct": 2.65
   },
   {
     "epoch": 458,
@@ -160,10 +167,8 @@
     "end_time": "2025-10-10T21:44:51Z",
     "first_slot": 140400000,
     "first_block": 10416766,
-    "blocks_minted": 21383,
-    "active_stake_lovelace": 22743194032000000,
-    "pool_blocks": 17,
-    "pool_roa_pct": 2.74,
+    "blocks_minted": 21697,
+    "active_stake_lovelace": 22305407075000000,
     "action_count": 3,
     "dreps_rewarded": 0,
     "cc_rewarded": 0,
@@ -173,7 +178,10 @@
     "cc_share_lovelace": 0,
     "rewards_generated_lovelace": 27312123514,
     "status": "closed",
-    "claim_open": false
+    "claim_open": false,
+    "pool_expected_blocks": 73.0,
+    "pool_blocks": 71,
+    "pool_roa_pct": 2.66
   },
   {
     "epoch": 459,
@@ -182,10 +190,8 @@
     "end_time": "2025-10-15T21:44:51Z",
     "first_slot": 140832000,
     "first_block": 10438366,
-    "blocks_minted": 21252,
-    "active_stake_lovelace": 22428736353000000,
-    "pool_blocks": 23,
-    "pool_roa_pct": 3.15,
+    "blocks_minted": 21551,
+    "active_stake_lovelace": 22254584939000000,
     "action_count": 3,
     "dreps_rewarded": 0,
     "cc_rewarded": 0,
@@ -195,7 +201,10 @@
     "cc_share_lovelace": 0,
     "rewards_generated_lovelace": 30704598646,
     "status": "closed",
-    "claim_open": false
+    "claim_open": false,
+    "pool_expected_blocks": 72.6,
+    "pool_blocks": 79,
+    "pool_roa_pct": 2.99
   },
   {
     "epoch": 460,
@@ -204,10 +213,8 @@
     "end_time": "2025-10-20T21:44:51Z",
     "first_slot": 141264000,
     "first_block": 10459966,
-    "blocks_minted": 21257,
-    "active_stake_lovelace": 22629317533000000,
-    "pool_blocks": 20,
-    "pool_roa_pct": 2.66,
+    "blocks_minted": 21676,
+    "active_stake_lovelace": 21779170844000000,
     "action_count": 4,
     "dreps_rewarded": 146,
     "cc_rewarded": 5,
@@ -217,7 +224,10 @@
     "cc_share_lovelace": 708950671,
     "rewards_generated_lovelace": 24694189505,
     "status": "closed",
-    "claim_open": false
+    "claim_open": false,
+    "pool_expected_blocks": 74.6,
+    "pool_blocks": 65,
+    "pool_roa_pct": 2.4
   },
   {
     "epoch": 461,
@@ -226,10 +236,8 @@
     "end_time": "2025-10-25T21:44:51Z",
     "first_slot": 141696000,
     "first_block": 10481566,
-    "blocks_minted": 21381,
-    "active_stake_lovelace": 21573667150000000,
-    "pool_blocks": 15,
-    "pool_roa_pct": 2.84,
+    "blocks_minted": 21145,
+    "active_stake_lovelace": 22849468957000000,
     "action_count": 7,
     "dreps_rewarded": 0,
     "cc_rewarded": 0,
@@ -239,7 +247,10 @@
     "cc_share_lovelace": 0,
     "rewards_generated_lovelace": 36587390487,
     "status": "closed",
-    "claim_open": false
+    "claim_open": false,
+    "pool_expected_blocks": 69.4,
+    "pool_blocks": 90,
+    "pool_roa_pct": 3.56
   },
   {
     "epoch": 462,
@@ -248,10 +259,8 @@
     "end_time": "2025-10-30T21:44:51Z",
     "first_slot": 142128000,
     "first_block": 10503166,
-    "blocks_minted": 21524,
-    "active_stake_lovelace": 22220510613000000,
-    "pool_blocks": 9,
-    "pool_roa_pct": 2.93,
+    "blocks_minted": 21657,
+    "active_stake_lovelace": 22791166003000000,
     "action_count": 3,
     "dreps_rewarded": 0,
     "cc_rewarded": 0,
@@ -261,7 +270,10 @@
     "cc_share_lovelace": 0,
     "rewards_generated_lovelace": 34457591783,
     "status": "closed",
-    "claim_open": false
+    "claim_open": false,
+    "pool_expected_blocks": 71.3,
+    "pool_blocks": 87,
+    "pool_roa_pct": 3.35
   },
   {
     "epoch": 463,
@@ -270,10 +282,8 @@
     "end_time": "2025-11-04T21:44:51Z",
     "first_slot": 142560000,
     "first_block": 10524766,
-    "blocks_minted": 21558,
-    "active_stake_lovelace": 22510062672000000,
-    "pool_blocks": 11,
-    "pool_roa_pct": 3.17,
+    "blocks_minted": 21104,
+    "active_stake_lovelace": 22765654309000000,
     "action_count": 2,
     "dreps_rewarded": 179,
     "cc_rewarded": 5,
@@ -283,7 +293,10 @@
     "cc_share_lovelace": 887820383,
     "rewards_generated_lovelace": 32534062496,
     "status": "closed",
-    "claim_open": false
+    "claim_open": false,
+    "pool_expected_blocks": 69.5,
+    "pool_blocks": 80,
+    "pool_roa_pct": 3.17
   },
   {
     "epoch": 464,
@@ -292,10 +305,8 @@
     "end_time": "2025-11-09T21:44:51Z",
     "first_slot": 142992000,
     "first_block": 10546366,
-    "blocks_minted": 21297,
-    "active_stake_lovelace": 21603836172000000,
-    "pool_blocks": 15,
-    "pool_roa_pct": 2.93,
+    "blocks_minted": 21264,
+    "active_stake_lovelace": 22279985831000000,
     "action_count": 5,
     "dreps_rewarded": 0,
     "cc_rewarded": 0,
@@ -305,7 +316,10 @@
     "cc_share_lovelace": 0,
     "rewards_generated_lovelace": 21842814983,
     "status": "closed",
-    "claim_open": false
+    "claim_open": false,
+    "pool_expected_blocks": 71.6,
+    "pool_blocks": 55,
+    "pool_roa_pct": 2.13
   },
   {
     "epoch": 465,
@@ -314,10 +328,8 @@
     "end_time": "2025-11-14T21:44:51Z",
     "first_slot": 143424000,
     "first_block": 10567966,
-    "blocks_minted": 21551,
-    "active_stake_lovelace": 21703486921000000,
-    "pool_blocks": 19,
-    "pool_roa_pct": 2.67,
+    "blocks_minted": 20928,
+    "active_stake_lovelace": 22642706787000000,
     "action_count": 5,
     "dreps_rewarded": 0,
     "cc_rewarded": 0,
@@ -327,7 +339,10 @@
     "cc_share_lovelace": 0,
     "rewards_generated_lovelace": 28138329407,
     "status": "closed",
-    "claim_open": false
+    "claim_open": false,
+    "pool_expected_blocks": 69.3,
+    "pool_blocks": 69,
+    "pool_roa_pct": 2.74
   },
   {
     "epoch": 466,
@@ -336,10 +351,8 @@
     "end_time": "2025-11-19T21:44:51Z",
     "first_slot": 143856000,
     "first_block": 10589566,
-    "blocks_minted": 21639,
-    "active_stake_lovelace": 23008481087000000,
-    "pool_blocks": 21,
-    "pool_roa_pct": 2.92,
+    "blocks_minted": 21383,
+    "active_stake_lovelace": 22743194032000000,
     "action_count": 4,
     "dreps_rewarded": 159,
     "cc_rewarded": 5,
@@ -349,7 +362,10 @@
     "cc_share_lovelace": 689241630,
     "rewards_generated_lovelace": 30430379146,
     "status": "closed",
-    "claim_open": false
+    "claim_open": false,
+    "pool_expected_blocks": 70.5,
+    "pool_blocks": 76,
+    "pool_roa_pct": 2.96
   },
   {
     "epoch": 467,
@@ -358,10 +374,8 @@
     "end_time": "2025-11-24T21:44:51Z",
     "first_slot": 144288000,
     "first_block": 10611166,
-    "blocks_minted": 20986,
-    "active_stake_lovelace": 22663699608000000,
-    "pool_blocks": 14,
-    "pool_roa_pct": 2.72,
+    "blocks_minted": 21609,
+    "active_stake_lovelace": 21840596417000000,
     "action_count": 4,
     "dreps_rewarded": 0,
     "cc_rewarded": 0,
@@ -371,7 +385,10 @@
     "cc_share_lovelace": 0,
     "rewards_generated_lovelace": 30132255953,
     "status": "closed",
-    "claim_open": false
+    "claim_open": false,
+    "pool_expected_blocks": 74.2,
+    "pool_blocks": 79,
+    "pool_roa_pct": 2.93
   },
   {
     "epoch": 468,
@@ -380,10 +397,8 @@
     "end_time": "2025-11-29T21:44:51Z",
     "first_slot": 144720000,
     "first_block": 10632766,
-    "blocks_minted": 21054,
-    "active_stake_lovelace": 21615965224000000,
-    "pool_blocks": 23,
-    "pool_roa_pct": 3.15,
+    "blocks_minted": 21252,
+    "active_stake_lovelace": 22428736353000000,
     "action_count": 4,
     "dreps_rewarded": 0,
     "cc_rewarded": 0,
@@ -393,7 +408,10 @@
     "cc_share_lovelace": 0,
     "rewards_generated_lovelace": 20551085831,
     "status": "closed",
-    "claim_open": false
+    "claim_open": false,
+    "pool_expected_blocks": 71.1,
+    "pool_blocks": 52,
+    "pool_roa_pct": 2.0
   },
   {
     "epoch": 469,
@@ -402,10 +420,8 @@
     "end_time": "2025-12-04T21:44:51Z",
     "first_slot": 145152000,
     "first_block": 10654366,
-    "blocks_minted": 21510,
-    "active_stake_lovelace": 21648496324000000,
-    "pool_blocks": 24,
-    "pool_roa_pct": 3.05,
+    "blocks_minted": 21640,
+    "active_stake_lovelace": 22160287052000000,
     "action_count": 5,
     "dreps_rewarded": 161,
     "cc_rewarded": 7,
@@ -415,7 +431,10 @@
     "cc_share_lovelace": 627739366,
     "rewards_generated_lovelace": 22552917648,
     "status": "closed",
-    "claim_open": false
+    "claim_open": false,
+    "pool_expected_blocks": 73.2,
+    "pool_blocks": 59,
+    "pool_roa_pct": 2.2
   },
   {
     "epoch": 470,
@@ -424,10 +443,8 @@
     "end_time": "2025-12-09T21:44:51Z",
     "first_slot": 145584000,
     "first_block": 10675966,
-    "blocks_minted": 21461,
-    "active_stake_lovelace": 21995692770000000,
-    "pool_blocks": 26,
-    "pool_roa_pct": 2.7,
+    "blocks_minted": 21273,
+    "active_stake_lovelace": 23079664698000000,
     "action_count": 1,
     "dreps_rewarded": 0,
     "cc_rewarded": 0,
@@ -437,7 +454,10 @@
     "cc_share_lovelace": 0,
     "rewards_generated_lovelace": 25249301924,
     "status": "closed",
-    "claim_open": false
+    "claim_open": false,
+    "pool_expected_blocks": 69.1,
+    "pool_blocks": 62,
+    "pool_roa_pct": 2.46
   },
   {
     "epoch": 471,
@@ -446,10 +466,8 @@
     "end_time": "2025-12-14T21:44:51Z",
     "first_slot": 146016000,
     "first_block": 10697566,
-    "blocks_minted": 21643,
-    "active_stake_lovelace": 21424212994000000,
-    "pool_blocks": 12,
-    "pool_roa_pct": 2.96,
+    "blocks_minted": 21004,
+    "active_stake_lovelace": 21536914813000000,
     "action_count": 3,
     "dreps_rewarded": 0,
     "cc_rewarded": 0,
@@ -459,7 +477,10 @@
     "cc_share_lovelace": 0,
     "rewards_generated_lovelace": 26489536800,
     "status": "closed",
-    "claim_open": false
+    "claim_open": false,
+    "pool_expected_blocks": 73.1,
+    "pool_blocks": 69,
+    "pool_roa_pct": 2.58
   },
   {
     "epoch": 472,
@@ -468,10 +489,8 @@
     "end_time": "2025-12-19T21:44:51Z",
     "first_slot": 146448000,
     "first_block": 10719166,
-    "blocks_minted": 21344,
-    "active_stake_lovelace": 22987162168000000,
-    "pool_blocks": 15,
-    "pool_roa_pct": 3.16,
+    "blocks_minted": 21101,
+    "active_stake_lovelace": 21785637905000000,
     "action_count": 2,
     "dreps_rewarded": 150,
     "cc_rewarded": 6,
@@ -481,7 +500,10 @@
     "cc_share_lovelace": 672910947,
     "rewards_generated_lovelace": 26767438433,
     "status": "closed",
-    "claim_open": false
+    "claim_open": false,
+    "pool_expected_blocks": 72.6,
+    "pool_blocks": 69,
+    "pool_roa_pct": 2.61
   },
   {
     "epoch": 473,
@@ -490,10 +512,8 @@
     "end_time": "2025-12-24T21:44:51Z",
     "first_slot": 146880000,
     "first_block": 10740766,
-    "blocks_minted": 21157,
-    "active_stake_lovelace": 21758771973000000,
-    "pool_blocks": 15,
-    "pool_roa_pct": 2.81,
+    "blocks_minted": 21394,
+    "active_stake_lovelace": 21974153715000000,
     "action_count": 4,
     "dreps_rewarded": 0,
     "cc_rewarded": 0,
@@ -503,7 +523,10 @@
     "cc_share_lovelace": 0,
     "rewards_generated_lovelace": 31346041111,
     "status": "closed",
-    "claim_open": false
+    "claim_open": false,
+    "pool_expected_blocks": 73.0,
+    "pool_blocks": 81,
+    "pool_roa_pct": 3.05
   },
   {
     "epoch": 474,
@@ -512,10 +535,8 @@
     "end_time": "2025-12-29T21:44:51Z",
     "first_slot": 147312000,
     "first_block": 10762366,
-    "blocks_minted": 21500,
-    "active_stake_lovelace": 21808916967000000,
-    "pool_blocks": 19,
-    "pool_roa_pct": 2.78,
+    "blocks_minted": 21524,
+    "active_stake_lovelace": 22460912875000000,
     "action_count": 4,
     "dreps_rewarded": 0,
     "cc_rewarded": 0,
@@ -525,7 +546,10 @@
     "cc_share_lovelace": 0,
     "rewards_generated_lovelace": 32729700675,
     "status": "closed",
-    "claim_open": false
+    "claim_open": false,
+    "pool_expected_blocks": 71.9,
+    "pool_blocks": 83,
+    "pool_roa_pct": 3.19
   },
   {
     "epoch": 475,
@@ -534,10 +558,8 @@
     "end_time": "2026-01-03T21:44:51Z",
     "first_slot": 147744000,
     "first_block": 10783966,
-    "blocks_minted": 21034,
-    "active_stake_lovelace": 22112321339000000,
-    "pool_blocks": 10,
-    "pool_roa_pct": 3.22,
+    "blocks_minted": 21390,
+    "active_stake_lovelace": 22828740396000000,
     "action_count": 3,
     "dreps_rewarded": 196,
     "cc_rewarded": 6,
@@ -547,7 +569,10 @@
     "cc_share_lovelace": 837604879,
     "rewards_generated_lovelace": 33644827425,
     "status": "closed",
-    "claim_open": false
+    "claim_open": false,
+    "pool_expected_blocks": 70.3,
+    "pool_blocks": 84,
+    "pool_roa_pct": 3.27
   },
   {
     "epoch": 476,
@@ -556,10 +581,8 @@
     "end_time": "2026-01-08T21:44:51Z",
     "first_slot": 148176000,
     "first_block": 10805566,
-    "blocks_minted": 21369,
-    "active_stake_lovelace": 22001432840000000,
-    "pool_blocks": 25,
-    "pool_roa_pct": 2.89,
+    "blocks_minted": 21252,
+    "active_stake_lovelace": 22945638636000000,
     "action_count": 2,
     "dreps_rewarded": 0,
     "cc_rewarded": 0,
@@ -569,7 +592,10 @@
     "cc_share_lovelace": 0,
     "rewards_generated_lovelace": 30994356644,
     "status": "closed",
-    "claim_open": false
+    "claim_open": false,
+    "pool_expected_blocks": 69.5,
+    "pool_blocks": 76,
+    "pool_roa_pct": 3.02
   },
   {
     "epoch": 477,
@@ -578,10 +604,8 @@
     "end_time": "2026-01-13T21:44:51Z",
     "first_slot": 148608000,
     "first_block": 10827166,
-    "blocks_minted": 21413,
-    "active_stake_lovelace": 22960125843000000,
-    "pool_blocks": 13,
-    "pool_roa_pct": 2.97,
+    "blocks_minted": 20986,
+    "active_stake_lovelace": 22759394366000000,
     "action_count": 3,
     "dreps_rewarded": 0,
     "cc_rewarded": 0,
@@ -591,7 +615,10 @@
     "cc_share_lovelace": 0,
     "rewards_generated_lovelace": 25736608064,
     "status": "closed",
-    "claim_open": false
+    "claim_open": false,
+    "pool_expected_blocks": 69.2,
+    "pool_blocks": 63,
+    "pool_roa_pct": 2.51
   },
   {
     "epoch": 478,
@@ -600,10 +627,8 @@
     "end_time": "2026-01-18T21:44:51Z",
     "first_slot": 149040000,
     "first_block": 10848766,
-    "blocks_minted": 20919,
-    "active_stake_lovelace": 22289961195000000,
-    "pool_blocks": 23,
-    "pool_roa_pct": 3.13,
+    "blocks_minted": 21022,
+    "active_stake_lovelace": 22818902973000000,
     "action_count": 3,
     "dreps_rewarded": 169,
     "cc_rewarded": 4,
@@ -613,7 +638,10 @@
     "cc_share_lovelace": 672066859,
     "rewards_generated_lovelace": 21676835601,
     "status": "closed",
-    "claim_open": false
+    "claim_open": false,
+    "pool_expected_blocks": 69.1,
+    "pool_blocks": 53,
+    "pool_roa_pct": 2.11
   },
   {
     "epoch": 479,
@@ -622,10 +650,8 @@
     "end_time": "2026-01-23T21:44:51Z",
     "first_slot": 149472000,
     "first_block": 10870366,
-    "blocks_minted": 21694,
-    "active_stake_lovelace": 22434542886000000,
-    "pool_blocks": 13,
-    "pool_roa_pct": 2.73,
+    "blocks_minted": 21628,
+    "active_stake_lovelace": 22946621133000000,
     "action_count": 4,
     "dreps_rewarded": 0,
     "cc_rewarded": 0,
@@ -635,7 +661,10 @@
     "cc_share_lovelace": 0,
     "rewards_generated_lovelace": 34444497128,
     "status": "closed",
-    "claim_open": false
+    "claim_open": false,
+    "pool_expected_blocks": 70.7,
+    "pool_blocks": 86,
+    "pool_roa_pct": 3.35
   },
   {
     "epoch": 480,
@@ -644,10 +673,8 @@
     "end_time": "2026-01-28T21:44:51Z",
     "first_slot": 149904000,
     "first_block": 10891966,
-    "blocks_minted": 21642,
-    "active_stake_lovelace": 22204937985000000,
-    "pool_blocks": 12,
-    "pool_roa_pct": 2.98,
+    "blocks_minted": 21389,
+    "active_stake_lovelace": 22675238781000000,
     "action_count": 2,
     "dreps_rewarded": 0,
     "cc_rewarded": 0,
@@ -657,7 +684,10 @@
     "cc_share_lovelace": 0,
     "rewards_generated_lovelace": 27401766676,
     "status": "closed",
-    "claim_open": false
+    "claim_open": false,
+    "pool_expected_blocks": 70.7,
+    "pool_blocks": 69,
+    "pool_roa_pct": 2.67
   },
   {
     "epoch": 481,
@@ -666,10 +696,8 @@
     "end_time": "2026-02-02T21:44:51Z",
     "first_slot": 150336000,
     "first_block": 10913566,
-    "blocks_minted": 21430,
-    "active_stake_lovelace": 21954169656000000,
-    "pool_blocks": 25,
-    "pool_roa_pct": 2.98,
+    "blocks_minted": 21344,
+    "active_stake_lovelace": 22911318707000000,
     "action_count": 3,
     "dreps_rewarded": 159,
     "cc_rewarded": 7,
@@ -679,7 +707,10 @@
     "cc_share_lovelace": 755262851,
     "rewards_generated_lovelace": 26267735567,
     "status": "closed",
-    "claim_open": false
+    "claim_open": false,
+    "pool_expected_blocks": 69.9,
+    "pool_blocks": 65,
+    "pool_roa_pct": 2.56
   },
   {
     "epoch": 482,
@@ -688,10 +719,8 @@
     "end_time": "2026-02-07T21:44:51Z",
     "first_slot": 150768000,
     "first_block": 10935166,
-    "blocks_minted": 21008,
-    "active_stake_lovelace": 22733263208000000,
-    "pool_blocks": 26,
-    "pool_roa_pct": 2.65,
+    "blocks_minted": 21240,
+    "active_stake_lovelace": 22741530232000000,
     "action_count": 2,
     "dreps_rewarded": 0,
     "cc_rewarded": 0,
@@ -701,7 +730,10 @@
     "cc_share_lovelace": 0,
     "rewards_generated_lovelace": 26935701133,
     "status": "closed",
-    "claim_open": false
+    "claim_open": false,
+    "pool_expected_blocks": 70.0,
+    "pool_blocks": 67,
+    "pool_roa_pct": 2.62
   },
   {
     "epoch": 483,
@@ -710,10 +742,8 @@
     "end_time": "2026-02-12T21:44:51Z",
     "first_slot": 151200000,
     "first_block": 10956766,
-    "blocks_minted": 20943,
-    "active_stake_lovelace": 21725220422000000,
-    "pool_blocks": 12,
-    "pool_roa_pct": 2.95,
+    "blocks_minted": 21639,
+    "active_stake_lovelace": 21547474758000000,
     "action_count": 2,
     "dreps_rewarded": 0,
     "cc_rewarded": 0,
@@ -723,7 +753,10 @@
     "cc_share_lovelace": 0,
     "rewards_generated_lovelace": 32820363861,
     "status": "closed",
-    "claim_open": false
+    "claim_open": false,
+    "pool_expected_blocks": 75.3,
+    "pool_blocks": 88,
+    "pool_roa_pct": 3.19
   },
   {
     "epoch": 484,
@@ -732,10 +765,8 @@
     "end_time": "2026-02-17T21:44:51Z",
     "first_slot": 151632000,
     "first_block": 10978366,
-    "blocks_minted": 21678,
-    "active_stake_lovelace": 22354939957000000,
-    "pool_blocks": 11,
-    "pool_roa_pct": 2.91,
+    "blocks_minted": 21311,
+    "active_stake_lovelace": 22072925441000000,
     "action_count": 4,
     "dreps_rewarded": 179,
     "cc_rewarded": 4,
@@ -745,7 +776,10 @@
     "cc_share_lovelace": 799407781,
     "rewards_generated_lovelace": 33508176211,
     "status": "closed",
-    "claim_open": false
+    "claim_open": false,
+    "pool_expected_blocks": 72.4,
+    "pool_blocks": 86,
+    "pool_roa_pct": 3.26
   },
   {
     "epoch": 485,
@@ -754,10 +788,8 @@
     "end_time": "2026-02-22T21:44:51Z",
     "first_slot": 152064000,
     "first_block": 10999966,
-    "blocks_minted": 21417,
-    "active_stake_lovelace": 22441297403000000,
-    "pool_blocks": 25,
-    "pool_roa_pct": 2.74,
+    "blocks_minted": 20986,
+    "active_stake_lovelace": 22663699608000000,
     "action_count": 1,
     "dreps_rewarded": 0,
     "cc_rewarded": 0,
@@ -767,7 +799,10 @@
     "cc_share_lovelace": 0,
     "rewards_generated_lovelace": 28786517674,
     "status": "closed",
-    "claim_open": false
+    "claim_open": false,
+    "pool_expected_blocks": 69.4,
+    "pool_blocks": 71,
+    "pool_roa_pct": 2.8
   },
   {
     "epoch": 486,
@@ -776,10 +811,8 @@
     "end_time": "2026-02-27T21:44:51Z",
     "first_slot": 152496000,
     "first_block": 11021566,
-    "blocks_minted": 21420,
-    "active_stake_lovelace": 21871215418000000,
-    "pool_blocks": 26,
-    "pool_roa_pct": 3.15,
+    "blocks_minted": 21074,
+    "active_stake_lovelace": 22632157731000000,
     "action_count": 3,
     "dreps_rewarded": 0,
     "cc_rewarded": 0,
@@ -789,7 +822,10 @@
     "cc_share_lovelace": 0,
     "rewards_generated_lovelace": 35970135623,
     "status": "closed",
-    "claim_open": false
+    "claim_open": false,
+    "pool_expected_blocks": 69.8,
+    "pool_blocks": 89,
+    "pool_roa_pct": 3.5
   },
   {
     "epoch": 487,
@@ -798,10 +834,8 @@
     "end_time": "2026-03-04T21:44:51Z",
     "first_slot": 152928000,
     "first_block": 11043166,
-    "blocks_minted": 21153,
-    "active_stake_lovelace": 22263178160000000,
-    "pool_blocks": 25,
-    "pool_roa_pct": 3.2,
+    "blocks_minted": 20928,
+    "active_stake_lovelace": 23088291005000000,
     "action_count": 3,
     "dreps_rewarded": 155,
     "cc_rewarded": 7,
@@ -811,7 +845,10 @@
     "cc_share_lovelace": 821592236,
     "rewards_generated_lovelace": 31095774230,
     "status": "closed",
-    "claim_open": false
+    "claim_open": false,
+    "pool_expected_blocks": 68.0,
+    "pool_blocks": 75,
+    "pool_roa_pct": 3.03
   },
   {
     "epoch": 488,
@@ -820,10 +857,8 @@
     "end_time": "2026-03-09T21:44:51Z",
     "first_slot": 153360000,
     "first_block": 11064766,
-    "blocks_minted": 21165,
-    "active_stake_lovelace": 23001707000000000,
-    "pool_blocks": 26,
-    "pool_roa_pct": 3.21,
+    "blocks_minted": 21376,
+    "active_stake_lovelace": 21656956190000000,
     "action_count": 2,
     "dreps_rewarded": 0,
     "cc_rewarded": 0,
@@ -833,7 +868,10 @@
     "cc_share_lovelace": 0,
     "rewards_generated_lovelace": 20158084495,
     "status": "closed",
-    "claim_open": false
+    "claim_open": false,
+    "pool_expected_blocks": 74.0,
+    "pool_blocks": 53,
+    "pool_roa_pct": 1.96
   },
   {
     "epoch": 489,
@@ -842,10 +880,8 @@
     "end_time": "2026-03-14T21:44:51Z",
     "first_slot": 153792000,
     "first_block": 11086366,
-    "blocks_minted": 21358,
-    "active_stake_lovelace": 21744400496000000,
-    "pool_blocks": 13,
-    "pool_roa_pct": 2.89,
+    "blocks_minted": 21049,
+    "active_stake_lovelace": 22771053369000000,
     "action_count": 4,
     "dreps_rewarded": 0,
     "cc_rewarded": 0,
@@ -855,7 +891,10 @@
     "cc_share_lovelace": 0,
     "rewards_generated_lovelace": 34408174447,
     "status": "closed",
-    "claim_open": false
+    "claim_open": false,
+    "pool_expected_blocks": 69.3,
+    "pool_blocks": 85,
+    "pool_roa_pct": 3.35
   },
   {
     "epoch": 490,
@@ -864,10 +903,8 @@
     "end_time": "2026-03-19T21:44:51Z",
     "first_slot": 154224000,
     "first_block": 11107966,
-    "blocks_minted": 21223,
-    "active_stake_lovelace": 22067019443000000,
-    "pool_blocks": 11,
-    "pool_roa_pct": 3.06,
+    "blocks_minted": 21510,
+    "active_stake_lovelace": 22439674673000000,
     "action_count": 4,
     "dreps_rewarded": 148,
     "cc_rewarded": 7,
@@ -877,7 +914,10 @@
     "cc_share_lovelace": 656333016,
     "rewards_generated_lovelace": 22005926295,
     "status": "closed",
-    "claim_open": false
+    "claim_open": false,
+    "pool_expected_blocks": 71.9,
+    "pool_blocks": 56,
+    "pool_roa_pct": 2.14
   },
   {
     "epoch": 491,
@@ -886,10 +926,8 @@
     "end_time": "2026-03-24T21:44:51Z",
     "first_slot": 154656000,
     "first_block": 11129566,
-    "blocks_minted": 21117,
-    "active_stake_lovelace": 22128175751000000,
-    "pool_blocks": 18,
-    "pool_roa_pct": 3.14,
+    "blocks_minted": 21573,
+    "active_stake_lovelace": 23066520103000000,
     "action_count": 2,
     "dreps_rewarded": 0,
     "cc_rewarded": 0,
@@ -899,7 +937,10 @@
     "cc_share_lovelace": 0,
     "rewards_generated_lovelace": 29981905953,
     "status": "closed",
-    "claim_open": false
+    "claim_open": false,
+    "pool_expected_blocks": 70.1,
+    "pool_blocks": 75,
+    "pool_roa_pct": 2.92
   },
   {
     "epoch": 492,
@@ -908,10 +949,8 @@
     "end_time": "2026-03-29T21:44:51Z",
     "first_slot": 155088000,
     "first_block": 11151166,
-    "blocks_minted": 21058,
-    "active_stake_lovelace": 22924944935000000,
-    "pool_blocks": 20,
-    "pool_roa_pct": 2.71,
+    "blocks_minted": 21059,
+    "active_stake_lovelace": 22993694768000000,
     "action_count": 5,
     "dreps_rewarded": 0,
     "cc_rewarded": 0,
@@ -921,7 +960,10 @@
     "cc_share_lovelace": 0,
     "rewards_generated_lovelace": 20558376198,
     "status": "closed",
-    "claim_open": false
+    "claim_open": false,
+    "pool_expected_blocks": 68.7,
+    "pool_blocks": 50,
+    "pool_roa_pct": 2.0
   },
   {
     "epoch": 493,
@@ -930,10 +972,8 @@
     "end_time": "2026-04-03T21:44:51Z",
     "first_slot": 155520000,
     "first_block": 11172766,
-    "blocks_minted": 21378,
-    "active_stake_lovelace": 22900815817000000,
-    "pool_blocks": 16,
-    "pool_roa_pct": 3.11,
+    "blocks_minted": 21034,
+    "active_stake_lovelace": 22332722074000000,
     "action_count": 5,
     "dreps_rewarded": 196,
     "cc_rewarded": 7,
@@ -943,7 +983,10 @@
     "cc_share_lovelace": 652379983,
     "rewards_generated_lovelace": 25570715887,
     "status": "closed",
-    "claim_open": false
+    "claim_open": false,
+    "pool_expected_blocks": 70.6,
+    "pool_blocks": 64,
+    "pool_roa_pct": 2.49
   },
   {
     "epoch": 494,
@@ -952,10 +995,8 @@
     "end_time": "2026-04-08T21:44:51Z",
     "first_slot": 155952000,
     "first_block": 11194366,
-    "blocks_minted": 21398,
-    "active_stake_lovelace": 21560013256000000,
-    "pool_blocks": 14,
-    "pool_roa_pct": 3.27,
+    "blocks_minted": 21643,
+    "active_stake_lovelace": 21436374346000000,
     "action_count": 4,
     "dreps_rewarded": 0,
     "cc_rewarded": 0,
@@ -965,7 +1006,10 @@
     "cc_share_lovelace": 0,
     "rewards_generated_lovelace": 30759184777,
     "status": "closed",
-    "claim_open": false
+    "claim_open": false,
+    "pool_expected_blocks": 75.7,
+    "pool_blocks": 83,
+    "pool_roa_pct": 2.99
   },
   {
     "epoch": 495,
@@ -974,10 +1018,8 @@
     "end_time": "2026-04-13T21:44:51Z",
     "first_slot": 156384000,
     "first_block": 11215966,
-    "blocks_minted": 21065,
-    "active_stake_lovelace": 22815155938000000,
-    "pool_blocks": 22,
-    "pool_roa_pct": 3.28,
+    "blocks_minted": 21439,
+    "active_stake_lovelace": 22504446938000000,
     "action_count": 3,
     "dreps_rewarded": 0,
     "cc_rewarded": 0,
@@ -987,7 +1029,10 @@
     "cc_share_lovelace": 0,
     "rewards_generated_lovelace": 27249158647,
     "status": "closed",
-    "claim_open": false
+    "claim_open": false,
+    "pool_expected_blocks": 71.4,
+    "pool_blocks": 69,
+    "pool_roa_pct": 2.65
   },
   {
     "epoch": 496,
@@ -996,10 +1041,8 @@
     "end_time": "2026-04-18T21:44:51Z",
     "first_slot": 156816000,
     "first_block": 11237566,
-    "blocks_minted": 21331,
-    "active_stake_lovelace": 22086476576000000,
-    "pool_blocks": 15,
-    "pool_roa_pct": 2.85,
+    "blocks_minted": 21042,
+    "active_stake_lovelace": 22674143588000000,
     "action_count": 0,
     "dreps_rewarded": 193,
     "cc_rewarded": 5,
@@ -1009,7 +1052,10 @@
     "cc_share_lovelace": 740750159,
     "rewards_generated_lovelace": 28412508520,
     "status": "closed",
-    "claim_open": false
+    "claim_open": false,
+    "pool_expected_blocks": 69.6,
+    "pool_blocks": 70,
+    "pool_roa_pct": 2.77
   },
   {
     "epoch": 497,
@@ -1018,10 +1064,8 @@
     "end_time": "2026-04-23T21:44:51Z",
     "first_slot": 157248000,
     "first_block": 11259166,
-    "blocks_minted": 21274,
-    "active_stake_lovelace": 21556729844000000,
-    "pool_blocks": 9,
-    "pool_roa_pct": 2.84,
+    "blocks_minted": 21099,
+    "active_stake_lovelace": 22137476042000000,
     "action_count": 3,
     "dreps_rewarded": 0,
     "cc_rewarded": 0,
@@ -1031,7 +1075,10 @@
     "cc_share_lovelace": 0,
     "rewards_generated_lovelace": 31621275509,
     "status": "closed",
-    "claim_open": false
+    "claim_open": false,
+    "pool_expected_blocks": 71.5,
+    "pool_blocks": 80,
+    "pool_roa_pct": 3.08
   },
   {
     "epoch": 498,
@@ -1040,10 +1087,8 @@
     "end_time": "2026-04-28T21:44:51Z",
     "first_slot": 157680000,
     "first_block": 11280766,
-    "blocks_minted": 21620,
-    "active_stake_lovelace": 22179740306000000,
-    "pool_blocks": 9,
-    "pool_roa_pct": 2.87,
+    "blocks_minted": 21116,
+    "active_stake_lovelace": 22804463928000000,
     "action_count": 5,
     "dreps_rewarded": 0,
     "cc_rewarded": 0,
@@ -1053,7 +1098,10 @@
     "cc_share_lovelace": 0,
     "rewards_generated_lovelace": 27440560559,
     "status": "closed",
-    "claim_open": false
+    "claim_open": false,
+    "pool_expected_blocks": 69.4,
+    "pool_blocks": 68,
+    "pool_roa_pct": 2.67
   },
   {
     "epoch": 499,
@@ -1062,10 +1110,8 @@
     "end_time": "2026-05-03T21:44:51Z",
     "first_slot": 158112000,
     "first_block": 11302366,
-    "blocks_minted": 21202,
-    "active_stake_lovelace": 22279637556000000,
-    "pool_blocks": 25,
-    "pool_roa_pct": 3.25,
+    "blocks_minted": 21117,
+    "active_stake_lovelace": 21447589333000000,
     "action_count": 4,
     "dreps_rewarded": 179,
     "cc_rewarded": 6,
@@ -1075,7 +1121,10 @@
     "cc_share_lovelace": 769810485,
     "rewards_generated_lovelace": 30749387190,
     "status": "closed",
-    "claim_open": false
+    "claim_open": false,
+    "pool_expected_blocks": 73.8,
+    "pool_blocks": 80,
+    "pool_roa_pct": 2.99
   },
   {
     "epoch": 500,
@@ -1084,10 +1133,8 @@
     "end_time": "2026-05-08T21:44:51Z",
     "first_slot": 158544000,
     "first_block": 11323966,
-    "blocks_minted": 21134,
-    "active_stake_lovelace": 21591844928000000,
-    "pool_blocks": 12,
-    "pool_roa_pct": 2.67,
+    "blocks_minted": 21146,
+    "active_stake_lovelace": 21898043309000000,
     "action_count": 3,
     "dreps_rewarded": 0,
     "cc_rewarded": 0,
@@ -1097,7 +1144,10 @@
     "cc_share_lovelace": 0,
     "rewards_generated_lovelace": 35327540531,
     "status": "closed",
-    "claim_open": false
+    "claim_open": false,
+    "pool_expected_blocks": 72.4,
+    "pool_blocks": 91,
+    "pool_roa_pct": 3.44
   },
   {
     "epoch": 501,
@@ -1106,10 +1156,8 @@
     "end_time": "2026-05-13T21:44:51Z",
     "first_slot": 158976000,
     "first_block": 11345566,
-    "blocks_minted": 21697,
-    "active_stake_lovelace": 21862264778000000,
-    "pool_blocks": 14,
-    "pool_roa_pct": 2.79,
+    "blocks_minted": 21233,
+    "active_stake_lovelace": 22698255633000000,
     "action_count": 1,
     "dreps_rewarded": 0,
     "cc_rewarded": 0,
@@ -1119,7 +1167,10 @@
     "cc_share_lovelace": 0,
     "rewards_generated_lovelace": 25775996382,
     "status": "closed",
-    "claim_open": false
+    "claim_open": false,
+    "pool_expected_blocks": 70.2,
+    "pool_blocks": 64,
+    "pool_roa_pct": 2.51
   },
   {
     "epoch": 502,
@@ -1128,10 +1179,8 @@
     "end_time": "2026-05-18T21:44:51Z",
     "first_slot": 159408000,
     "first_block": 11367166,
-    "blocks_minted": 21332,
-    "active_stake_lovelace": 21620244450000000,
-    "pool_blocks": 17,
-    "pool_roa_pct": 2.88,
+    "blocks_minted": 21329,
+    "active_stake_lovelace": 21840920151000000,
     "action_count": 4,
     "dreps_rewarded": 169,
     "cc_rewarded": 7,
@@ -1141,7 +1190,10 @@
     "cc_share_lovelace": 716165087,
     "rewards_generated_lovelace": 22449056615,
     "status": "closed",
-    "claim_open": false
+    "claim_open": false,
+    "pool_expected_blocks": 73.2,
+    "pool_blocks": 58,
+    "pool_roa_pct": 2.19
   },
   {
     "epoch": 503,
@@ -1150,10 +1202,8 @@
     "end_time": "2026-05-23T21:44:51Z",
     "first_slot": 159840000,
     "first_block": 11388766,
-    "blocks_minted": 21427,
-    "active_stake_lovelace": 22312218113000000,
-    "pool_blocks": 24,
-    "pool_roa_pct": 3.08,
+    "blocks_minted": 20962,
+    "active_stake_lovelace": 22818131493000000,
     "action_count": 3,
     "dreps_rewarded": 0,
     "cc_rewarded": 0,
@@ -1163,7 +1213,10 @@
     "cc_share_lovelace": 0,
     "rewards_generated_lovelace": 22943417406,
     "status": "closed",
-    "claim_open": false
+    "claim_open": false,
+    "pool_expected_blocks": 68.9,
+    "pool_blocks": 56,
+    "pool_roa_pct": 2.23
   },
   {
     "epoch": 504,
@@ -1172,10 +1225,8 @@
     "end_time": "2026-05-28T21:44:51Z",
     "first_slot": 160272000,
     "first_block": 11410366,
-    "blocks_minted": 20958,
-    "active_stake_lovelace": 21552085753000000,
-    "pool_blocks": 14,
-    "pool_roa_pct": 2.89,
+    "blocks_minted": 21262,
+    "active_stake_lovelace": 22947028995000000,
     "action_count": 1,
     "dreps_rewarded": 0,
     "cc_rewarded": 0,
@@ -1185,7 +1236,10 @@
     "cc_share_lovelace": 0,
     "rewards_generated_lovelace": 26117665100,
     "status": "closed",
-    "claim_open": false
+    "claim_open": false,
+    "pool_expected_blocks": 69.5,
+    "pool_blocks": 64,
+    "pool_roa_pct": 2.54
   },
   {
     "epoch": 505,
@@ -1194,10 +1248,8 @@
     "end_time": "2026-06-02T21:44:51Z",
     "first_slot": 160704000,
     "first_block": 11431966,
-    "blocks_minted": 20917,
-    "active_stake_lovelace": 21523103961000000,
-    "pool_blocks": 11,
-    "pool_roa_pct": 3.15,
+    "blocks_minted": 21578,
+    "active_stake_lovelace": 22926096802000000,
     "action_count": 3,
     "dreps_rewarded": 143,
     "cc_rewarded": 5,
@@ -1207,7 +1259,10 @@
     "cc_share_lovelace": 672407163,
     "rewards_generated_lovelace": 29386419894,
     "status": "closed",
-    "claim_open": false
+    "claim_open": false,
+    "pool_expected_blocks": 70.6,
+    "pool_blocks": 74,
+    "pool_roa_pct": 2.86
   },
   {
     "epoch": 506,
@@ -1216,10 +1271,8 @@
     "end_time": "2026-06-07T21:44:51Z",
     "first_slot": 161136000,
     "first_block": 11453566,
-    "blocks_minted": 21127,
-    "active_stake_lovelace": 21542362294000000,
-    "pool_blocks": 11,
-    "pool_roa_pct": 2.79,
+    "blocks_minted": 21429,
+    "active_stake_lovelace": 22391692912000000,
     "action_count": 6,
     "dreps_rewarded": 0,
     "cc_rewarded": 0,
@@ -1229,7 +1282,10 @@
     "cc_share_lovelace": 0,
     "rewards_generated_lovelace": 31119170187,
     "status": "closed",
-    "claim_open": false
+    "claim_open": false,
+    "pool_expected_blocks": 71.8,
+    "pool_blocks": 79,
+    "pool_roa_pct": 3.03
   },
   {
     "epoch": 507,
@@ -1238,10 +1294,8 @@
     "end_time": "2026-06-12T21:44:51Z",
     "first_slot": 161568000,
     "first_block": 11475166,
-    "blocks_minted": 20911,
-    "active_stake_lovelace": 21606851849000000,
-    "pool_blocks": 19,
-    "pool_roa_pct": 3.28,
+    "blocks_minted": 21413,
+    "active_stake_lovelace": 22115068060000000,
     "action_count": 3,
     "dreps_rewarded": 0,
     "cc_rewarded": 0,
@@ -1251,7 +1305,10 @@
     "cc_share_lovelace": 0,
     "rewards_generated_lovelace": 29405115268,
     "status": "closed",
-    "claim_open": false
+    "claim_open": false,
+    "pool_expected_blocks": 72.6,
+    "pool_blocks": 76,
+    "pool_roa_pct": 2.86
   },
   {
     "epoch": 508,
@@ -1260,10 +1317,8 @@
     "end_time": "2026-06-17T21:44:51Z",
     "first_slot": 162000000,
     "first_block": 11496766,
-    "blocks_minted": 21174,
-    "active_stake_lovelace": 22110192568000000,
-    "pool_blocks": 13,
-    "pool_roa_pct": 2.64,
+    "blocks_minted": 21055,
+    "active_stake_lovelace": 21622297540000000,
     "action_count": 3,
     "dreps_rewarded": 176,
     "cc_rewarded": 5,
@@ -1273,7 +1328,10 @@
     "cc_share_lovelace": 751228163,
     "rewards_generated_lovelace": 27119000244,
     "status": "closed",
-    "claim_open": false
+    "claim_open": false,
+    "pool_expected_blocks": 73.0,
+    "pool_blocks": 70,
+    "pool_roa_pct": 2.64
   },
   {
     "epoch": 509,
@@ -1282,10 +1340,8 @@
     "end_time": "2026-06-22T21:44:51Z",
     "first_slot": 162432000,
     "first_block": 11518366,
-    "blocks_minted": 21012,
-    "active_stake_lovelace": 22606212420000000,
-    "pool_blocks": 14,
-    "pool_roa_pct": 2.79,
+    "blocks_minted": 20919,
+    "active_stake_lovelace": 22289961195000000,
     "action_count": 2,
     "dreps_rewarded": 0,
     "cc_rewarded": 0,
@@ -1295,7 +1351,10 @@
     "cc_share_lovelace": 0,
     "rewards_generated_lovelace": 29387562685,
     "status": "closed",
-    "claim_open": false
+    "claim_open": false,
+    "pool_expected_blocks": 70.4,
+    "pool_blocks": 73,
+    "pool_roa_pct": 2.86
   },
   {
     "epoch": 510,
@@ -1304,10 +1363,8 @@
     "end_time": "2026-06-27T21:44:51Z",
     "first_slot": 162864000,
     "first_block": 11539966,
-    "blocks_minted": 21219,
-    "active_stake_lovelace": 21707948144000000,
-    "pool_blocks": 18,
-    "pool_roa_pct": 2.97,
+    "blocks_minted": 21695,
+    "active_stake_lovelace": 22883769517000000,
     "action_count": 4,
     "dreps_rewarded": 0,
     "cc_rewarded": 0,
@@ -1317,7 +1374,10 @@
     "cc_share_lovelace": 0,
     "rewards_generated_lovelace": 31819026739,
     "status": "closed",
-    "claim_open": false
+    "claim_open": false,
+    "pool_expected_blocks": 71.1,
+    "pool_blocks": 80,
+    "pool_roa_pct": 3.1
   },
   {
     "epoch": 511,
@@ -1326,10 +1386,8 @@
     "end_time": "2026-07-02T21:44:51Z",
     "first_slot": 163296000,
     "first_block": 11561566,
-    "blocks_minted": 21356,
-    "active_stake_lovelace": 21749981629000000,
-    "pool_blocks": 25,
-    "pool_roa_pct": 3.06,
+    "blocks_minted": 20904,
+    "active_stake_lovelace": 21711283408000000,
     "action_count": 3,
     "dreps_rewarded": 195,
     "cc_rewarded": 5,
@@ -1339,7 +1397,10 @@
     "cc_share_lovelace": 788877112,
     "rewards_generated_lovelace": 30829073731,
     "status": "closed",
-    "claim_open": false
+    "claim_open": false,
+    "pool_expected_blocks": 72.2,
+    "pool_blocks": 79,
+    "pool_roa_pct": 3.0
   },
   {
     "epoch": 512,
@@ -1348,10 +1409,8 @@
     "end_time": "2026-07-07T21:44:51Z",
     "first_slot": 163728000,
     "first_block": 11583166,
-    "blocks_minted": 20918,
-    "active_stake_lovelace": 21859888022000000,
-    "pool_blocks": 17,
-    "pool_roa_pct": 2.63,
+    "blocks_minted": 21053,
+    "active_stake_lovelace": 22719266241000000,
     "action_count": 2,
     "dreps_rewarded": 0,
     "cc_rewarded": 0,
@@ -1361,7 +1420,10 @@
     "cc_share_lovelace": 0,
     "rewards_generated_lovelace": 25862264511,
     "status": "closed",
-    "claim_open": false
+    "claim_open": false,
+    "pool_expected_blocks": 69.5,
+    "pool_blocks": 64,
+    "pool_roa_pct": 2.52
   },
   {
     "epoch": 513,
@@ -1370,10 +1432,8 @@
     "end_time": "2026-07-12T21:44:51Z",
     "first_slot": 164160000,
     "first_block": 11604766,
-    "blocks_minted": 21417,
-    "active_stake_lovelace": 21431337624000000,
-    "pool_blocks": 26,
-    "pool_roa_pct": 3.27,
+    "blocks_minted": 21384,
+    "active_stake_lovelace": 21692989410000000,
     "action_count": 1,
     "dreps_rewarded": 0,
     "cc_rewarded": 0,
@@ -1383,7 +1443,10 @@
     "cc_share_lovelace": 0,
     "rewards_generated_lovelace": 26137364264,
     "status": "closed",
-    "claim_open": false
+    "claim_open": false,
+    "pool_expected_blocks": 73.9,
+    "pool_blocks": 69,
+    "pool_roa_pct": 2.54
   },
   {
     "epoch": 514,
@@ -1392,10 +1455,8 @@
     "end_time": "2026-07-17T21:44:51Z",
     "first_slot": 164592000,
     "first_block": 11626366,
-    "blocks_minted": 21151,
-    "active_stake_lovelace": 22274199349000000,
-    "pool_blocks": 23,
-    "pool_roa_pct": 2.68,
+    "blocks_minted": 21023,
+    "active_stake_lovelace": 22452472106000000,
     "action_count": 1,
     "dreps_rewarded": 194,
     "cc_rewarded": 7,
@@ -1405,7 +1466,10 @@
     "cc_share_lovelace": 646806426,
     "rewards_generated_lovelace": 23461120956,
     "status": "closed",
-    "claim_open": false
+    "claim_open": false,
+    "pool_expected_blocks": 70.2,
+    "pool_blocks": 58,
+    "pool_roa_pct": 2.28
   },
   {
     "epoch": 515,
@@ -1414,10 +1478,8 @@
     "end_time": "2026-07-22T21:44:51Z",
     "first_slot": 165024000,
     "first_block": 11647966,
-    "blocks_minted": 21342,
-    "active_stake_lovelace": 22792164238000000,
-    "pool_blocks": 24,
-    "pool_roa_pct": 2.98,
+    "blocks_minted": 21233,
+    "active_stake_lovelace": 22346008562000000,
     "action_count": 3,
     "dreps_rewarded": 0,
     "cc_rewarded": 0,
@@ -1427,7 +1489,10 @@
     "cc_share_lovelace": 0,
     "rewards_generated_lovelace": 24602488625,
     "status": "closed",
-    "claim_open": false
+    "claim_open": false,
+    "pool_expected_blocks": 71.3,
+    "pool_blocks": 62,
+    "pool_roa_pct": 2.39
   },
   {
     "epoch": 516,
@@ -1436,10 +1501,8 @@
     "end_time": "2026-07-27T21:44:51Z",
     "first_slot": 165456000,
     "first_block": 11669566,
-    "blocks_minted": 21418,
-    "active_stake_lovelace": 22910834147000000,
-    "pool_blocks": 18,
-    "pool_roa_pct": 3.07,
+    "blocks_minted": 21443,
+    "active_stake_lovelace": 22559963320000000,
     "action_count": 6,
     "dreps_rewarded": 0,
     "cc_rewarded": 0,
@@ -1449,7 +1512,10 @@
     "cc_share_lovelace": 0,
     "rewards_generated_lovelace": 23709151118,
     "status": "closed",
-    "claim_open": false
+    "claim_open": false,
+    "pool_expected_blocks": 71.3,
+    "pool_blocks": 60,
+    "pool_roa_pct": 2.31
   },
   {
     "epoch": 517,
@@ -1458,10 +1524,8 @@
     "end_time": "2026-08-01T21:44:51Z",
     "first_slot": 165888000,
     "first_block": 11691166,
-    "blocks_minted": 21250,
-    "active_stake_lovelace": 23070148918000000,
-    "pool_blocks": 15,
-    "pool_roa_pct": 3.17,
+    "blocks_minted": 21695,
+    "active_stake_lovelace": 22344251187000000,
     "action_count": 2,
     "dreps_rewarded": 187,
     "cc_rewarded": 6,
@@ -1471,7 +1535,10 @@
     "cc_share_lovelace": 658652116,
     "rewards_generated_lovelace": 28531107151,
     "status": "closed",
-    "claim_open": false
+    "claim_open": false,
+    "pool_expected_blocks": 72.8,
+    "pool_blocks": 74,
+    "pool_roa_pct": 2.78
   },
   {
     "epoch": 518,
@@ -1480,10 +1547,8 @@
     "end_time": "2026-08-06T21:44:51Z",
     "first_slot": 166320000,
     "first_block": 11712766,
-    "blocks_minted": 21551,
-    "active_stake_lovelace": 22601433182000000,
-    "pool_blocks": 13,
-    "pool_roa_pct": 2.88,
+    "blocks_minted": 21473,
+    "active_stake_lovelace": 21580386009000000,
     "action_count": 6,
     "dreps_rewarded": 0,
     "cc_rewarded": 0,
@@ -1493,7 +1558,10 @@
     "cc_share_lovelace": 0,
     "rewards_generated_lovelace": 27654725674,
     "status": "closed",
-    "claim_open": false
+    "claim_open": false,
+    "pool_expected_blocks": 74.6,
+    "pool_blocks": 73,
+    "pool_roa_pct": 2.69
   },
   {
     "epoch": 519,
@@ -1502,10 +1570,8 @@
     "end_time": "2026-08-11T21:44:51Z",
     "first_slot": 166752000,
     "first_block": 11734366,
-    "blocks_minted": 20955,
-    "active_stake_lovelace": 21990838706000000,
-    "pool_blocks": 13,
-    "pool_roa_pct": 2.62,
+    "blocks_minted": 21095,
+    "active_stake_lovelace": 21496598369000000,
     "action_count": 1,
     "dreps_rewarded": 0,
     "cc_rewarded": 0,
@@ -1515,7 +1581,10 @@
     "cc_share_lovelace": 0,
     "rewards_generated_lovelace": 22303169280,
     "status": "closed",
-    "claim_open": false
+    "claim_open": false,
+    "pool_expected_blocks": 73.6,
+    "pool_blocks": 58,
+    "pool_roa_pct": 2.17
   },
   {
     "epoch": 520,
@@ -1524,10 +1593,8 @@
     "end_time": "2026-08-16T21:44:51Z",
     "first_slot": 167184000,
     "first_block": 11755966,
-    "blocks_minted": 21161,
-    "active_stake_lovelace": 22463262134000000,
-    "pool_blocks": 22,
-    "pool_roa_pct": 2.72,
+    "blocks_minted": 21690,
+    "active_stake_lovelace": 21870759019000000,
     "action_count": 4,
     "dreps_rewarded": 173,
     "cc_rewarded": 6,
@@ -1537,7 +1604,10 @@
     "cc_share_lovelace": 639324799,
     "rewards_generated_lovelace": 24629998266,
     "status": "closed",
-    "claim_open": false
+    "claim_open": false,
+    "pool_expected_blocks": 74.4,
+    "pool_blocks": 65,
+    "pool_roa_pct": 2.4
   },
   {
     "epoch": 521,
@@ -1546,10 +1616,8 @@
     "end_time": "2026-08-21T21:44:51Z",
     "first_slot": 167616000,
     "first_block": 11777566,
-    "blocks_minted": 21290,
-    "active_stake_lovelace": 21543624283000000,
-    "pool_blocks": 25,
-    "pool_roa_pct": 3.06,
+    "blocks_minted": 21363,
+    "active_stake_lovelace": 21566166964000000,
     "action_count": 4,
     "dreps_rewarded": 0,
     "cc_rewarded": 0,
@@ -1559,7 +1627,10 @@
     "cc_share_lovelace": 0,
     "rewards_generated_lovelace": 26720682554,
     "status": "open",
-    "claim_open": true
+    "claim_open": true,
+    "pool_expected_blocks": 74.3,
+    "pool_blocks": 70,
+    "pool_roa_pct": 2.6
   },
   {
     "epoch": 522,
@@ -1568,10 +1639,8 @@
     "end_time": "2026-08-26T21:44:51Z",
     "first_slot": 168048000,
     "first_block": 11799166,
-    "blocks_minted": 21148,
-    "active_stake_lovelace": 21879286579000000,
-    "pool_blocks": 18,
-    "pool_roa_pct": 2.64,
+    "blocks_minted": 21678,
+    "active_stake_lovelace": 22354939957000000,
     "action_count": 3,
     "dreps_rewarded": 0,
     "cc_rewarded": 0,
@@ -1581,7 +1650,10 @@
     "cc_share_lovelace": 0,
     "rewards_generated_lovelace": 30557050631,
     "status": "open",
-    "claim_open": true
+    "claim_open": true,
+    "pool_expected_blocks": 72.7,
+    "pool_blocks": 79,
+    "pool_roa_pct": 2.97
   },
   {
     "epoch": 523,
@@ -1590,10 +1662,8 @@
     "end_time": "2026-08-31T21:44:51Z",
     "first_slot": 168480000,
     "first_block": 11820766,
-    "blocks_minted": 21175,
-    "active_stake_lovelace": 21715098448000000,
-    "pool_blocks": 23,
-    "pool_roa_pct": 2.61,
+    "blocks_minted": 20964,
+    "active_stake_lovelace": 22919820532000000,
     "action_count": 4,
     "dreps_rewarded": 0,
     "cc_rewarded": 0,
@@ -1603,6 +1673,9 @@
     "cc_share_lovelace": 778646714,
     "rewards_generated_lovelace": 33564383452,
     "status": "open",
-    "claim_open": true
+    "claim_open": true,
+    "pool_expected_blocks": 68.6,
+    "pool_blocks": 82,
+    "pool_roa_pct": 3.27
   }
 ]

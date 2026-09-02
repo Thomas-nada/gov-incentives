@@ -153,6 +153,10 @@ function fundingSection(p, w) {
       ['Lifetime ROA', `${pool.lifetime_roa_pct}%`],
     ])}
     ${callout('Because rewards are yield only, a poor epoch for the pool means a smaller pool that window — not a shortfall paid from elsewhere.')}
+    <p>The <a href="#treasury" class="text-brand-600 dark:text-brand-400 hover:underline">treasury page</a>
+    shows this side of the programme end to end, and lets you step an epoch at a time through the
+    pool earning yield, a window closing and being funded, claims draining the payout script, and
+    the remainder sweeping to reserve.</p>
   `);
 }
 

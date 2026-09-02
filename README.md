@@ -31,10 +31,12 @@ js/
   config.js             Static programme config and test accounts
   utils.js              Lovelace/date/identifier formatting, CSV, clipboard, bech32
   claims.js             Local claim ledger (localStorage), claim reference numbering
+  simulation.js         Treasury-side state machine: yield, window close, funding, sweep
   components/
     shared.js           Metric tiles, pills, identity cells, eligibility checklist
     home.js             Overview dashboard
     claim.js            Four-step claim wizard
+    treasury.js         Treasury and stake pool operations, with the simulator
     epochs.js           Epoch and window history
     explorer.js         Snapshot explorer (actions, DReps, committee, votes, claims)
     docs.js             Programme documentation, FAQ, glossary
@@ -66,6 +68,33 @@ The generator is deterministic apart from its epoch anchor, which is pinned to t
 date it runs so the "current" epoch is always in progress. Re-run it if the
 countdowns drift into the past.
 
+## Demonstrating the whole cycle
+
+The claim pages read a frozen snapshot. The **Treasury** page is the other half:
+the delegation is already in place, and the page models what happens to the
+yield it produces. It can be stepped an epoch at a time, so the full programme
+can be walked through in a few minutes.
+
+Each epoch boundary does the same things the real treasury would:
+
+1. The pool mints its blocks and earns the epoch's yield.
+2. Rewards earned two epochs ago are credited to the reward account.
+3. Claims settle against any window whose payout script is funded.
+4. If the epoch closed a window, the reward account is withdrawn, split 94/6,
+   the snapshot is sealed and the payout script is funded.
+5. Any window past its claim deadline is emptied and the remainder swept to
+   reserve.
+
+Controls are *Advance one epoch*, *Run to window close*, *Auto-run* and *Reset*.
+The state persists in `localStorage` under `govrewards.treasury-sim.v1`, and the
+random draws are seeded, so a rehearsed demo tells the same story every time it
+is reset. Nothing here writes to the bundled snapshot, so stepping never
+invalidates the claim flow.
+
+A suggested order is printed at the foot of the page: look at the starting
+position, claim as a participant, come back and close a window, watch the new
+window drain, then check the arithmetic in the explorer.
+
 ## Programme rules
 
 - **Window** — three epochs, roughly fifteen days. Eligibility is decided at the
@@ -91,3 +120,6 @@ countdowns drift into the past.
   the snapshot, which is the intended "not found" path — use a test account to
   see the eligible flow.
 - Explorer tables export to CSV, and the snapshot manifest downloads as JSON.
+- Claiming on the claim page also settles against the treasury simulation, so a
+  claim taken in one place shows up as a payout script withdrawal in the other.
+  Resetting the simulation does not clear recorded claims, and vice versa.

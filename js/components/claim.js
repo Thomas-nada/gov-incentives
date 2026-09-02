@@ -2,6 +2,7 @@ import {
   state, snap, lookupAccount, resolveToStakeAddress, openWalletDialog, showToast,
 } from '../app.js';
 import { getClaim, saveClaim, nextClaimId } from '../claims.js';
+import { recordExternalClaim } from '../simulation.js';
 import { DEMO_ACCOUNTS, STORAGE } from '../config.js';
 import {
   ada, adaExact, adaCompact, formatInt, formatDate, formatDateTime, formatCountdown,
@@ -761,6 +762,7 @@ function finaliseClaim(app, signature) {
   };
 
   saveClaim(receipt);
+  recordExternalClaim(receipt);
   try { localStorage.setItem(STORAGE.addressBook, cs.destination); } catch {}
 
   cs.receipt = receipt;

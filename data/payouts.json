@@ -2390,8 +2390,8 @@
     "tx_hash": "73cc195f7aed9411d8283f30cfd3202ce5aef8bf3f7380bb972d32a133dda0e6",
     "block_height": 11853715,
     "status": "confirmed",
-    "submitted_at": "2026-08-31T21:45:32Z",
-    "confirmed_at": "2026-08-31T21:46:13Z"
+    "submitted_at": "2026-08-31T21:45:33Z",
+    "confirmed_at": "2026-08-31T21:46:14Z"
   },
   {
     "claim_id": "GRC-523-00191",
@@ -2409,8 +2409,8 @@
     "tx_hash": "784b7f061236d696eefe5f4407371bab5cfb8adb413a215b79bd1132810cd325",
     "block_height": 11858222,
     "status": "confirmed",
-    "submitted_at": "2026-08-31T21:44:53Z",
-    "confirmed_at": "2026-08-31T21:47:01Z"
+    "submitted_at": "2026-08-31T21:44:54Z",
+    "confirmed_at": "2026-08-31T21:47:02Z"
   },
   {
     "claim_id": "GRC-523-00195",
@@ -2428,8 +2428,8 @@
     "tx_hash": "f796d1a14ed760d7efe2a579acd53abd0fbf3b01e3e029e20280200ed3de00db",
     "block_height": 11852235,
     "status": "confirmed",
-    "submitted_at": "2026-08-31T21:45:54Z",
-    "confirmed_at": "2026-08-31T21:47:03Z"
+    "submitted_at": "2026-08-31T21:45:56Z",
+    "confirmed_at": "2026-08-31T21:47:05Z"
   },
   {
     "claim_id": "GRC-523-00141",
@@ -2447,8 +2447,8 @@
     "tx_hash": "6dbd8e1195bd2702aa50cc15907e6772fc9b923bd68636a71dabe62529be89b4",
     "block_height": 11857640,
     "status": "confirmed",
-    "submitted_at": "2026-08-31T21:45:33Z",
-    "confirmed_at": "2026-08-31T21:47:31Z"
+    "submitted_at": "2026-08-31T21:45:34Z",
+    "confirmed_at": "2026-08-31T21:47:32Z"
   },
   {
     "claim_id": "GRC-523-00185",
@@ -2466,8 +2466,8 @@
     "tx_hash": "47549c4dcdadbb08ff15ebf558f02ca0eb442834fc8b014451668fb9fbd71ba5",
     "block_height": 11848978,
     "status": "confirmed",
-    "submitted_at": "2026-08-31T21:46:35Z",
-    "confirmed_at": "2026-08-31T21:48:24Z"
+    "submitted_at": "2026-08-31T21:46:38Z",
+    "confirmed_at": "2026-08-31T21:48:27Z"
   },
   {
     "claim_id": "GRC-523-00218",
@@ -2485,8 +2485,8 @@
     "tx_hash": "92e01fd3108b9d36a6e738778eb8f0d7da7ad3708eb69fbd5fffcee329d11b1b",
     "block_height": 11849127,
     "status": "confirmed",
-    "submitted_at": "2026-08-31T21:48:49Z",
-    "confirmed_at": "2026-08-31T21:49:53Z"
+    "submitted_at": "2026-08-31T21:48:56Z",
+    "confirmed_at": "2026-08-31T21:50:00Z"
   },
   {
     "claim_id": "GRC-523-00159",
@@ -2504,8 +2504,8 @@
     "tx_hash": "89f40dc2456e701fd8f3378de05fa37c2bd8b4e98b2b19025dd031d0bc188164",
     "block_height": 11845011,
     "status": "confirmed",
-    "submitted_at": "2026-08-31T21:50:06Z",
-    "confirmed_at": "2026-08-31T21:51:12Z"
+    "submitted_at": "2026-08-31T21:50:15Z",
+    "confirmed_at": "2026-08-31T21:51:21Z"
   },
   {
     "claim_id": "GRC-523-00192",
@@ -2523,8 +2523,8 @@
     "tx_hash": "a728c2354dadde7c3761e48ed6e8fcdff71c7606b7737ef6af1ba7a6db99da70",
     "block_height": 11843037,
     "status": "confirmed",
-    "submitted_at": "2026-08-31T21:49:58Z",
-    "confirmed_at": "2026-08-31T21:51:14Z"
+    "submitted_at": "2026-08-31T21:50:07Z",
+    "confirmed_at": "2026-08-31T21:51:23Z"
   },
   {
     "claim_id": "GRC-523-00150",
@@ -2542,8 +2542,8 @@
     "tx_hash": "f892bbf54f3e5cc83a6d77d70b748ae2e7c66ace52667371a863a729aecaa405",
     "block_height": 11859349,
     "status": "confirmed",
-    "submitted_at": "2026-08-31T21:52:02Z",
-    "confirmed_at": "2026-08-31T21:52:46Z"
+    "submitted_at": "2026-08-31T21:52:14Z",
+    "confirmed_at": "2026-08-31T21:52:58Z"
   },
   {
     "claim_id": "GRC-523-00230",
@@ -2561,8 +2561,8 @@
     "tx_hash": "37a82eac56b9af2171911287835907728c53ec260fd2f41f4d352334cd78a19f",
     "block_height": 11853524,
     "status": "confirmed",
-    "submitted_at": "2026-08-31T21:52:18Z",
-    "confirmed_at": "2026-08-31T21:54:26Z"
+    "submitted_at": "2026-08-31T21:52:31Z",
+    "confirmed_at": "2026-08-31T21:54:39Z"
   },
   {
     "claim_id": "GRC-523-00176",
@@ -2580,8 +2580,8 @@
     "tx_hash": "a642941aaf2cc15d8e193d2a60b76feb5a349a9f881901c1dd0b91544d064389",
     "block_height": 11860091,
     "status": "confirmed",
-    "submitted_at": "2026-08-31T21:52:08Z",
-    "confirmed_at": "2026-08-31T21:55:12Z"
+    "submitted_at": "2026-08-31T21:52:21Z",
+    "confirmed_at": "2026-08-31T21:55:25Z"
   },
   {
     "claim_id": "GRC-523-00184",
@@ -2599,8 +2599,8 @@
     "tx_hash": "453d3a6e7f33800c6aa3e23c527f6318c5159c550b178b67fe66c900e1a9934d",
     "block_height": 11845326,
     "status": "confirmed",
-    "submitted_at": "2026-08-31T21:57:19Z",
-    "confirmed_at": "2026-08-31T21:58:17Z"
+    "submitted_at": "2026-08-31T21:57:40Z",
+    "confirmed_at": "2026-08-31T21:58:38Z"
   },
   {
     "claim_id": "GRC-523-00265",
@@ -2618,8 +2618,8 @@
     "tx_hash": "fb9ae992814ec0080266e9e1dcd21905c62c7cdf053e3403c747c89941c4eaec",
     "block_height": 11844382,
     "status": "confirmed",
-    "submitted_at": "2026-08-31T21:55:58Z",
-    "confirmed_at": "2026-08-31T21:58:31Z"
+    "submitted_at": "2026-08-31T21:56:17Z",
+    "confirmed_at": "2026-08-31T21:58:50Z"
   },
   {
     "claim_id": "GRC-523-00134",
@@ -2637,8 +2637,8 @@
     "tx_hash": "91b19f01fd647dcb74312b8b746ed061ed61dc56945370bcaa6c195e92572567",
     "block_height": 11848095,
     "status": "confirmed",
-    "submitted_at": "2026-08-31T21:58:36Z",
-    "confirmed_at": "2026-08-31T21:59:52Z"
+    "submitted_at": "2026-08-31T21:59:00Z",
+    "confirmed_at": "2026-08-31T22:00:16Z"
   },
   {
     "claim_id": "GRC-523-00133",
@@ -2656,8 +2656,8 @@
     "tx_hash": "1bb8d682f2fd9a6d32c93ab0ba1f278e4efe384e9a15efcde1487b4bdd3b98d0",
     "block_height": 11860037,
     "status": "confirmed",
-    "submitted_at": "2026-08-31T22:02:42Z",
-    "confirmed_at": "2026-08-31T22:03:57Z"
+    "submitted_at": "2026-08-31T22:03:12Z",
+    "confirmed_at": "2026-08-31T22:04:27Z"
   },
   {
     "claim_id": "GRC-523-00225",
@@ -2675,8 +2675,8 @@
     "tx_hash": "9c32a3e51efc632b04bf3140c2f01a6fe8524ab17199297f77e497e9e473d477",
     "block_height": 11848454,
     "status": "confirmed",
-    "submitted_at": "2026-08-31T22:01:18Z",
-    "confirmed_at": "2026-08-31T22:04:15Z"
+    "submitted_at": "2026-08-31T22:01:46Z",
+    "confirmed_at": "2026-08-31T22:04:43Z"
   },
   {
     "claim_id": "GRC-523-00207",
@@ -2694,8 +2694,8 @@
     "tx_hash": "d2a094270850f2ff6b8f7736b7279e94a3fa64dce717bead9bfc44c9949b2529",
     "block_height": 11851756,
     "status": "confirmed",
-    "submitted_at": "2026-08-31T22:06:24Z",
-    "confirmed_at": "2026-08-31T22:06:58Z"
+    "submitted_at": "2026-08-31T22:07:01Z",
+    "confirmed_at": "2026-08-31T22:07:35Z"
   },
   {
     "claim_id": "GRC-523-00252",
@@ -2713,8 +2713,8 @@
     "tx_hash": "4a301fc2269e3cc938d262de809430f40c02ca272506f05bb4bc30e8a708d0cf",
     "block_height": 11852365,
     "status": "confirmed",
-    "submitted_at": "2026-08-31T22:10:01Z",
-    "confirmed_at": "2026-08-31T22:12:05Z"
+    "submitted_at": "2026-08-31T22:10:44Z",
+    "confirmed_at": "2026-08-31T22:12:48Z"
   },
   {
     "claim_id": "GRC-523-00187",
@@ -2732,8 +2732,8 @@
     "tx_hash": "00ddaf823ecc12584f3ba7baf499834f8ee6f8d6eb4aa5990d14f34e98132f58",
     "block_height": 11843377,
     "status": "confirmed",
-    "submitted_at": "2026-08-31T22:15:55Z",
-    "confirmed_at": "2026-08-31T22:17:10Z"
+    "submitted_at": "2026-08-31T22:16:48Z",
+    "confirmed_at": "2026-08-31T22:18:03Z"
   },
   {
     "claim_id": "GRC-523-00244",
@@ -2751,8 +2751,8 @@
     "tx_hash": "16c2f0335d3cddcaddc24a62609f76148b7252222eb0ce2d17cc4ab278a33768",
     "block_height": 11851039,
     "status": "confirmed",
-    "submitted_at": "2026-08-31T22:38:21Z",
-    "confirmed_at": "2026-08-31T22:40:15Z"
+    "submitted_at": "2026-08-31T22:39:52Z",
+    "confirmed_at": "2026-08-31T22:41:46Z"
   },
   {
     "claim_id": "GRC-523-00262",
@@ -2770,8 +2770,8 @@
     "tx_hash": "442376cb1d424ee163a4a5537226331441dd55de3819ef45bd4b7a47f2f34df4",
     "block_height": 11849493,
     "status": "confirmed",
-    "submitted_at": "2026-08-31T22:42:19Z",
-    "confirmed_at": "2026-08-31T22:43:17Z"
+    "submitted_at": "2026-08-31T22:43:57Z",
+    "confirmed_at": "2026-08-31T22:44:55Z"
   },
   {
     "claim_id": "GRC-523-00204",
@@ -2789,8 +2789,8 @@
     "tx_hash": "cd725059860d8be5d9cc2581f12a9c362a6ea42a763acba26c22fccadd1c1c0f",
     "block_height": 11847635,
     "status": "confirmed",
-    "submitted_at": "2026-08-31T23:03:26Z",
-    "confirmed_at": "2026-08-31T23:05:22Z"
+    "submitted_at": "2026-08-31T23:05:41Z",
+    "confirmed_at": "2026-08-31T23:07:37Z"
   },
   {
     "claim_id": "GRC-523-00171",
@@ -2808,8 +2808,8 @@
     "tx_hash": "9904416947a5f29a380cc9f6f5c06696b1cfcbd82217fae047461585de37d8c9",
     "block_height": 11855190,
     "status": "confirmed",
-    "submitted_at": "2026-08-31T23:13:45Z",
-    "confirmed_at": "2026-08-31T23:15:48Z"
+    "submitted_at": "2026-08-31T23:16:17Z",
+    "confirmed_at": "2026-08-31T23:18:20Z"
   },
   {
     "claim_id": "GRC-523-00183",
@@ -2827,8 +2827,8 @@
     "tx_hash": "4cf86b63ecd3d592f931ba7f30a79ec55ae643a951a1b5c2dfda13c9b6fc7b7a",
     "block_height": 11857860,
     "status": "confirmed",
-    "submitted_at": "2026-08-31T23:16:34Z",
-    "confirmed_at": "2026-08-31T23:18:55Z"
+    "submitted_at": "2026-08-31T23:19:11Z",
+    "confirmed_at": "2026-08-31T23:21:32Z"
   },
   {
     "claim_id": "GRC-523-00151",
@@ -2846,8 +2846,8 @@
     "tx_hash": "da90fc683219e787221d1b9fdb3de7b84b3185ce4e3c6734977e1ca0d7f0a0f7",
     "block_height": 11843002,
     "status": "confirmed",
-    "submitted_at": "2026-08-31T23:42:27Z",
-    "confirmed_at": "2026-08-31T23:43:32Z"
+    "submitted_at": "2026-08-31T23:45:49Z",
+    "confirmed_at": "2026-08-31T23:46:54Z"
   },
   {
     "claim_id": "GRC-523-00201",
@@ -2865,8 +2865,8 @@
     "tx_hash": "bcab6d3e3b4507b5dabe3197c9e2840983907fffc0c027c0352c66ea8ab00d4b",
     "block_height": 11859475,
     "status": "confirmed",
-    "submitted_at": "2026-08-31T23:55:06Z",
-    "confirmed_at": "2026-08-31T23:57:09Z"
+    "submitted_at": "2026-08-31T23:58:49Z",
+    "confirmed_at": "2026-09-01T00:00:52Z"
   },
   {
     "claim_id": "GRC-523-00152",
@@ -2884,8 +2884,8 @@
     "tx_hash": "2c66a427d1bcaefe3ee9907f06d7c6616205fee72a1dfa0a7c2c57669428faa9",
     "block_height": 11859287,
     "status": "confirmed",
-    "submitted_at": "2026-09-01T00:00:54Z",
-    "confirmed_at": "2026-09-01T00:02:54Z"
+    "submitted_at": "2026-09-01T00:04:47Z",
+    "confirmed_at": "2026-09-01T00:06:47Z"
   },
   {
     "claim_id": "GRC-523-00227",
@@ -2903,8 +2903,8 @@
     "tx_hash": "22d9198539970dab57867ac9c2a05a06b6e139c0381b3dc6d708518f4fa5946d",
     "block_height": 11843871,
     "status": "confirmed",
-    "submitted_at": "2026-09-01T00:01:57Z",
-    "confirmed_at": "2026-09-01T00:03:46Z"
+    "submitted_at": "2026-09-01T00:05:52Z",
+    "confirmed_at": "2026-09-01T00:07:41Z"
   },
   {
     "claim_id": "GRC-523-00165",
@@ -2922,8 +2922,8 @@
     "tx_hash": "c1d2275db47516cabdde555cd9bfcfd100a2ab5bdacd9bc1aecd956e19bdeb9c",
     "block_height": 11843022,
     "status": "confirmed",
-    "submitted_at": "2026-09-01T00:07:21Z",
-    "confirmed_at": "2026-09-01T00:10:26Z"
+    "submitted_at": "2026-09-01T00:11:25Z",
+    "confirmed_at": "2026-09-01T00:14:30Z"
   },
   {
     "claim_id": "GRC-523-00264",
@@ -2941,8 +2941,8 @@
     "tx_hash": "bcc34e87c997950c25574591b6d60c8bdaffb74703020c03487978d9862963bb",
     "block_height": 11852907,
     "status": "confirmed",
-    "submitted_at": "2026-09-01T00:14:03Z",
-    "confirmed_at": "2026-09-01T00:16:51Z"
+    "submitted_at": "2026-09-01T00:18:19Z",
+    "confirmed_at": "2026-09-01T00:21:07Z"
   },
   {
     "claim_id": "GRC-523-00127",
@@ -2960,8 +2960,8 @@
     "tx_hash": "7760a847102274a9a7f148f4743a71eee77581946e78941421479ead95df6afc",
     "block_height": 11848754,
     "status": "confirmed",
-    "submitted_at": "2026-09-01T00:16:35Z",
-    "confirmed_at": "2026-09-01T00:18:44Z"
+    "submitted_at": "2026-09-01T00:20:55Z",
+    "confirmed_at": "2026-09-01T00:23:04Z"
   },
   {
     "claim_id": "GRC-523-00234",
@@ -2979,8 +2979,8 @@
     "tx_hash": "cb27d81714eded70a02176b02e15a5b7c3844ed40a497a6feae0501ef85f22ba",
     "block_height": 11847724,
     "status": "confirmed",
-    "submitted_at": "2026-09-01T00:25:22Z",
-    "confirmed_at": "2026-09-01T00:27:53Z"
+    "submitted_at": "2026-09-01T00:29:57Z",
+    "confirmed_at": "2026-09-01T00:32:28Z"
   },
   {
     "claim_id": "GRC-523-00235",
@@ -2998,8 +2998,8 @@
     "tx_hash": "a0f70269957a1f201878ad33d9b66f0eafc7e7288cfc1fbdabfd7157f945b965",
     "block_height": 11852806,
     "status": "confirmed",
-    "submitted_at": "2026-09-01T00:31:10Z",
-    "confirmed_at": "2026-09-01T00:32:46Z"
+    "submitted_at": "2026-09-01T00:35:54Z",
+    "confirmed_at": "2026-09-01T00:37:30Z"
   },
   {
     "claim_id": "GRC-523-00137",
@@ -3017,8 +3017,8 @@
     "tx_hash": "a6af5d17ab1b0dbf34b11e3f5b74203b0e9c5daf6c02b24829d189043d3f0713",
     "block_height": 11857493,
     "status": "confirmed",
-    "submitted_at": "2026-09-01T00:41:24Z",
-    "confirmed_at": "2026-09-01T00:41:57Z"
+    "submitted_at": "2026-09-01T00:46:27Z",
+    "confirmed_at": "2026-09-01T00:47:00Z"
   },
   {
     "claim_id": "GRC-523-00155",
@@ -3036,8 +3036,8 @@
     "tx_hash": "60aebc37c149877efbadd495f0198e0ca3e617175a1592f5fd8422e97f9f5114",
     "block_height": 11842829,
     "status": "confirmed",
-    "submitted_at": "2026-09-01T00:40:23Z",
-    "confirmed_at": "2026-09-01T00:43:04Z"
+    "submitted_at": "2026-09-01T00:45:24Z",
+    "confirmed_at": "2026-09-01T00:48:05Z"
   },
   {
     "claim_id": "GRC-523-00206",
@@ -3055,8 +3055,8 @@
     "tx_hash": "1dbea3a243700219131710c021cbd56170ff69c24ebb56fbaf01f025ebb15007",
     "block_height": 11852855,
     "status": "confirmed",
-    "submitted_at": "2026-09-01T00:42:45Z",
-    "confirmed_at": "2026-09-01T00:44:37Z"
+    "submitted_at": "2026-09-01T00:47:50Z",
+    "confirmed_at": "2026-09-01T00:49:42Z"
   },
   {
     "claim_id": "GRC-523-00126",
@@ -3074,8 +3074,8 @@
     "tx_hash": "7bcacab6418e35e75154dd633dc1bc886dacafb73755020815b5c64f40e3af65",
     "block_height": 11844782,
     "status": "confirmed",
-    "submitted_at": "2026-09-01T00:47:57Z",
-    "confirmed_at": "2026-09-01T00:50:58Z"
+    "submitted_at": "2026-09-01T00:53:11Z",
+    "confirmed_at": "2026-09-01T00:56:12Z"
   },
   {
     "claim_id": "GRC-523-00202",
@@ -3093,8 +3093,8 @@
     "tx_hash": "5ac67be3c145c8324f070d7c4af06d3513b79102c30c70acd739dc7d1b56c67f",
     "block_height": 11848684,
     "status": "confirmed",
-    "submitted_at": "2026-09-01T00:53:37Z",
-    "confirmed_at": "2026-09-01T00:55:49Z"
+    "submitted_at": "2026-09-01T00:59:01Z",
+    "confirmed_at": "2026-09-01T01:01:13Z"
   },
   {
     "claim_id": "GRC-523-00208",
@@ -3112,8 +3112,8 @@
     "tx_hash": "bd33c5b045e721b9fd626253ef72c9e9a1e49d199d1269ff81e222e46bff476f",
     "block_height": 11847215,
     "status": "confirmed",
-    "submitted_at": "2026-09-01T01:03:40Z",
-    "confirmed_at": "2026-09-01T01:06:31Z"
+    "submitted_at": "2026-09-01T01:09:21Z",
+    "confirmed_at": "2026-09-01T01:12:12Z"
   },
   {
     "claim_id": "GRC-523-00224",
@@ -3131,8 +3131,8 @@
     "tx_hash": "a6fcb29817685f6b52516fa0dbe43d542a68d0e6c1fd1a48588dbc42251b76c9",
     "block_height": 11846515,
     "status": "confirmed",
-    "submitted_at": "2026-09-01T01:21:27Z",
-    "confirmed_at": "2026-09-01T01:22:58Z"
+    "submitted_at": "2026-09-01T01:27:38Z",
+    "confirmed_at": "2026-09-01T01:29:09Z"
   },
   {
     "claim_id": "GRC-523-00251",
@@ -3150,8 +3150,8 @@
     "tx_hash": "755f173ad9090692ff7d6a93c4a1b56e6add6d8a673cacd09a8969e32abbe503",
     "block_height": 11852417,
     "status": "confirmed",
-    "submitted_at": "2026-09-01T01:29:45Z",
-    "confirmed_at": "2026-09-01T01:32:14Z"
+    "submitted_at": "2026-09-01T01:36:10Z",
+    "confirmed_at": "2026-09-01T01:38:39Z"
   },
   {
     "claim_id": "GRC-523-00212",
@@ -3169,8 +3169,8 @@
     "tx_hash": "701efd4fc788f1ed745332a89afa345cefb1b2d8f6ead828a4b4f2c1c0936857",
     "block_height": 11850101,
     "status": "confirmed",
-    "submitted_at": "2026-09-01T01:42:30Z",
-    "confirmed_at": "2026-09-01T01:45:34Z"
+    "submitted_at": "2026-09-01T01:49:17Z",
+    "confirmed_at": "2026-09-01T01:52:21Z"
   },
   {
     "claim_id": "GRC-523-00222",
@@ -3188,8 +3188,8 @@
     "tx_hash": "3da8ad04492dc702bbd8899aacbe5e2be2009f02c11997f39c553557e655d400",
     "block_height": 11855900,
     "status": "confirmed",
-    "submitted_at": "2026-09-01T02:08:25Z",
-    "confirmed_at": "2026-09-01T02:08:54Z"
+    "submitted_at": "2026-09-01T02:15:56Z",
+    "confirmed_at": "2026-09-01T02:16:25Z"
   },
   {
     "claim_id": "GRC-523-00226",
@@ -3207,8 +3207,8 @@
     "tx_hash": "51a8060a3cc2612e9f3992c50cec30501ea236a932f171d47f61f69955ee7179",
     "block_height": 11850401,
     "status": "confirmed",
-    "submitted_at": "2026-09-01T02:30:42Z",
-    "confirmed_at": "2026-09-01T02:32:50Z"
+    "submitted_at": "2026-09-01T02:38:51Z",
+    "confirmed_at": "2026-09-01T02:40:59Z"
   },
   {
     "claim_id": "GRC-523-00146",
@@ -3226,8 +3226,8 @@
     "tx_hash": "22471b5d6ae1d682d28f97ad7e99e035c9dd472d90a0bd30e0d0f730a49b7adb",
     "block_height": 11844920,
     "status": "confirmed",
-    "submitted_at": "2026-09-01T02:39:43Z",
-    "confirmed_at": "2026-09-01T02:41:30Z"
+    "submitted_at": "2026-09-01T02:48:08Z",
+    "confirmed_at": "2026-09-01T02:49:55Z"
   },
   {
     "claim_id": "GRC-523-00256",
@@ -3245,8 +3245,8 @@
     "tx_hash": "86c20bf5f709834f62ae9d718080d51e9e1d714f2b974ba0e05a677d1bb80210",
     "block_height": 11850062,
     "status": "confirmed",
-    "submitted_at": "2026-09-01T02:56:58Z",
-    "confirmed_at": "2026-09-01T02:57:33Z"
+    "submitted_at": "2026-09-01T03:05:53Z",
+    "confirmed_at": "2026-09-01T03:06:28Z"
   },
   {
     "claim_id": "GRC-523-00190",
@@ -3264,8 +3264,8 @@
     "tx_hash": "aad6b02dc95895179e6432b6f9e59ab791b1ffd1496c2e82eed6ca15a6b6470b",
     "block_height": 11852421,
     "status": "confirmed",
-    "submitted_at": "2026-09-01T03:02:09Z",
-    "confirmed_at": "2026-09-01T03:04:31Z"
+    "submitted_at": "2026-09-01T03:11:12Z",
+    "confirmed_at": "2026-09-01T03:13:34Z"
   },
   {
     "claim_id": "GRC-523-00153",
@@ -3283,8 +3283,8 @@
     "tx_hash": "86a90709fc9568f7df941cd68be764180f3f1b0f05301469f78ba27c97e74e85",
     "block_height": 11854888,
     "status": "confirmed",
-    "submitted_at": "2026-09-01T03:23:00Z",
-    "confirmed_at": "2026-09-01T03:24:31Z"
+    "submitted_at": "2026-09-01T03:32:39Z",
+    "confirmed_at": "2026-09-01T03:34:10Z"
   },
   {
     "claim_id": "GRC-523-00149",
@@ -3302,8 +3302,8 @@
     "tx_hash": "5717d3198d25b9600bbb8c43c62df37d2e40dccb3fa095c0f8d5b6a3b800f157",
     "block_height": 11854741,
     "status": "confirmed",
-    "submitted_at": "2026-09-01T03:29:47Z",
-    "confirmed_at": "2026-09-01T03:32:09Z"
+    "submitted_at": "2026-09-01T03:39:38Z",
+    "confirmed_at": "2026-09-01T03:42:00Z"
   },
   {
     "claim_id": "GRC-523-00186",
@@ -3321,8 +3321,8 @@
     "tx_hash": "624f0a2e5f07a7527a708287a1085445bf171f422e8382c6c337775f8c50c2cc",
     "block_height": 11843426,
     "status": "confirmed",
-    "submitted_at": "2026-09-01T03:49:58Z",
-    "confirmed_at": "2026-09-01T03:52:26Z"
+    "submitted_at": "2026-09-01T04:00:23Z",
+    "confirmed_at": "2026-09-01T04:02:51Z"
   },
   {
     "claim_id": "GRC-523-00180",
@@ -3340,8 +3340,8 @@
     "tx_hash": "94d167e0bea4ab56a1c20efb83ae035ebeef340d7b9d5456c4ba13662fdc5544",
     "block_height": 11857357,
     "status": "confirmed",
-    "submitted_at": "2026-09-01T03:50:57Z",
-    "confirmed_at": "2026-09-01T03:52:56Z"
+    "submitted_at": "2026-09-01T04:01:24Z",
+    "confirmed_at": "2026-09-01T04:03:23Z"
   },
   {
     "claim_id": "GRC-523-00148",
@@ -3359,8 +3359,8 @@
     "tx_hash": "e5130f739e11c3cc337c60666035b88c51784e2189d9f3ca98001c22610de74d",
     "block_height": 11852901,
     "status": "confirmed",
-    "submitted_at": "2026-09-01T04:08:01Z",
-    "confirmed_at": "2026-09-01T04:10:52Z"
+    "submitted_at": "2026-09-01T04:18:58Z",
+    "confirmed_at": "2026-09-01T04:21:49Z"
   },
   {
     "claim_id": "GRC-523-00246",
@@ -3378,8 +3378,8 @@
     "tx_hash": "e336111563a20687029e4285e3d17195d89f015b225e24a9b0468dda98bfb686",
     "block_height": 11855371,
     "status": "confirmed",
-    "submitted_at": "2026-09-01T04:23:13Z",
-    "confirmed_at": "2026-09-01T04:25:00Z"
+    "submitted_at": "2026-09-01T04:34:35Z",
+    "confirmed_at": "2026-09-01T04:36:22Z"
   },
   {
     "claim_id": "GRC-523-00196",
@@ -3397,8 +3397,8 @@
     "tx_hash": "fa93650ee0f850727ec0ea8e3e6668a572991a671138ffc16a2c3433bde329d6",
     "block_height": 11854564,
     "status": "confirmed",
-    "submitted_at": "2026-09-01T04:47:20Z",
-    "confirmed_at": "2026-09-01T04:49:32Z"
+    "submitted_at": "2026-09-01T04:59:24Z",
+    "confirmed_at": "2026-09-01T05:01:36Z"
   },
   {
     "claim_id": "GRC-523-00130",
@@ -3416,8 +3416,8 @@
     "tx_hash": "c5322426678e9eeda677de8e6d13d53744a7e2fb924af4e606de3ce67c20a070",
     "block_height": 11852472,
     "status": "confirmed",
-    "submitted_at": "2026-09-01T05:37:35Z",
-    "confirmed_at": "2026-09-01T05:40:00Z"
+    "submitted_at": "2026-09-01T05:51:05Z",
+    "confirmed_at": "2026-09-01T05:53:30Z"
   },
   {
     "claim_id": "GRC-523-00250",
@@ -3435,8 +3435,8 @@
     "tx_hash": "c1fea6e1842796da6d8a5c088379c9dccf2b14b10fb6683ef2431a9edc83f87c",
     "block_height": 11845298,
     "status": "confirmed",
-    "submitted_at": "2026-09-01T05:46:45Z",
-    "confirmed_at": "2026-09-01T05:49:10Z"
+    "submitted_at": "2026-09-01T06:00:30Z",
+    "confirmed_at": "2026-09-01T06:02:55Z"
   },
   {
     "claim_id": "GRC-523-00214",
@@ -3454,8 +3454,8 @@
     "tx_hash": "b27f1569bc6b9707b55c267a8c9d05b97d74e198bc98e211c2c7e2af0b0470d7",
     "block_height": 11843291,
     "status": "confirmed",
-    "submitted_at": "2026-09-01T05:46:28Z",
-    "confirmed_at": "2026-09-01T05:49:29Z"
+    "submitted_at": "2026-09-01T06:00:13Z",
+    "confirmed_at": "2026-09-01T06:03:14Z"
   },
   {
     "claim_id": "GRC-523-00240",
@@ -3473,8 +3473,8 @@
     "tx_hash": "58fce800c2903dee0c1e1d1f5335f79bd06490d43b72f8305527d43eb5a136ed",
     "block_height": 11848458,
     "status": "confirmed",
-    "submitted_at": "2026-09-01T05:50:26Z",
-    "confirmed_at": "2026-09-01T05:51:35Z"
+    "submitted_at": "2026-09-01T06:04:18Z",
+    "confirmed_at": "2026-09-01T06:05:27Z"
   },
   {
     "claim_id": "GRC-523-00255",
@@ -3492,8 +3492,8 @@
     "tx_hash": "3254d920d03326d070c69939ae951a60a14b969a2b9e680cd3c22bf7934ebea6",
     "block_height": 11848463,
     "status": "confirmed",
-    "submitted_at": "2026-09-01T05:53:56Z",
-    "confirmed_at": "2026-09-01T05:54:50Z"
+    "submitted_at": "2026-09-01T06:07:53Z",
+    "confirmed_at": "2026-09-01T06:08:47Z"
   },
   {
     "claim_id": "GRC-523-00213",
@@ -3511,8 +3511,8 @@
     "tx_hash": "ab27f9bac7c4b2d6e522938786d3beaf18d7ad5c55fa0c5f621e5564d1f8eac0",
     "block_height": 11855647,
     "status": "confirmed",
-    "submitted_at": "2026-09-01T05:54:39Z",
-    "confirmed_at": "2026-09-01T05:57:30Z"
+    "submitted_at": "2026-09-01T06:08:38Z",
+    "confirmed_at": "2026-09-01T06:11:29Z"
   },
   {
     "claim_id": "GRC-523-00163",
@@ -3530,8 +3530,8 @@
     "tx_hash": "3b19bd3156e818ebd59378e7d483d102ff60acc2bceb14385254942cecbc73ad",
     "block_height": 11852114,
     "status": "confirmed",
-    "submitted_at": "2026-09-01T06:10:42Z",
-    "confirmed_at": "2026-09-01T06:13:41Z"
+    "submitted_at": "2026-09-01T06:25:09Z",
+    "confirmed_at": "2026-09-01T06:28:08Z"
   },
   {
     "claim_id": "GRC-523-00156",
@@ -3549,8 +3549,8 @@
     "tx_hash": "351143ba4083b4e0b7bedebf0d6714481b4ce855684eee9375181b92fd93a798",
     "block_height": 11847306,
     "status": "confirmed",
-    "submitted_at": "2026-09-01T06:21:21Z",
-    "confirmed_at": "2026-09-01T06:23:08Z"
+    "submitted_at": "2026-09-01T06:36:06Z",
+    "confirmed_at": "2026-09-01T06:37:53Z"
   },
   {
     "claim_id": "GRC-523-00169",
@@ -3568,8 +3568,8 @@
     "tx_hash": "5f15ced31fb7929df3f3278c0045271525c9b780069b5782a253d9fa4a264a4e",
     "block_height": 11854125,
     "status": "confirmed",
-    "submitted_at": "2026-09-01T06:20:58Z",
-    "confirmed_at": "2026-09-01T06:24:01Z"
+    "submitted_at": "2026-09-01T06:35:41Z",
+    "confirmed_at": "2026-09-01T06:38:44Z"
   },
   {
     "claim_id": "GRC-523-00144",
@@ -3587,8 +3587,8 @@
     "tx_hash": "ec28a179b42ff83448262639b89adc27b4e59828f304d431a745c68414a72659",
     "block_height": 11859503,
     "status": "confirmed",
-    "submitted_at": "2026-09-01T06:24:03Z",
-    "confirmed_at": "2026-09-01T06:25:53Z"
+    "submitted_at": "2026-09-01T06:38:52Z",
+    "confirmed_at": "2026-09-01T06:40:42Z"
   },
   {
     "claim_id": "GRC-523-00166",
@@ -3606,8 +3606,8 @@
     "tx_hash": "b160fba1942d004181a2327fabb5071d4557b86f0ec15a8ce5880874041175e4",
     "block_height": 11842595,
     "status": "confirmed",
-    "submitted_at": "2026-09-01T06:38:58Z",
-    "confirmed_at": "2026-09-01T06:40:55Z"
+    "submitted_at": "2026-09-01T06:54:12Z",
+    "confirmed_at": "2026-09-01T06:56:09Z"
   },
   {
     "claim_id": "GRC-523-00249",
@@ -3625,8 +3625,8 @@
     "tx_hash": "666572193e350db0b14a048a1f28555270106e3c158026e3c7ee8455e7c7fa5f",
     "block_height": 11857084,
     "status": "confirmed",
-    "submitted_at": "2026-09-01T07:27:29Z",
-    "confirmed_at": "2026-09-01T07:28:30Z"
+    "submitted_at": "2026-09-01T07:44:07Z",
+    "confirmed_at": "2026-09-01T07:45:08Z"
   },
   {
     "claim_id": "GRC-523-00162",
@@ -3644,8 +3644,8 @@
     "tx_hash": "918cf002687daa8011fd151bc3e1683a40999b4c627b5ae5afd366ce194995a5",
     "block_height": 11848171,
     "status": "confirmed",
-    "submitted_at": "2026-09-01T07:47:26Z",
-    "confirmed_at": "2026-09-01T07:50:30Z"
+    "submitted_at": "2026-09-01T08:04:38Z",
+    "confirmed_at": "2026-09-01T08:07:42Z"
   },
   {
     "claim_id": "GRC-523-00136",
@@ -3663,8 +3663,8 @@
     "tx_hash": "9b9ec305fba6ceacfb3172704f4e9ef47d784d63e672198b8320511573733a79",
     "block_height": 11843963,
     "status": "confirmed",
-    "submitted_at": "2026-09-01T08:11:02Z",
-    "confirmed_at": "2026-09-01T08:11:45Z"
+    "submitted_at": "2026-09-01T08:28:54Z",
+    "confirmed_at": "2026-09-01T08:29:37Z"
   },
   {
     "claim_id": "GRC-523-00157",
@@ -3682,8 +3682,8 @@
     "tx_hash": "ff01e91d9f70ce4de6f2d73e3bc2d7a9b66e1b85eda45f52fd62d05aba808338",
     "block_height": 11847702,
     "status": "confirmed",
-    "submitted_at": "2026-09-01T08:12:42Z",
-    "confirmed_at": "2026-09-01T08:14:12Z"
+    "submitted_at": "2026-09-01T08:30:37Z",
+    "confirmed_at": "2026-09-01T08:32:07Z"
   },
   {
     "claim_id": "GRC-523-00228",
@@ -3701,8 +3701,8 @@
     "tx_hash": "0f044eff5fec075cef56e7f65acb7772070a7367989eae50ff874e82caa649c9",
     "block_height": 11847696,
     "status": "confirmed",
-    "submitted_at": "2026-09-01T08:46:47Z",
-    "confirmed_at": "2026-09-01T08:48:47Z"
+    "submitted_at": "2026-09-01T09:05:40Z",
+    "confirmed_at": "2026-09-01T09:07:40Z"
   },
   {
     "claim_id": "GRC-523-00139",
@@ -3720,8 +3720,8 @@
     "tx_hash": "0e829d6561f54907452c2de478064806a0e681d616cc1a9442be2a377fc05e36",
     "block_height": 11851797,
     "status": "confirmed",
-    "submitted_at": "2026-09-01T09:22:19Z",
-    "confirmed_at": "2026-09-01T09:25:17Z"
+    "submitted_at": "2026-09-01T09:42:14Z",
+    "confirmed_at": "2026-09-01T09:45:12Z"
   },
   {
     "claim_id": "GRC-523-00128",
@@ -3739,8 +3739,8 @@
     "tx_hash": "95fdee855c31daf9fc348a1a9e52bdb491d06cbcd3f926c19dd12e736f27e745",
     "block_height": 11843676,
     "status": "confirmed",
-    "submitted_at": "2026-09-01T09:55:51Z",
-    "confirmed_at": "2026-09-01T09:57:58Z"
+    "submitted_at": "2026-09-01T10:16:43Z",
+    "confirmed_at": "2026-09-01T10:18:50Z"
   },
   {
     "claim_id": "GRC-523-00170",
@@ -3758,8 +3758,8 @@
     "tx_hash": "a57836c1f8fa10c8b13e26c0a72d217f0d019ed5e952c455895ae2894674e2d9",
     "block_height": 11854529,
     "status": "confirmed",
-    "submitted_at": "2026-09-01T10:07:43Z",
-    "confirmed_at": "2026-09-01T10:08:24Z"
+    "submitted_at": "2026-09-01T10:28:55Z",
+    "confirmed_at": "2026-09-01T10:29:36Z"
   },
   {
     "claim_id": "GRC-523-00198",
@@ -3777,8 +3777,8 @@
     "tx_hash": "505dbb9c9a4aef5be3cf682c839d64edfca5fa82d4bdfd07f63b160815d9cdc2",
     "block_height": 11843283,
     "status": "confirmed",
-    "submitted_at": "2026-09-01T10:19:31Z",
-    "confirmed_at": "2026-09-01T10:20:41Z"
+    "submitted_at": "2026-09-01T10:41:04Z",
+    "confirmed_at": "2026-09-01T10:42:14Z"
   },
   {
     "claim_id": "GRC-523-00220",
@@ -3796,8 +3796,8 @@
     "tx_hash": "5e8c02562500fe3c9d59ce3bc6924b76317d14c3f41e7aa80ec3f17515a14350",
     "block_height": 11843473,
     "status": "confirmed",
-    "submitted_at": "2026-09-01T10:47:43Z",
-    "confirmed_at": "2026-09-01T10:49:26Z"
+    "submitted_at": "2026-09-01T11:10:04Z",
+    "confirmed_at": "2026-09-01T11:11:47Z"
   },
   {
     "claim_id": "GRC-523-00258",
@@ -3815,8 +3815,8 @@
     "tx_hash": "1ce0137ccc322d3ecd7eb7328c3009fa27dd2c7ca835ec2c32eb014beecc4956",
     "block_height": 11858132,
     "status": "confirmed",
-    "submitted_at": "2026-09-01T10:50:16Z",
-    "confirmed_at": "2026-09-01T10:51:17Z"
+    "submitted_at": "2026-09-01T11:12:42Z",
+    "confirmed_at": "2026-09-01T11:13:43Z"
   },
   {
     "claim_id": "GRC-523-00135",
@@ -3834,8 +3834,8 @@
     "tx_hash": "f8a2a8751aabce57354cf357aa798df3f76c1663c3841c49f62d03be96fc4780",
     "block_height": 11846641,
     "status": "confirmed",
-    "submitted_at": "2026-09-01T11:32:10Z",
-    "confirmed_at": "2026-09-01T11:32:52Z"
+    "submitted_at": "2026-09-01T11:55:46Z",
+    "confirmed_at": "2026-09-01T11:56:28Z"
   },
   {
     "claim_id": "GRC-523-00161",
@@ -3853,8 +3853,8 @@
     "tx_hash": "b009d36732b46ba0f6e61d0b4f1c9da50ec9ba384538d5a181a39cb4a7e87f8d",
     "block_height": 11850107,
     "status": "confirmed",
-    "submitted_at": "2026-09-01T11:33:14Z",
-    "confirmed_at": "2026-09-01T11:33:51Z"
+    "submitted_at": "2026-09-01T11:56:53Z",
+    "confirmed_at": "2026-09-01T11:57:30Z"
   },
   {
     "claim_id": "GRC-523-00199",
@@ -3872,8 +3872,8 @@
     "tx_hash": "ac066cb215e7a407875a8f8ed531ac06512861d19e24c75696700503c4c380ba",
     "block_height": 11847457,
     "status": "confirmed",
-    "submitted_at": "2026-09-01T11:44:37Z",
-    "confirmed_at": "2026-09-01T11:45:25Z"
+    "submitted_at": "2026-09-01T12:08:36Z",
+    "confirmed_at": "2026-09-01T12:09:24Z"
   },
   {
     "claim_id": "GRC-523-00194",
@@ -3891,8 +3891,8 @@
     "tx_hash": "becb9f77115daedeb893b462e4e83661dc8beccb214d90b10c4caf726d53c67a",
     "block_height": 11845756,
     "status": "confirmed",
-    "submitted_at": "2026-09-01T11:46:51Z",
-    "confirmed_at": "2026-09-01T11:48:29Z"
+    "submitted_at": "2026-09-01T12:10:53Z",
+    "confirmed_at": "2026-09-01T12:12:31Z"
   },
   {
     "claim_id": "GRC-523-00254",
@@ -3910,8 +3910,8 @@
     "tx_hash": "067c35386315894d471674cd47bcc424acaaa4a4e9e53e0d7fafca51b56fefd5",
     "block_height": 11855485,
     "status": "confirmed",
-    "submitted_at": "2026-09-01T11:51:44Z",
-    "confirmed_at": "2026-09-01T11:54:05Z"
+    "submitted_at": "2026-09-01T12:15:54Z",
+    "confirmed_at": "2026-09-01T12:18:15Z"
   },
   {
     "claim_id": "GRC-523-00175",
@@ -3929,8 +3929,8 @@
     "tx_hash": "ac27a2bb11d33b0a590f6600a17aa72c652c1fc7a3ffd66de6ebb46b2463bafc",
     "block_height": 11847100,
     "status": "confirmed",
-    "submitted_at": "2026-09-01T11:51:37Z",
-    "confirmed_at": "2026-09-01T11:54:09Z"
+    "submitted_at": "2026-09-01T12:15:47Z",
+    "confirmed_at": "2026-09-01T12:18:19Z"
   },
   {
     "claim_id": "GRC-523-00237",
@@ -3948,8 +3948,8 @@
     "tx_hash": "5c2e911bcac9a05b970d6e8249553e72f5900377f49256f08b0732d5ca2eb233",
     "block_height": 11847396,
     "status": "confirmed",
-    "submitted_at": "2026-09-01T12:17:16Z",
-    "confirmed_at": "2026-09-01T12:17:52Z"
+    "submitted_at": "2026-09-01T12:42:10Z",
+    "confirmed_at": "2026-09-01T12:42:46Z"
   },
   {
     "claim_id": "GRC-523-00209",
@@ -3967,8 +3967,8 @@
     "tx_hash": "d4f71f8ddfded6b41ad89fe30f72c7402ab64f6864436c38e683798211705eba",
     "block_height": 11849798,
     "status": "confirmed",
-    "submitted_at": "2026-09-01T12:26:39Z",
-    "confirmed_at": "2026-09-01T12:27:03Z"
+    "submitted_at": "2026-09-01T12:51:49Z",
+    "confirmed_at": "2026-09-01T12:52:13Z"
   },
   {
     "claim_id": "GRC-523-00181",
@@ -3986,8 +3986,8 @@
     "tx_hash": "c10dfd9c7a4f6c14bb5582a5f18f48327435fe61e83dce2dbfbc1e6cf937f92b",
     "block_height": 11845489,
     "status": "confirmed",
-    "submitted_at": "2026-09-01T12:29:02Z",
-    "confirmed_at": "2026-09-01T12:30:24Z"
+    "submitted_at": "2026-09-01T12:54:17Z",
+    "confirmed_at": "2026-09-01T12:55:39Z"
   },
   {
     "claim_id": "GRC-523-00259",
@@ -4005,8 +4005,8 @@
     "tx_hash": "1c82f227d93bcc3f0d87c34ed5b8caf4d648b9fefd75776a7ac68554de3324dd",
     "block_height": 11857952,
     "status": "confirmed",
-    "submitted_at": "2026-09-01T13:50:43Z",
-    "confirmed_at": "2026-09-01T13:51:40Z"
+    "submitted_at": "2026-09-01T14:18:17Z",
+    "confirmed_at": "2026-09-01T14:19:14Z"
   },
   {
     "claim_id": "GRC-523-00219",
@@ -4024,8 +4024,8 @@
     "tx_hash": "0efc666fd917416c10647a32dccde957fc7ef19963e51724c2a25bd0c9b49f98",
     "block_height": 11856237,
     "status": "confirmed",
-    "submitted_at": "2026-09-01T13:52:04Z",
-    "confirmed_at": "2026-09-01T13:53:27Z"
+    "submitted_at": "2026-09-01T14:19:41Z",
+    "confirmed_at": "2026-09-01T14:21:04Z"
   },
   {
     "claim_id": "GRC-523-00229",
@@ -4043,8 +4043,8 @@
     "tx_hash": "579a8745b8c6e366f5cb00b3f7a198a4ae531040cbcac2a19e57cd53e58722ec",
     "block_height": 11859155,
     "status": "confirmed",
-    "submitted_at": "2026-09-01T14:09:23Z",
-    "confirmed_at": "2026-09-01T14:11:28Z"
+    "submitted_at": "2026-09-01T14:37:30Z",
+    "confirmed_at": "2026-09-01T14:39:35Z"
   },
   {
     "claim_id": "GRC-523-00203",
@@ -4062,8 +4062,8 @@
     "tx_hash": "20240677561ae95c25f2cc25cf5ffdcbcbb9286a416366d1c0d590149d5047f1",
     "block_height": 11859040,
     "status": "confirmed",
-    "submitted_at": "2026-09-01T14:17:36Z",
-    "confirmed_at": "2026-09-01T14:18:16Z"
+    "submitted_at": "2026-09-01T14:45:56Z",
+    "confirmed_at": "2026-09-01T14:46:36Z"
   },
   {
     "claim_id": "GRC-523-00248",
@@ -4081,8 +4081,8 @@
     "tx_hash": "01263b133d1b31be731d9edc0ab15f5b3bdd45ad2bee586831803792930cf890",
     "block_height": 11848867,
     "status": "confirmed",
-    "submitted_at": "2026-09-01T14:26:49Z",
-    "confirmed_at": "2026-09-01T14:29:19Z"
+    "submitted_at": "2026-09-01T14:55:25Z",
+    "confirmed_at": "2026-09-01T14:57:55Z"
   },
   {
     "claim_id": "GRC-523-00164",
@@ -4100,8 +4100,8 @@
     "tx_hash": "1506e7bf74a872e7f1582923169b03413bd3f78590bb12d6a51d6925ec85e779",
     "block_height": 11858143,
     "status": "confirmed",
-    "submitted_at": "2026-09-01T15:12:24Z",
-    "confirmed_at": "2026-09-01T15:14:25Z"
+    "submitted_at": "2026-09-01T15:42:18Z",
+    "confirmed_at": "2026-09-01T15:44:19Z"
   },
   {
     "claim_id": "GRC-523-00267",
@@ -4119,8 +4119,8 @@
     "tx_hash": "aa66dc6393ae8e1228582ff7814ec0f21a97e788983a2d403e400c9f561ad37a",
     "block_height": 11857598,
     "status": "confirmed",
-    "submitted_at": "2026-09-01T15:14:29Z",
-    "confirmed_at": "2026-09-01T15:15:50Z"
+    "submitted_at": "2026-09-01T15:44:26Z",
+    "confirmed_at": "2026-09-01T15:45:47Z"
   },
   {
     "claim_id": "GRC-523-00160",
@@ -4138,8 +4138,8 @@
     "tx_hash": "6309f4cc2e07b88da2dd8d4606faa6dd034586ecdb46f13226123b67ec10c056",
     "block_height": 11853445,
     "status": "confirmed",
-    "submitted_at": "2026-09-01T15:23:41Z",
-    "confirmed_at": "2026-09-01T15:24:44Z"
+    "submitted_at": "2026-09-01T15:53:54Z",
+    "confirmed_at": "2026-09-01T15:54:57Z"
   },
   {
     "claim_id": "GRC-523-00168",
@@ -4157,8 +4157,8 @@
     "tx_hash": "a88df86ae08ab039579237dd037ef3f55a89d98266a49063ae4b1aedea367111",
     "block_height": 11853082,
     "status": "confirmed",
-    "submitted_at": "2026-09-01T16:21:24Z",
-    "confirmed_at": "2026-09-01T16:22:42Z"
+    "submitted_at": "2026-09-01T16:53:16Z",
+    "confirmed_at": "2026-09-01T16:54:34Z"
   },
   {
     "claim_id": "GRC-523-00216",
@@ -4176,8 +4176,8 @@
     "tx_hash": "018b3b2573bebf11b2b0484a0506f263e26b944907031b579bf7eb5f31dc5a3b",
     "block_height": 11845997,
     "status": "confirmed",
-    "submitted_at": "2026-09-01T16:20:01Z",
-    "confirmed_at": "2026-09-01T16:22:59Z"
+    "submitted_at": "2026-09-01T16:51:50Z",
+    "confirmed_at": "2026-09-01T16:54:48Z"
   },
   {
     "claim_id": "GRC-523-00132",
@@ -4195,8 +4195,8 @@
     "tx_hash": "7686463a0bf6fe87460069a2481a9ed7f6149b34d14f73484aeedfa36a10de5e",
     "block_height": 11855975,
     "status": "confirmed",
-    "submitted_at": "2026-09-01T16:26:58Z",
-    "confirmed_at": "2026-09-01T16:27:56Z"
+    "submitted_at": "2026-09-01T16:58:59Z",
+    "confirmed_at": "2026-09-01T16:59:57Z"
   },
   {
     "claim_id": "GRC-523-00241",
@@ -4214,8 +4214,8 @@
     "tx_hash": "2dbe72aab37aa2f9fcd157fa58cec22b551aa750cd96537b95e0aac99ef21891",
     "block_height": 11852912,
     "status": "confirmed",
-    "submitted_at": "2026-09-01T16:39:07Z",
-    "confirmed_at": "2026-09-01T16:39:53Z"
+    "submitted_at": "2026-09-01T17:11:30Z",
+    "confirmed_at": "2026-09-01T17:12:16Z"
   },
   {
     "claim_id": "GRC-523-00172",
@@ -4233,8 +4233,8 @@
     "tx_hash": "5043915dcb87afd7b8e458496781b3559423e78cfb07aa86f2cfeff847b8305e",
     "block_height": 11852174,
     "status": "confirmed",
-    "submitted_at": "2026-09-01T16:49:24Z",
-    "confirmed_at": "2026-09-01T16:49:55Z"
+    "submitted_at": "2026-09-01T17:22:04Z",
+    "confirmed_at": "2026-09-01T17:22:35Z"
   },
   {
     "claim_id": "GRC-523-00223",
@@ -4252,8 +4252,8 @@
     "tx_hash": "4790288213895bb0f52c1fa29beeb555042815b8099616d80671ab5ac9d7fb1a",
     "block_height": 11846017,
     "status": "confirmed",
-    "submitted_at": "2026-09-01T16:49:46Z",
-    "confirmed_at": "2026-09-01T16:52:10Z"
+    "submitted_at": "2026-09-01T17:22:27Z",
+    "confirmed_at": "2026-09-01T17:24:51Z"
   },
   {
     "claim_id": "GRC-523-00253",
@@ -4271,8 +4271,8 @@
     "tx_hash": "08fc1b839f1057120169dbcc7e277781923baff252c1fb9c781ed440d567b9a9",
     "block_height": 11860035,
     "status": "confirmed",
-    "submitted_at": "2026-09-01T17:10:30Z",
-    "confirmed_at": "2026-09-01T17:10:55Z"
+    "submitted_at": "2026-09-01T17:43:46Z",
+    "confirmed_at": "2026-09-01T17:44:11Z"
   },
   {
     "claim_id": "GRC-523-00197",
@@ -4290,8 +4290,8 @@
     "tx_hash": "2986120330d3160375a2dd27ca1c0259928b1b44320c05a8501925534fe99246",
     "block_height": 11859085,
     "status": "confirmed",
-    "submitted_at": "2026-09-01T17:13:40Z",
-    "confirmed_at": "2026-09-01T17:16:32Z"
+    "submitted_at": "2026-09-01T17:47:02Z",
+    "confirmed_at": "2026-09-01T17:49:54Z"
   },
   {
     "claim_id": "GRC-523-00232",
@@ -4309,8 +4309,8 @@
     "tx_hash": "4117e76610232d6e984da95898cab64775e21f44d0b552686f21d6b5685faf2a",
     "block_height": 11844360,
     "status": "confirmed",
-    "submitted_at": "2026-09-01T17:40:20Z",
-    "confirmed_at": "2026-09-01T17:42:27Z"
+    "submitted_at": "2026-09-01T18:14:27Z",
+    "confirmed_at": "2026-09-01T18:16:34Z"
   },
   {
     "claim_id": "GRC-523-00174",
@@ -4328,8 +4328,8 @@
     "tx_hash": "eb1606d3319d891cc892a8d2fa2715398ac888439c37fa798e1c2f80681f82d5",
     "block_height": 11852010,
     "status": "confirmed",
-    "submitted_at": "2026-09-01T18:46:55Z",
-    "confirmed_at": "2026-09-01T18:49:24Z"
+    "submitted_at": "2026-09-01T19:22:57Z",
+    "confirmed_at": "2026-09-01T19:25:26Z"
   },
   {
     "claim_id": "GRC-523-00188",
@@ -4347,8 +4347,8 @@
     "tx_hash": "f56c0164583f781429b21584177f2544d997588f363dbc475b1578f48056a4de",
     "block_height": 11849451,
     "status": "confirmed",
-    "submitted_at": "2026-09-01T19:03:21Z",
-    "confirmed_at": "2026-09-01T19:04:41Z"
+    "submitted_at": "2026-09-01T19:39:50Z",
+    "confirmed_at": "2026-09-01T19:41:10Z"
   },
   {
     "claim_id": "GRC-523-00178",
@@ -4366,8 +4366,8 @@
     "tx_hash": "1b4a4a128e8594ced38265f878c9a0aff347faf02dc1fe6061366d80ff2e8367",
     "block_height": 11846264,
     "status": "confirmed",
-    "submitted_at": "2026-09-01T19:13:49Z",
-    "confirmed_at": "2026-09-01T19:14:31Z"
+    "submitted_at": "2026-09-01T19:50:37Z",
+    "confirmed_at": "2026-09-01T19:51:19Z"
   },
   {
     "claim_id": "GRC-523-00147",
@@ -4385,8 +4385,8 @@
     "tx_hash": "2535a91623b364275a5065fe7ba6ff5bb236e705c3eb4b22db642f33c7d4d378",
     "block_height": 11859882,
     "status": "confirmed",
-    "submitted_at": "2026-09-01T20:08:44Z",
-    "confirmed_at": "2026-09-01T20:10:34Z"
+    "submitted_at": "2026-09-01T20:47:06Z",
+    "confirmed_at": "2026-09-01T20:48:56Z"
   },
   {
     "claim_id": "GRC-523-00217",
@@ -4404,8 +4404,8 @@
     "tx_hash": "dd67ebbecf7a949bb69a0961f45736d2089c5c6f2889b8d11fe0a3d4809e449e",
     "block_height": 11843127,
     "status": "confirmed",
-    "submitted_at": "2026-09-01T20:15:15Z",
-    "confirmed_at": "2026-09-01T20:17:16Z"
+    "submitted_at": "2026-09-01T20:53:48Z",
+    "confirmed_at": "2026-09-01T20:55:49Z"
   },
   {
     "claim_id": "GRC-523-00167",
@@ -4423,8 +4423,8 @@
     "tx_hash": "3a922392b9bc032a138e62a670cf5671855f095daa673fa7980bad9e0e1aed03",
     "block_height": 11847613,
     "status": "confirmed",
-    "submitted_at": "2026-09-01T20:42:52Z",
-    "confirmed_at": "2026-09-01T20:43:59Z"
+    "submitted_at": "2026-09-01T21:22:12Z",
+    "confirmed_at": "2026-09-01T21:23:19Z"
   },
   {
     "claim_id": "GRC-523-00145",
@@ -4442,8 +4442,8 @@
     "tx_hash": "f436d0ecdd7b477e90451d112184b492aa14979c28470c772e91b125b8a621ff",
     "block_height": 11851807,
     "status": "confirmed",
-    "submitted_at": "2026-09-01T20:44:06Z",
-    "confirmed_at": "2026-09-01T20:45:59Z"
+    "submitted_at": "2026-09-01T21:23:28Z",
+    "confirmed_at": "2026-09-01T21:25:21Z"
   },
   {
     "claim_id": "GRC-523-00231",
@@ -4461,8 +4461,8 @@
     "tx_hash": "efccb9d0b31b55a89523d77ae22a87666748e44cc0848385549d01a1fa7d6d40",
     "block_height": 11848486,
     "status": "confirmed",
-    "submitted_at": "2026-09-01T20:51:09Z",
-    "confirmed_at": "2026-09-01T20:53:43Z"
+    "submitted_at": "2026-09-01T21:30:44Z",
+    "confirmed_at": "2026-09-01T21:33:18Z"
   },
   {
     "claim_id": "GRC-523-00266",
@@ -4480,8 +4480,8 @@
     "tx_hash": "b0a3b692b93bcaec8689630aede0398e20f86baec17e3205ceaa482cd882b5d0",
     "block_height": 11850516,
     "status": "confirmed",
-    "submitted_at": "2026-09-01T21:37:34Z",
-    "confirmed_at": "2026-09-01T21:40:08Z"
+    "submitted_at": "2026-09-01T22:18:28Z",
+    "confirmed_at": "2026-09-01T22:21:02Z"
   },
   {
     "claim_id": "GRC-523-00211",
@@ -4499,8 +4499,8 @@
     "tx_hash": "55c62869242e5c12ab648a49f984bb8fa0baefbb451531c2e7a0ae54e48584dc",
     "block_height": 11843334,
     "status": "confirmed",
-    "submitted_at": "2026-09-01T21:50:30Z",
-    "confirmed_at": "2026-09-01T21:52:27Z"
+    "submitted_at": "2026-09-01T22:31:46Z",
+    "confirmed_at": "2026-09-01T22:33:43Z"
   },
   {
     "claim_id": "GRC-523-00260",
@@ -4518,8 +4518,8 @@
     "tx_hash": "b7379541891b8038754ff40547d230ba11b5ca28de8f53b102d9b91697598255",
     "block_height": 11846277,
     "status": "confirmed",
-    "submitted_at": "2026-09-01T21:54:35Z",
-    "confirmed_at": "2026-09-01T21:55:54Z"
+    "submitted_at": "2026-09-01T22:35:58Z",
+    "confirmed_at": "2026-09-01T22:37:17Z"
   },
   {
     "claim_id": "GRC-523-00205",
@@ -4537,8 +4537,8 @@
     "tx_hash": "fe9e2e58041991b850ff43366de14adc90f262d34240d4e49a1effd351c50e53",
     "block_height": 11848736,
     "status": "confirmed",
-    "submitted_at": "2026-09-01T22:37:41Z",
-    "confirmed_at": "2026-09-01T22:38:37Z"
+    "submitted_at": "2026-09-01T23:20:18Z",
+    "confirmed_at": "2026-09-01T23:21:14Z"
   },
   {
     "claim_id": "GRC-523-00243",
@@ -4556,8 +4556,8 @@
     "tx_hash": "cc5ab4fff8bf353c28d20058dbf7353b2e3fff1bf1e43d38b39407b2bb4801e2",
     "block_height": 11847153,
     "status": "confirmed",
-    "submitted_at": "2026-09-01T23:14:02Z",
-    "confirmed_at": "2026-09-01T23:15:29Z"
+    "submitted_at": "2026-09-01T23:57:41Z",
+    "confirmed_at": "2026-09-01T23:59:08Z"
   },
   {
     "claim_id": "GRC-523-00138",
@@ -4575,8 +4575,8 @@
     "tx_hash": "b664067c3c57f53d488952152834292e092c04c04e090fbce31f4a7de098b885",
     "block_height": 11850143,
     "status": "confirmed",
-    "submitted_at": "2026-09-01T23:26:00Z",
-    "confirmed_at": "2026-09-01T23:28:09Z"
+    "submitted_at": "2026-09-02T00:10:00Z",
+    "confirmed_at": "2026-09-02T00:12:09Z"
   },
   {
     "claim_id": "GRC-523-00245",
@@ -4594,8 +4594,8 @@
     "tx_hash": "62ebaa206160ddd9efb01a55646f0cbc5734622e9f9c6cd0e3df81b1e0a01171",
     "block_height": 11848332,
     "status": "confirmed",
-    "submitted_at": "2026-09-01T23:28:29Z",
-    "confirmed_at": "2026-09-01T23:30:29Z"
+    "submitted_at": "2026-09-02T00:12:33Z",
+    "confirmed_at": "2026-09-02T00:14:33Z"
   },
   {
     "claim_id": "GRC-523-00129",
@@ -4613,8 +4613,8 @@
     "tx_hash": "18c9be89e4503c5d31e779fe4ca879cc620284babf7d9f3eb4f0efa20fa0f5d3",
     "block_height": 11844913,
     "status": "confirmed",
-    "submitted_at": "2026-09-01T23:45:24Z",
-    "confirmed_at": "2026-09-01T23:46:54Z"
+    "submitted_at": "2026-09-02T00:29:56Z",
+    "confirmed_at": "2026-09-02T00:31:26Z"
   },
   {
     "claim_id": "GRC-523-00177",
@@ -4632,8 +4632,8 @@
     "tx_hash": "a4a0d024332f56b4149ff2b71b5be1832a2d79b1556b112c54983320d4a82c8a",
     "block_height": 11852026,
     "status": "confirmed",
-    "submitted_at": "2026-09-02T00:26:12Z",
-    "confirmed_at": "2026-09-02T00:28:05Z"
+    "submitted_at": "2026-09-02T01:11:55Z",
+    "confirmed_at": "2026-09-02T01:13:48Z"
   },
   {
     "claim_id": "GRC-523-00261",
@@ -4651,8 +4651,8 @@
     "tx_hash": "23ab4418fb7daf06c7537bd81476966d284a3badcee683ebce06f31c34617b02",
     "block_height": 11844346,
     "status": "confirmed",
-    "submitted_at": "2026-09-02T01:04:44Z",
-    "confirmed_at": "2026-09-02T01:06:48Z"
+    "submitted_at": "2026-09-02T01:51:32Z",
+    "confirmed_at": "2026-09-02T01:53:36Z"
   },
   {
     "claim_id": "GRC-523-00221",
@@ -4670,8 +4670,8 @@
     "tx_hash": "3fc6d5411daf282377c172af696dad76a5bd9fe83b500f81fbbc8a1c112efa4c",
     "block_height": 11842533,
     "status": "confirmed",
-    "submitted_at": "2026-09-02T01:20:07Z",
-    "confirmed_at": "2026-09-02T01:21:37Z"
+    "submitted_at": "2026-09-02T02:07:22Z",
+    "confirmed_at": "2026-09-02T02:08:52Z"
   },
   {
     "claim_id": "GRC-523-00142",
@@ -4689,8 +4689,8 @@
     "tx_hash": "4e9cd56b1e977887b3e3c97863037851b4aec88351a3500893a27bccbef4b575",
     "block_height": 11856907,
     "status": "confirmed",
-    "submitted_at": "2026-09-02T01:40:44Z",
-    "confirmed_at": "2026-09-02T01:41:51Z"
+    "submitted_at": "2026-09-02T02:28:34Z",
+    "confirmed_at": "2026-09-02T02:29:41Z"
   },
   {
     "claim_id": "GRC-523-00131",
@@ -4708,8 +4708,8 @@
     "tx_hash": "fa61eed8d0ff66dbbebe7fbcbf464b990b5ea5a1e283d548d479525d4cd9318e",
     "block_height": 11854457,
     "status": "confirmed",
-    "submitted_at": "2026-09-02T01:45:53Z",
-    "confirmed_at": "2026-09-02T01:47:08Z"
+    "submitted_at": "2026-09-02T02:33:52Z",
+    "confirmed_at": "2026-09-02T02:35:07Z"
   },
   {
     "claim_id": "GRC-523-00189",
@@ -4727,8 +4727,8 @@
     "tx_hash": "29d05c94a822a71537ef39ad5adeeec6a2479695c3b0b91e7fe48e20dd63ff31",
     "block_height": 11847172,
     "status": "confirmed",
-    "submitted_at": "2026-09-02T01:59:56Z",
-    "confirmed_at": "2026-09-02T02:00:48Z"
+    "submitted_at": "2026-09-02T02:48:19Z",
+    "confirmed_at": "2026-09-02T02:49:11Z"
   },
   {
     "claim_id": "GRC-523-00239",
@@ -4746,8 +4746,8 @@
     "tx_hash": "9a054ca4eba57581bd1ce5ea1ddee0df36638891b00a80894541a56957748a3b",
     "block_height": 11849633,
     "status": "confirmed",
-    "submitted_at": "2026-09-02T02:15:58Z",
-    "confirmed_at": "2026-09-02T02:18:36Z"
+    "submitted_at": "2026-09-02T03:04:48Z",
+    "confirmed_at": "2026-09-02T03:07:26Z"
   },
   {
     "claim_id": "GRC-523-00236",
@@ -4765,8 +4765,8 @@
     "tx_hash": "c647a1d52d4731e456e8cf60be6a3f2215687829c413756affe915b2f9b6383d",
     "block_height": 11858098,
     "status": "confirmed",
-    "submitted_at": "2026-09-02T02:21:54Z",
-    "confirmed_at": "2026-09-02T02:22:55Z"
+    "submitted_at": "2026-09-02T03:10:55Z",
+    "confirmed_at": "2026-09-02T03:11:56Z"
   },
   {
     "claim_id": "GRC-523-00247",
@@ -4784,8 +4784,8 @@
     "tx_hash": "8c2f8c67053b5268f7dd0c1cd682a6114f22be99b7315f0aab0466d6fae9b5b9",
     "block_height": 11857587,
     "status": "confirmed",
-    "submitted_at": "2026-09-02T03:01:06Z",
-    "confirmed_at": "2026-09-02T03:01:48Z"
+    "submitted_at": "2026-09-02T03:51:14Z",
+    "confirmed_at": "2026-09-02T03:51:56Z"
   },
   {
     "claim_id": "GRC-523-00215",
@@ -4803,8 +4803,8 @@
     "tx_hash": "e26a6579a85b699360c95246e7f3269f419180f8e72701a6da279ab7997c2e86",
     "block_height": 11855786,
     "status": "confirmed",
-    "submitted_at": "2026-09-02T03:22:53Z",
-    "confirmed_at": "2026-09-02T03:25:51Z"
+    "submitted_at": "2026-09-02T04:13:38Z",
+    "confirmed_at": "2026-09-02T04:16:36Z"
   },
   {
     "claim_id": "GRC-523-00210",
@@ -4822,8 +4822,8 @@
     "tx_hash": "a458d60cb0be180ab9ba8f3854e000eb6b05fe5cbdf28b432d525d6e9dde5f5c",
     "block_height": 11843190,
     "status": "confirmed",
-    "submitted_at": "2026-09-02T03:29:28Z",
-    "confirmed_at": "2026-09-02T03:30:23Z"
+    "submitted_at": "2026-09-02T04:20:24Z",
+    "confirmed_at": "2026-09-02T04:21:19Z"
   },
   {
     "claim_id": "GRC-523-00238",
@@ -4841,8 +4841,8 @@
     "tx_hash": "1571881601a09d65fd38d8adec9dae7ab7477d297646adb5c45a19a5a4312ce7",
     "block_height": 11845895,
     "status": "confirmed",
-    "submitted_at": "2026-09-02T03:45:41Z",
-    "confirmed_at": "2026-09-02T03:46:57Z"
+    "submitted_at": "2026-09-02T04:37:05Z",
+    "confirmed_at": "2026-09-02T04:38:21Z"
   },
   {
     "claim_id": "GRC-523-00200",
@@ -4860,8 +4860,8 @@
     "tx_hash": "b3f41f29497d0022f9bdbf6ea0e911cc14ee9fc02dc9c832a3f45cb4f0d34861",
     "block_height": 11843200,
     "status": "confirmed",
-    "submitted_at": "2026-09-02T03:50:01Z",
-    "confirmed_at": "2026-09-02T03:52:19Z"
+    "submitted_at": "2026-09-02T04:41:32Z",
+    "confirmed_at": "2026-09-02T04:43:50Z"
   },
   {
     "claim_id": "GRC-523-00143",
@@ -4879,8 +4879,8 @@
     "tx_hash": "04d6a9037f3e6ba1014fc575e8e2e3e18cd44225faba84545a4a4cf673924c62",
     "block_height": 11853176,
     "status": "confirmed",
-    "submitted_at": "2026-09-02T04:20:31Z",
-    "confirmed_at": "2026-09-02T04:22:57Z"
+    "submitted_at": "2026-09-02T05:12:55Z",
+    "confirmed_at": "2026-09-02T05:15:21Z"
   },
   {
     "claim_id": "GRC-523-00140",
@@ -4898,8 +4898,8 @@
     "tx_hash": "44606a50dc8ae7373559e0dd96d6713facd062a3baff2aaa1c417bc0a571741b",
     "block_height": 11846745,
     "status": "confirmed",
-    "submitted_at": "2026-09-02T04:43:17Z",
-    "confirmed_at": "2026-09-02T04:44:06Z"
+    "submitted_at": "2026-09-02T05:36:20Z",
+    "confirmed_at": "2026-09-02T05:37:09Z"
   },
   {
     "claim_id": "GRC-523-00242",
@@ -4917,8 +4917,8 @@
     "tx_hash": "0d03bf939e0f787005b5590c47bc1ba40495d29c63c5aa6d697c752ba922f9a4",
     "block_height": 11849428,
     "status": "confirmed",
-    "submitted_at": "2026-09-02T05:12:17Z",
-    "confirmed_at": "2026-09-02T05:14:53Z"
+    "submitted_at": "2026-09-02T06:06:10Z",
+    "confirmed_at": "2026-09-02T06:08:46Z"
   },
   {
     "claim_id": "GRC-523-00193",
@@ -4936,8 +4936,8 @@
     "tx_hash": "64849f371d65ac22cda0af63b9f013537f4783aef4fa1316e67f936a4abb43f7",
     "block_height": 11843500,
     "status": "confirmed",
-    "submitted_at": "2026-09-02T05:43:59Z",
-    "confirmed_at": "2026-09-02T05:44:21Z"
+    "submitted_at": "2026-09-02T06:38:45Z",
+    "confirmed_at": "2026-09-02T06:39:07Z"
   },
   {
     "claim_id": "GRC-523-00158",
@@ -4955,8 +4955,8 @@
     "tx_hash": "6f9f2ede96429e073aa78dc7ff3bbf0b62b38d5c6e191dd4b4241f6a0f090d6e",
     "block_height": 11847473,
     "status": "confirmed",
-    "submitted_at": "2026-09-02T05:46:43Z",
-    "confirmed_at": "2026-09-02T05:48:47Z"
+    "submitted_at": "2026-09-02T06:41:35Z",
+    "confirmed_at": "2026-09-02T06:43:39Z"
   },
   {
     "claim_id": "GRC-523-00154",
@@ -4974,8 +4974,8 @@
     "tx_hash": "d5fe00dfc28fd9535dd28f0464c5f32cc20fb0ce8d61c4484bb374028822f4e4",
     "block_height": 11849209,
     "status": "confirmed",
-    "submitted_at": "2026-09-02T05:49:56Z",
-    "confirmed_at": "2026-09-02T05:50:41Z"
+    "submitted_at": "2026-09-02T06:44:53Z",
+    "confirmed_at": "2026-09-02T06:45:38Z"
   },
   {
     "claim_id": "GRC-523-00182",
@@ -4993,8 +4993,8 @@
     "tx_hash": "c0c4f2406e6c5035d4f2ddd0f561a83371f7a20aecac81b536772278ada405c3",
     "block_height": 11849142,
     "status": "confirmed",
-    "submitted_at": "2026-09-02T05:57:43Z",
-    "confirmed_at": "2026-09-02T05:59:44Z"
+    "submitted_at": "2026-09-02T06:52:53Z",
+    "confirmed_at": "2026-09-02T06:54:54Z"
   },
   {
     "claim_id": "GRC-523-00173",
@@ -5012,8 +5012,8 @@
     "tx_hash": "46627a462b60b7d33b9361aad855f822ecac9d3455699354e99280a27d885646",
     "block_height": 11859371,
     "status": "confirmed",
-    "submitted_at": "2026-09-02T06:00:21Z",
-    "confirmed_at": "2026-09-02T06:01:22Z"
+    "submitted_at": "2026-09-02T06:55:36Z",
+    "confirmed_at": "2026-09-02T06:56:37Z"
   },
   {
     "claim_id": "GRC-523-00257",
@@ -5031,8 +5031,8 @@
     "tx_hash": "aff6788cca80364f429aeaef3d39c6b355bef96c7c0501fcbd2899409711bf12",
     "block_height": 11856270,
     "status": "confirmed",
-    "submitted_at": "2026-09-02T06:04:39Z",
-    "confirmed_at": "2026-09-02T06:07:09Z"
+    "submitted_at": "2026-09-02T07:00:01Z",
+    "confirmed_at": "2026-09-02T07:02:31Z"
   },
   {
     "claim_id": "GRC-523-00233",
@@ -5050,8 +5050,8 @@
     "tx_hash": "f3c5bb1ca0306f01c9cd7eaab339ee12ad364851b56d3c362b53d8b7e48223a1",
     "block_height": 11851474,
     "status": "confirmed",
-    "submitted_at": "2026-09-02T06:18:34Z",
-    "confirmed_at": "2026-09-02T06:21:43Z"
+    "submitted_at": "2026-09-02T07:14:20Z",
+    "confirmed_at": "2026-09-02T07:17:29Z"
   },
   {
     "claim_id": "GRC-523-00263",
@@ -5069,7 +5069,7 @@
     "tx_hash": "2d8d5298db97e04681d9b2431e469305a355b1ec8757cf2fe8b02fe1ce969924",
     "block_height": 11843092,
     "status": "confirmed",
-    "submitted_at": "2026-09-02T06:47:57Z",
-    "confirmed_at": "2026-09-02T06:48:52Z"
+    "submitted_at": "2026-09-02T07:44:33Z",
+    "confirmed_at": "2026-09-02T07:45:28Z"
   }
 ]

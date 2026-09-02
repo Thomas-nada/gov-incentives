@@ -43,6 +43,7 @@ CC_PCT = 6
 MAX_ELIG = 200
 WINDOW_BASE = 449              # window boundaries: 449, 452, ... 521 (521-523 = window 24)
 EPOCH_DAYS = 5
+EPOCHS_PER_YEAR = 73
 PRINCIPAL_LOVELACE = 75_000_000 * LOVELACE
 CLAIM_GRACE = 4                # epochs after the window closes before claims expire
 PROGRAMME_VERSION = '1.4.2'
@@ -746,6 +747,10 @@ for ep in range(EP_START, EP_END + 1):
     cnt = len(gov_actions.get(str(ep), []))
     active_stake = int(rng3.uniform(21.4, 23.1) * 1_000_000_000) * LOVELACE
     blocks = rng3.randint(20_900, 21_700)
+    # Blocks and ROA are derived, not drawn: the pool's share of active stake
+    # sets its expected block count, and the epoch's yield sets its return.
+    stake_share = PRINCIPAL_LOVELACE / active_stake
+    expected_blocks = blocks * stake_share
 
     base = {
         'epoch': ep,
@@ -756,8 +761,6 @@ for ep in range(EP_START, EP_END + 1):
         'first_block': epoch_first_block(ep),
         'blocks_minted': blocks,
         'active_stake_lovelace': active_stake,
-        'pool_blocks': rng3.randint(9, 26),
-        'pool_roa_pct': round(rng3.uniform(2.61, 3.28), 2),
         'action_count': cnt,
     }
 
@@ -790,7 +793,18 @@ for ep in range(EP_START, EP_END + 1):
             'rewards_generated_lovelace': ep_reward_lovelace(),
             'status': 'closed', 'claim_open': False,
         })
+    base['pool_expected_blocks'] = round(expected_blocks, 1)
     epochs_data.append(base)
+
+# Blocks and ROA are derived once every yield is known. "Par" is the pool's own
+# mean yield, so luck averages 100% instead of being measured against a number
+# the pool never actually hits.
+par_yield = sum(e['rewards_generated_lovelace'] for e in epochs_data) / len(epochs_data)
+for e in epochs_data:
+    luck = e['rewards_generated_lovelace'] / par_yield if par_yield else 1.0
+    e['pool_blocks'] = max(1, round(e['pool_expected_blocks'] * luck))
+    e['pool_roa_pct'] = round(e['rewards_generated_lovelace'] / PRINCIPAL_LOVELACE * EPOCHS_PER_YEAR * 100, 2)
+PAR_ROA_PCT = round(par_yield / PRINCIPAL_LOVELACE * EPOCHS_PER_YEAR * 100, 2)
 
 with open(os.path.join(DATA, 'epochs.json'), 'w') as f:
     json.dump(epochs_data, f, indent=2)
@@ -1025,8 +1039,9 @@ snapshot = {
             'pool_id': pool_id(),
             'delegated_lovelace': PRINCIPAL_LOVELACE,
             'saturation_pct': 32.4,
-            'lifetime_roa_pct': 2.94,
-            'blocks_lifetime': 1_284,
+            'lifetime_roa_pct': PAR_ROA_PCT,
+            'par_roa_pct': PAR_ROA_PCT,
+            'blocks_lifetime': sum(e['pool_blocks'] for e in epochs_data),
         },
         'payout_script_address': payment_addr(),
         'support_email': 'support@govrewards.example',

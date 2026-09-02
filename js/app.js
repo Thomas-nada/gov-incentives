@@ -1,6 +1,7 @@
 import { renderHome }     from './components/home.js';
 import { renderClaim }    from './components/claim.js';
 import { renderEpochs }   from './components/epochs.js';
+import { renderTreasury, stopAutoplay } from './components/treasury.js';
 import { renderExplorer } from './components/explorer.js';
 import { renderDocs }     from './components/docs.js';
 import { renderProfile }  from './components/profile.js';
@@ -158,13 +159,14 @@ export function lookupAccount(stakeAddress) {
 const ROUTES = {
   home:     renderHome,
   claim:    renderClaim,
+  treasury: renderTreasury,
   epochs:   renderEpochs,
   explorer: renderExplorer,
   docs:     renderDocs,
   profile:  renderProfile,
 };
 
-const ALIASES = { transparency: 'explorer', guide: 'docs' };
+const ALIASES = { transparency: 'explorer', guide: 'docs', pool: 'treasury' };
 
 export function currentRoute() {
   const hash = window.location.hash.slice(1) || 'home';
@@ -176,6 +178,9 @@ export function currentRoute() {
 export function route() {
   const { view, params } = currentRoute();
   const app = document.getElementById('app');
+
+  // The treasury simulation runs on a timer; leaving the page must stop it.
+  if (view !== 'treasury') stopAutoplay();
 
   renderChrome(view);
 
@@ -226,6 +231,7 @@ function renderBanner() {
 const NAV = [
   { id: 'home',     label: 'Overview', icon: 'layout-dashboard' },
   { id: 'claim',    label: 'Claim',    icon: 'hand-coins' },
+  { id: 'treasury', label: 'Treasury', icon: 'landmark' },
   { id: 'epochs',   label: 'Epochs',   icon: 'calendar-range' },
   { id: 'explorer', label: 'Explorer', icon: 'table-2' },
   { id: 'docs',     label: 'Docs',     icon: 'book-open' },
@@ -379,7 +385,8 @@ function renderFooter() {
         </div>
         ${footerColumn('Programme', [
           ['Overview', '#home'], ['Claim rewards', '#claim'],
-          ['Epoch history', '#epochs'], ['Snapshot explorer', '#explorer'],
+          ['Treasury operations', '#treasury'], ['Epoch history', '#epochs'],
+          ['Snapshot explorer', '#explorer'],
         ])}
         ${footerColumn('Resources', [
           ['Documentation', '#docs'], ['Eligibility rules', '#docs'],
