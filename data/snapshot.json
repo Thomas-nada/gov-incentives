@@ -1,0 +1,76 @@
+{
+  "programme": {
+    "name": "Cardano Governance Rewards",
+    "version": "1.4.2",
+    "network": "mainnet",
+    "environment": "demo",
+    "principal_lovelace": 75000000000000,
+    "drep_pool_pct": 94,
+    "cc_pool_pct": 6,
+    "max_eligible_dreps": 200,
+    "committee_size": 7,
+    "window_length_epochs": 3,
+    "claim_grace_epochs": 4,
+    "stake_pool": {
+      "ticker": "GOVR",
+      "name": "Governance Rewards Treasury Pool",
+      "pool_id": "pool18mtmdp4nsrrg2ne9u0zsnalyzr35ppavm50f70kag6tfzl7ma2j",
+      "delegated_lovelace": 75000000000000,
+      "saturation_pct": 32.4,
+      "lifetime_roa_pct": 2.94,
+      "blocks_lifetime": 1284
+    },
+    "payout_script_address": "addr1qwfhtg06g8cyc8mscj50y5y2ahgk3gegtvxzwt4pvdt0dytxpxmpyct0jf3m9q6jrx4kh4g6npzu4u4pakh2dfrpjltl0",
+    "support_email": "support@govrewards.example",
+    "status_url": "https://status.govrewards.example",
+    "docs_url": "https://docs.govrewards.example"
+  },
+  "chain": {
+    "current_epoch": 524,
+    "current_epoch_start": "2026-08-31T21:44:51Z",
+    "current_epoch_end": "2026-09-05T21:44:51Z",
+    "epoch_length_days": 5,
+    "tip_block": 11851006,
+    "tip_slot": 169084800
+  },
+  "window": {
+    "id": "window_521_523",
+    "label": "Window 521-523",
+    "epochs": [
+      521,
+      522,
+      523
+    ],
+    "opened_at": "2026-08-16T21:44:51Z",
+    "closed_at": "2026-08-31T21:44:51Z",
+    "claim_opens_at": "2026-08-31T21:44:51Z",
+    "claim_deadline_epoch": 527,
+    "claim_deadline_at": "2026-09-20T21:44:51Z",
+    "total_actions": 11,
+    "total_pool_lovelace": 90842116637,
+    "drep_pool_lovelace": 85391589639,
+    "cc_pool_lovelace": 5450526998,
+    "drep_share_lovelace": 426957948,
+    "cc_share_lovelace": 778646714,
+    "eligible_dreps": 200,
+    "eligible_cc": 5,
+    "registered_dreps": 932,
+    "full_participation_dreps": 235,
+    "vote_records": 6634,
+    "snapshot_taken_at": "2026-08-31T21:44:51Z",
+    "snapshot_block": 11842366,
+    "snapshot_slot": 168912000,
+    "snapshot_hash": "4010e73c487a12a1a3d5896e83f7a85f106b93d4ce696902d22f4bd7edb1a0e5",
+    "claims_settled": 142,
+    "claims_settled_lovelace": 61683094914,
+    "claims_outstanding": 63
+  },
+  "totals": {
+    "epochs_recorded": 73,
+    "generated_lovelace": 2057880581048,
+    "distributed_lovelace": 1745270743049,
+    "reserve_balance_lovelace": 286050371776,
+    "payout_records": 267
+  },
+  "generated_at": "2026-09-02T06:59:59Z"
+}

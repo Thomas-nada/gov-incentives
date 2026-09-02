@@ -1,168 +1,129 @@
-import { state, clearWallet } from '../app.js?v=15';
-import { formatAda, truncateAddress } from '../utils.js?v=15';
-import { OPEN_EPOCHS, MAX_ELIGIBLE_DREPS } from '../config.js?v=15';
-
-const ACTION_TYPE_LABELS = {
-  TreasuryWithdrawal: 'Treasury Withdrawal',
-  ParameterChange: 'Protocol Parameter Change',
-  Info: 'Info',
-  HardForkInitiation: 'Hard Fork Initiation',
-  UpdateConstitution: 'Update to the Constitution or Proposal Policy',
-  ProposalPolicy: 'Update to the Constitution or Proposal Policy',
-  NewConstitution: 'Update to the Constitution or Proposal Policy',
-  NoConfidence: 'Motion of No-Confidence',
-  NewCommittee: 'New Constitutional Committee and/or Threshold and/or Terms',
-};
-
-const VOTE_COLORS = {
-  Yes: 'bg-emerald-100 dark:bg-emerald-900/40 text-emerald-700 dark:text-emerald-300',
-  No: 'bg-red-100 dark:bg-red-900/40 text-red-700 dark:text-red-300',
-  Abstain: 'bg-amber-100 dark:bg-amber-900/40 text-amber-700 dark:text-amber-300',
-};
+import { state, snap, lookupAccount, clearWallet, openWalletDialog } from '../app.js';
+import { getClaim, claimsForAddress } from '../claims.js';
+import {
+  ada, adaCompact, formatInt, formatPct, formatDate, formatDateTime,
+  relativeTime, escapeHtml, shortId, copyable, downloadFile, toCsv, explorer,
+} from '../utils.js';
+import {
+  metric, avatar, votePill, actionTypePill, checklist, buildChecks, emptyState,
+} from './shared.js';
 
 export function renderProfile(app) {
-  if (!state.wallet) {
-    app.innerHTML = `
-      <div class="max-w-2xl mx-auto px-4 py-20 text-center">
-        <div class="w-16 h-16 bg-slate-100 dark:bg-slate-800 rounded-full flex items-center justify-center mx-auto mb-4">
-          <i data-lucide="wallet" class="w-8 h-8 text-slate-400"></i>
-        </div>
-        <h2 class="text-xl font-bold text-slate-900 dark:text-slate-100 mb-2">No wallet connected</h2>
-        <p class="text-slate-500 dark:text-slate-400 mb-6 text-sm">Connect a wallet or enter your governance ID from the top bar to view your profile and history.</p>
-        <button onclick="window.showWalletModal()"
-          class="bg-brand-600 hover:bg-brand-700 text-white font-semibold px-6 py-2.5 rounded-xl transition-colors text-sm inline-flex items-center gap-2">
-          <i data-lucide="wallet" class="w-4 h-4"></i> Connect Wallet
-        </button>
-      </div>
-    `;
-    lucide.createIcons();
-    return;
-  }
+  if (!state.wallet) return renderDisconnected(app);
 
-  const { stakeAddress, govId, type, walletName } = state.wallet;
-  const elig = state.eligibility[stakeAddress] || null;
-  const allActions = OPEN_EPOCHS.flatMap(ep =>
-    (state.governanceActions[String(ep)] || []).map(a => ({ ...a, epoch: ep }))
-  );
+  const { stakeAddress, govId, walletName } = state.wallet;
+  const record = lookupAccount(stakeAddress);
+  const w = snap.window;
+  const claim = getClaim(stakeAddress, snap.windowId);
 
   const voteMap = {};
-  for (const vote of (state.votes?.window_521_523?.votes || [])) {
-    if (vote.stake_address === stakeAddress) voteMap[vote.action_id] = vote.vote;
+  for (const v of snap.voteLedger) {
+    if (v.stake_address === stakeAddress) voteMap[v.action_id] = v;
   }
+  const actions = snap.windowActions;
+  const votedCount = actions.filter(a => voteMap[a.id]).length;
 
-  const votedCount = Object.keys(voteMap).length;
-  const totalActions = allActions.length;
-  const sessionClaim = readSessionClaim(stakeAddress);
-  const historicalPayouts = [...(state.payouts || [])]
+  const settled = [...state.payouts]
     .filter(p => p.stake_address === stakeAddress)
-    .sort((a, b) => {
-      if ((b.epoch || 0) !== (a.epoch || 0)) return (b.epoch || 0) - (a.epoch || 0);
-      return (b.timestamp || '').localeCompare(a.timestamp || '');
-    });
-  const participationHistory = [...(state.profileHistory?.[stakeAddress] || [])]
+    .sort((a, b) => (b.confirmed_at || '').localeCompare(a.confirmed_at || ''));
+  const localClaims = claimsForAddress(stakeAddress);
+  const lifetime = settled.reduce((s, p) => s + p.amount_lovelace, 0)
+    + localClaims.reduce((s, c) => s + c.amount_lovelace, 0);
+
+  const history = [...(state.profileHistory?.[stakeAddress] || [])]
     .sort((a, b) => (b.sort_order || 0) - (a.sort_order || 0));
 
-  const historyStats = buildHistoryStats(historicalPayouts, sessionClaim);
-  const roleLabel = type === 'drep'
-    ? 'Delegated Representative'
-    : type === 'cc'
-      ? 'Constitutional Committee Member'
-      : 'Governance Participant';
-  const roleIcon = type === 'cc' ? 'scale' : type === 'drep' ? 'vote' : 'user';
-  const roleTheme = type === 'cc'
-    ? {
-        iconBg: 'bg-violet-100 dark:bg-violet-900/40',
-        iconText: 'text-violet-600 dark:text-violet-400',
-        pill: 'bg-violet-100 dark:bg-violet-900/40 text-violet-700 dark:text-violet-300',
-      }
-    : type === 'drep'
-      ? {
-          iconBg: 'bg-brand-100 dark:bg-brand-900/40',
-          iconText: 'text-brand-600 dark:text-brand-400',
-          pill: 'bg-brand-100 dark:bg-brand-900/40 text-brand-700 dark:text-brand-300',
-        }
-      : {
-          iconBg: 'bg-slate-100 dark:bg-slate-800',
-          iconText: 'text-slate-600 dark:text-slate-300',
-          pill: 'bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300',
-        };
+  const roleLabel = record?.type === 'cc'
+    ? 'Constitutional Committee'
+    : record?.type === 'drep' ? 'Delegated Representative' : 'Stake key';
 
   app.innerHTML = `
-    <div class="max-w-5xl mx-auto px-4 py-10">
+    <div class="max-w-7xl mx-auto px-4 py-6 space-y-5">
 
-      <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-3xl p-6 mb-6">
-        <div class="flex items-start justify-between gap-4 flex-wrap">
-          <div class="flex items-center gap-4 min-w-0">
-            <div class="w-14 h-14 ${roleTheme.iconBg} rounded-2xl flex items-center justify-center flex-shrink-0">
-              <i data-lucide="${roleIcon}" class="w-7 h-7 ${roleTheme.iconText}"></i>
-            </div>
+      <!-- Identity header -->
+      <section class="card card-pad">
+        <div class="flex flex-wrap items-start justify-between gap-5">
+          <div class="flex items-start gap-4 min-w-0">
+            ${avatar(record?.name || state.wallet.name, govId || stakeAddress, { size: '3rem' })}
             <div class="min-w-0">
-              <span class="inline-block px-2.5 py-1 ${roleTheme.pill} text-xs font-semibold rounded-full mb-2">${roleLabel}</span>
-              <div class="addr-chip text-sm font-semibold text-slate-900 dark:text-slate-100 break-all">${govId || stakeAddress}</div>
-              <div class="flex items-center gap-2 mt-1 flex-wrap text-xs text-slate-400">
-                <span class="addr-chip">${truncateAddress(stakeAddress)}</span>
-                ${walletName ? `<span>Connected via ${capitalize(walletName)}</span>` : '<span>Connected manually</span>'}
-                ${type === 'drep' && elig?.rank ? `<span>Rank #${elig.rank}</span>` : ''}
+              <div class="flex items-center gap-2 flex-wrap mb-1">
+                <h1 class="text-lg font-bold text-slate-900 dark:text-slate-50 truncate">
+                  ${escapeHtml(record?.name || state.wallet.name || 'Unnamed account')}
+                </h1>
+                <span class="pill ${record?.type === 'cc'
+                  ? 'bg-violet-100 text-violet-700 dark:bg-violet-900/40 dark:text-violet-300'
+                  : 'bg-brand-100 text-brand-700 dark:bg-brand-900/40 dark:text-brand-300'}">${roleLabel}</span>
               </div>
+              <div class="space-y-0.5">
+                <div class="flex items-center gap-1.5 text-xs">
+                  <span class="text-slate-400 w-[4.75rem] shrink-0">Governance</span>
+                  ${copyable(govId || stakeAddress, { display: shortId(govId || stakeAddress, 24, 10), className: 'text-slate-600 dark:text-slate-300' })}
+                </div>
+                <div class="flex items-center gap-1.5 text-xs">
+                  <span class="text-slate-400 w-[4.75rem] shrink-0">Stake key</span>
+                  ${copyable(stakeAddress, { display: shortId(stakeAddress, 24, 10), className: 'text-slate-500' })}
+                </div>
+              </div>
+              <p class="text-[11px] text-slate-400 mt-2">
+                ${walletName === 'demo' ? 'Test account' : walletName ? `Connected via ${escapeHtml(walletName)}` : 'Connected by identifier'}
+                · session opened ${relativeTime(state.wallet.connectedAt)}
+              </p>
             </div>
           </div>
+
           <div class="flex items-center gap-2 flex-wrap">
-            <a href="#claim" class="px-4 py-2 rounded-xl text-sm font-medium border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors">
-              Open Claim
-            </a>
-            <button id="profile-disconnect" class="px-4 py-2 rounded-xl text-sm font-medium border border-red-200 dark:border-red-900/50 text-red-600 dark:text-red-400 hover:bg-red-50 dark:hover:bg-red-950/20 transition-colors">
-              Disconnect
+            ${record?.eligible && !claim
+              ? `<a href="#claim" class="btn-primary text-sm h-9 px-4"><i data-lucide="hand-coins" class="w-4 h-4"></i> Claim ${ada(record.amount_lovelace)}</a>`
+              : `<a href="#claim" class="btn-secondary text-sm h-9 px-4"><i data-lucide="hand-coins" class="w-4 h-4"></i> Claim page</a>`}
+            <button id="profile-export" class="btn-secondary text-sm h-9 px-3" title="Export voting record">
+              <i data-lucide="download" class="w-4 h-4"></i>
+            </button>
+            <button id="profile-disconnect" class="btn-secondary text-sm h-9 px-3 !text-red-600 dark:!text-red-400" title="Disconnect">
+              <i data-lucide="log-out" class="w-4 h-4"></i>
             </button>
           </div>
         </div>
-      </div>
+      </section>
 
-      <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4 mb-6">
-        ${statCard('Historical Rewards', formatAda(historyStats.totalHistoricalRewards), `${historyStats.historicalPayoutCount} payout records in the demo dataset`, 'coins', 'text-brand-600 dark:text-brand-400')}
-        ${statCard('Latest Payout', historyStats.latestPayout ? `Epoch ${historyStats.latestPayout.epoch}` : 'None', historyStats.latestPayout ? `${formatAda(historyStats.latestPayout.amount)} on ${formatHistoryDate(historyStats.latestPayout.timestamp)}` : 'No historical payout for this profile', 'history', 'text-emerald-600 dark:text-emerald-400')}
-        ${statCard('Current Window', currentWindowStatusLabel(elig, sessionClaim), currentWindowStatusSubtext(elig, sessionClaim), 'shield-check', sessionClaim ? 'text-emerald-600 dark:text-emerald-400' : elig?.eligible ? 'text-brand-600 dark:text-brand-400' : 'text-amber-600 dark:text-amber-400')}
-        ${statCard('Votes This Window', `${votedCount} / ${totalActions || 0}`, totalActions ? `${Math.round((votedCount / totalActions) * 100)}% participation across epochs ${OPEN_EPOCHS.join(', ')}` : 'No open-window actions found', 'check-square', votedCount === totalActions && totalActions ? 'text-emerald-600 dark:text-emerald-400' : 'text-slate-500 dark:text-slate-300')}
-      </div>
+      <!-- Metrics -->
+      <section class="grid grid-cols-2 lg:grid-cols-4 gap-3">
+        ${metric({
+          label: 'Lifetime rewards', value: adaCompact(lifetime), icon: 'coins', tone: 'brand',
+          sub: `${formatInt(settled.length + localClaims.length)} settled claims`,
+        })}
+        ${metric({
+          label: 'This window', value: windowStatusLabel(record, claim), icon: 'shield-check',
+          tone: claim ? 'emerald' : record?.eligible ? 'brand' : 'amber',
+          sub: windowStatusSub(record, claim),
+        })}
+        ${metric({
+          label: 'Participation', value: `${votedCount} / ${actions.length}`, icon: 'check-square',
+          tone: votedCount === actions.length ? 'emerald' : 'amber',
+          sub: `${formatPct(actions.length ? (votedCount / actions.length) * 100 : 0, 0)} of window actions`,
+        })}
+        ${metric({
+          label: record?.type === 'cc' ? 'Committee seat' : 'Voting power',
+          value: record?.type === 'cc'
+            ? escapeHtml(record?.region || '—')
+            : adaCompact(record?.voting_power_lovelace || 0),
+          icon: record?.type === 'cc' ? 'scale' : 'gauge', tone: 'violet',
+          sub: record?.type === 'cc'
+            ? `Term ends epoch ${record?.term_end_epoch ?? '—'}`
+            : record?.rank ? `Rank ${formatInt(record.rank)} of ${formatInt(w.registered_dreps)}` : 'Not ranked',
+        })}
+      </section>
 
-      <div class="grid grid-cols-1 xl:grid-cols-[1.15fr_0.85fr] gap-6 mb-6">
-        <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-3xl p-6">
-          <h2 class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-4">Current Window Status</h2>
-          ${currentWindowCard(elig, type, votedCount, totalActions, sessionClaim)}
+      <div class="grid lg:grid-cols-[1fr_20rem] gap-5 items-start">
+        <div class="space-y-5">
+          ${currentWindowCard(record, claim, votedCount, actions.length)}
+          ${voteBreakdown(actions, voteMap, votedCount)}
+          ${rewardHistory(settled, localClaims)}
         </div>
-
-        <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-3xl p-6">
-          <h2 class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-4">History Snapshot</h2>
-          ${historySnapshot(historyStats, sessionClaim)}
-        </div>
+        <aside class="space-y-5 lg:sticky lg:top-28">
+          ${participationHistory(history)}
+        </aside>
       </div>
-
-      <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-3xl overflow-hidden mb-6">
-        <div class="px-5 py-4 border-b border-slate-100 dark:border-slate-800 flex items-center justify-between gap-3 flex-wrap">
-          <h2 class="text-xs font-bold text-slate-400 uppercase tracking-wider">Full Participation History</h2>
-          <span class="text-xs text-slate-400">Current window plus recent closed windows</span>
-        </div>
-        ${participationHistoryTable(participationHistory)}
-      </div>
-
-      <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-3xl overflow-hidden mb-6">
-        <div class="px-5 py-4 border-b border-slate-100 dark:border-slate-800 flex items-center justify-between gap-3 flex-wrap">
-          <h2 class="text-xs font-bold text-slate-400 uppercase tracking-wider">Current Window Vote Breakdown</h2>
-          <span class="text-xs font-semibold ${votedCount === totalActions && totalActions ? 'text-emerald-600 dark:text-emerald-400' : 'text-amber-600 dark:text-amber-400'}">
-            ${votedCount} / ${totalActions} actions voted
-          </span>
-        </div>
-        ${votingRecordTable(allActions, voteMap)}
-      </div>
-
-      <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-3xl overflow-hidden">
-        <div class="px-5 py-4 border-b border-slate-100 dark:border-slate-800">
-          <h2 class="text-xs font-bold text-slate-400 uppercase tracking-wider">Full Reward History</h2>
-        </div>
-        ${rewardHistoryTable(historicalPayouts, sessionClaim)}
-      </div>
-
-    </div>
-  `;
+    </div>`;
 
   lucide.createIcons();
 
@@ -170,360 +131,274 @@ export function renderProfile(app) {
     clearWallet();
     window.location.hash = '#home';
   });
+  app.querySelector('#profile-export')?.addEventListener('click', () => exportVotes(actions, voteMap, govId));
 }
 
-function statCard(label, value, detail, icon, accentClass) {
-  return `
-    <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-4">
-      <div class="flex items-start justify-between gap-3 mb-3">
-        <span class="text-xs font-bold text-slate-400 uppercase tracking-wider">${label}</span>
-        <i data-lucide="${icon}" class="w-4 h-4 ${accentClass}"></i>
+// ─── Disconnected ─────────────────────────────────────────────────────────────
+function renderDisconnected(app) {
+  app.innerHTML = `
+    <div class="max-w-md mx-auto px-4 py-24 text-center">
+      <div class="w-14 h-14 rounded-2xl bg-slate-100 dark:bg-slate-800 flex items-center justify-center mx-auto mb-4">
+        <i data-lucide="wallet" class="w-7 h-7 text-slate-400"></i>
       </div>
-      <div class="text-2xl font-bold text-slate-900 dark:text-slate-100">${value}</div>
-      <div class="text-xs text-slate-500 dark:text-slate-400 mt-1 leading-relaxed">${detail}</div>
-    </div>
-  `;
+      <h1 class="text-lg font-bold text-slate-900 dark:text-slate-50 mb-2">No account connected</h1>
+      <p class="text-sm text-slate-500 dark:text-slate-400 mb-6 leading-relaxed">
+        Connect a wallet or enter a governance identifier to see your voting record, eligibility
+        and reward history.
+      </p>
+      <button id="profile-connect" class="btn-primary text-sm h-10 px-5 mx-auto">
+        <i data-lucide="wallet" class="w-4 h-4"></i> Connect wallet
+      </button>
+    </div>`;
+  lucide.createIcons();
+  app.querySelector('#profile-connect').addEventListener('click', () => openWalletDialog());
 }
 
-function currentWindowCard(elig, type, voted, total, sessionClaim) {
-  if (!elig) {
+// ─── Current window ───────────────────────────────────────────────────────────
+function windowStatusLabel(record, claim) {
+  if (claim) return 'Claimed';
+  if (!record) return 'Not found';
+  return record.eligible ? 'Eligible' : 'Ineligible';
+}
+
+function windowStatusSub(record, claim) {
+  if (claim) return `${ada(claim.amount_lovelace)} settled`;
+  if (!record) return 'Absent from this snapshot';
+  if (record.eligible) return `${ada(record.amount_lovelace)} available`;
+  if (record.ineligible_reason === 'outside_top_200') return `Placed ${formatInt(record.participation_rank)}, below the cut-off`;
+  return `Voted ${record.voted_actions} of ${record.total_actions} actions`;
+}
+
+function currentWindowCard(record, claim, voted, total) {
+  const w = snap.window;
+
+  if (!record) {
     return `
-      <div class="flex items-center gap-3">
-        <div class="w-10 h-10 bg-slate-100 dark:bg-slate-800 rounded-full flex items-center justify-center flex-shrink-0">
-          <i data-lucide="help-circle" class="w-5 h-5 text-slate-400"></i>
-        </div>
-        <div>
-          <div class="font-semibold text-slate-900 dark:text-slate-100">Not found in current snapshot</div>
-          <div class="text-sm text-slate-500 dark:text-slate-400 mt-1">This connected profile does not appear as an active DRep or CC member in the current rewards window.</div>
-        </div>
-      </div>
-    `;
+      <section class="card">
+        <div class="card-header"><h2 class="text-sm font-bold text-slate-800 dark:text-slate-100">Window ${w.epochs?.join('–')}</h2></div>
+        ${emptyState('search-x', 'Not in this snapshot',
+          'This stake key was not a registered DRep or committee member when the window closed.')}
+      </section>`;
   }
 
-  if (sessionClaim) {
-    return `
-      <div class="space-y-4">
-        <div class="flex items-center justify-between gap-4 flex-wrap">
-          <div class="flex items-center gap-3">
-            <div class="w-10 h-10 bg-emerald-100 dark:bg-emerald-900/40 rounded-full flex items-center justify-center flex-shrink-0">
-              <i data-lucide="check-circle-2" class="w-5 h-5 text-emerald-500"></i>
-            </div>
+  const checks = buildChecks(record, {
+    windowMeta: { ...w, max_eligible_dreps: snap.programme.max_eligible_dreps },
+    existingClaim: claim,
+  });
+
+  return `
+    <section class="card">
+      <div class="card-header">
+        <h2 class="text-sm font-bold text-slate-800 dark:text-slate-100">Window ${w.epochs?.join('–')} status</h2>
+        <span class="text-xs text-slate-400">Snapshot ${formatDate(w.snapshot_taken_at)}</span>
+      </div>
+
+      ${claim ? `
+        <div class="px-5 py-4 bg-emerald-50/70 dark:bg-emerald-950/20 border-b border-emerald-100 dark:border-emerald-900/40">
+          <div class="flex items-start justify-between gap-4 flex-wrap">
             <div>
-              <div class="font-semibold text-slate-900 dark:text-slate-100">Demo claim recorded this session</div>
-              <div class="text-xs text-slate-400 mt-0.5">${voted}/${total} actions voted in the current window</div>
+              <p class="text-sm font-bold text-slate-900 dark:text-slate-50">Reward claimed</p>
+              <p class="text-xs text-slate-500 dark:text-slate-400 mt-0.5">
+                ${escapeHtml(claim.claim_id)} · confirmed ${formatDateTime(claim.confirmed_at)}
+              </p>
+            </div>
+            <div class="text-right">
+              <div class="text-xl font-bold text-emerald-700 dark:text-emerald-300 tabular">${ada(claim.amount_lovelace)}</div>
+              <a href="${explorer.tx(claim.tx_hash)}" target="_blank" rel="noopener"
+                 class="text-[11px] font-medium text-brand-600 dark:text-brand-400 hover:underline">
+                ${shortId(claim.tx_hash, 10, 6)} <i data-lucide="external-link" class="w-3 h-3 inline-block -mt-0.5"></i>
+              </a>
             </div>
           </div>
-          <div class="text-right">
-            <div class="text-2xl font-bold text-emerald-600 dark:text-emerald-400">${formatAda(sessionClaim.amount)}</div>
-            <div class="text-xs text-slate-400">Current window claim</div>
-          </div>
-        </div>
-        <div class="grid grid-cols-1 gap-3">
-          <div class="rounded-2xl bg-slate-50 dark:bg-slate-800 p-4">
-            <div class="text-xs font-semibold uppercase tracking-wider text-slate-400 mb-1">Destination Address</div>
-            <div class="addr-chip text-xs text-slate-600 dark:text-slate-300 break-all">${sessionClaim.destAddress || 'No payout address recorded'}</div>
-          </div>
-          <div class="rounded-2xl bg-slate-50 dark:bg-slate-800 p-4">
-            <div class="text-xs font-semibold uppercase tracking-wider text-slate-400 mb-1">Placeholder Transaction</div>
-            <div class="addr-chip text-xs text-slate-600 dark:text-slate-300 break-all">${sessionClaim.txHash}</div>
-          </div>
-        </div>
-      </div>
-    `;
-  }
-
-  if (elig.eligible) {
-    const isCc = type === 'cc';
-    return `
-      <div class="flex items-center justify-between flex-wrap gap-4">
-        <div class="flex items-center gap-3">
-          <div class="w-10 h-10 bg-emerald-100 dark:bg-emerald-900/40 rounded-full flex items-center justify-center flex-shrink-0">
-            <i data-lucide="check-circle" class="w-5 h-5 text-emerald-500"></i>
-          </div>
+        </div>` : record.eligible ? `
+        <div class="px-5 py-4 bg-brand-50/70 dark:bg-brand-950/20 border-b border-brand-100 dark:border-brand-900/40 flex items-center justify-between gap-4 flex-wrap">
           <div>
-            <div class="font-semibold text-slate-900 dark:text-slate-100">Eligible to claim</div>
-            <div class="text-sm text-slate-500 dark:text-slate-400 mt-1">
-              ${isCc ? 'CC member with full participation' : `Rank #${elig.rank} and inside the top ${MAX_ELIGIBLE_DREPS}`} · voted ${voted}/${total} actions
-            </div>
+            <p class="text-sm font-bold text-slate-900 dark:text-slate-50">${ada(record.amount_lovelace)} ready to claim</p>
+            <p class="text-xs text-slate-500 dark:text-slate-400 mt-0.5">
+              Claims close at the end of epoch ${w.claim_deadline_epoch}, ${formatDate(w.claim_deadline_at)}
+            </p>
           </div>
-        </div>
-        <div class="flex items-center gap-4">
-          <div class="text-right">
-            <div class="text-2xl font-bold text-brand-600 dark:text-brand-400">${formatAda(elig.amount)}</div>
-            <div class="text-xs text-slate-400">Current window share</div>
-          </div>
-          <a href="#claim" class="bg-brand-600 hover:bg-brand-700 text-white font-semibold px-4 py-2 rounded-xl text-sm transition-colors flex items-center gap-1.5 whitespace-nowrap">
-            <i data-lucide="coins" class="w-4 h-4"></i> Claim Reward
-          </a>
-        </div>
-      </div>
-    `;
-  }
+          <a href="#claim" class="btn-primary text-sm h-9 px-4">Claim now</a>
+        </div>` : ''}
 
-  let reasonText = 'Does not meet eligibility criteria for this window.';
-  if (elig.ineligible_reason === 'incomplete_votes') {
-    reasonText = `Voted ${voted}/${total} governance actions. All ${total} actions are required for a payout.`;
-  } else if (elig.ineligible_reason === 'outside_top_200') {
-    reasonText = `Voted all ${total} actions but ranked #${elig.rank}. Only the top ${MAX_ELIGIBLE_DREPS} DReps by voting power qualify.`;
-  }
-
-  return `
-    <div class="flex items-start gap-3">
-      <div class="w-10 h-10 bg-amber-100 dark:bg-amber-900/40 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
-        <i data-lucide="alert-triangle" class="w-5 h-5 text-amber-500"></i>
-      </div>
-      <div>
-        <div class="font-semibold text-slate-900 dark:text-slate-100">Not eligible this window</div>
-        <div class="text-sm text-slate-500 dark:text-slate-400 mt-1 leading-relaxed">${reasonText}</div>
-      </div>
-    </div>
-  `;
+      <div class="card-pad">${checklist(checks)}</div>
+    </section>`;
 }
 
-function historySnapshot(stats, sessionClaim) {
+// ─── Vote breakdown ───────────────────────────────────────────────────────────
+function voteBreakdown(actions, voteMap, votedCount) {
   return `
-    <div class="space-y-4">
-      <div class="rounded-2xl bg-slate-50 dark:bg-slate-800 p-4">
-        <div class="text-xs font-semibold uppercase tracking-wider text-slate-400 mb-1">Total Historical Rewards</div>
-        <div class="text-xl font-bold text-slate-900 dark:text-slate-100">${formatAda(stats.totalHistoricalRewards)}</div>
-        <div class="text-xs text-slate-500 dark:text-slate-400 mt-1">${stats.historicalPayoutCount} recorded payout${stats.historicalPayoutCount === 1 ? '' : 's'} in the demo history</div>
+    <section class="card overflow-hidden">
+      <div class="card-header">
+        <h2 class="text-sm font-bold text-slate-800 dark:text-slate-100">Voting record this window</h2>
+        <span class="text-xs font-semibold tabular ${votedCount === actions.length
+          ? 'text-emerald-600 dark:text-emerald-400' : 'text-amber-600 dark:text-amber-400'}">
+          ${votedCount} of ${actions.length} actions
+        </span>
       </div>
-      <div class="rounded-2xl bg-slate-50 dark:bg-slate-800 p-4">
-        <div class="text-xs font-semibold uppercase tracking-wider text-slate-400 mb-1">Latest Historical Record</div>
-        <div class="text-sm font-semibold text-slate-800 dark:text-slate-200">${stats.latestPayout ? `Epoch ${stats.latestPayout.epoch}` : 'No payout record found'}</div>
-        <div class="text-xs text-slate-500 dark:text-slate-400 mt-1">${stats.latestPayout ? `${formatAda(stats.latestPayout.amount)} · ${formatHistoryDate(stats.latestPayout.timestamp)}` : 'This profile has not received a historical payout in the bundled dataset.'}</div>
-      </div>
-      <div class="rounded-2xl bg-slate-50 dark:bg-slate-800 p-4">
-        <div class="text-xs font-semibold uppercase tracking-wider text-slate-400 mb-1">Current Session</div>
-        <div class="text-sm font-semibold text-slate-800 dark:text-slate-200">${sessionClaim ? 'Demo claim recorded' : 'No claim recorded yet'}</div>
-        <div class="text-xs text-slate-500 dark:text-slate-400 mt-1">${sessionClaim ? `${formatAda(sessionClaim.amount)} stored in this browser session` : 'A current-window demo claim will appear here after submission.'}</div>
-      </div>
-    </div>
-  `;
-}
-
-function votingRecordTable(actions, voteMap) {
-  if (!actions.length) {
-    return `<div class="px-5 py-8 text-center text-sm text-slate-400">No governance actions found for this window.</div>`;
-  }
-
-  return `
-    <div class="overflow-x-auto">
-      <table class="w-full text-sm">
-        <thead>
-          <tr class="border-b border-slate-100 dark:border-slate-800">
-            <th class="text-left px-5 py-3 text-xs font-semibold text-slate-400 uppercase tracking-wider">Action</th>
-            <th class="text-center px-4 py-3 text-xs font-semibold text-slate-400 uppercase tracking-wider hidden sm:table-cell whitespace-nowrap">Epoch</th>
-            <th class="text-center px-4 py-3 text-xs font-semibold text-slate-400 uppercase tracking-wider whitespace-nowrap">Vote</th>
-          </tr>
-        </thead>
-        <tbody>
-          ${actions.map(action => {
-            const vote = voteMap[action.id];
-            const typeLabel = ACTION_TYPE_LABELS[action.type] || action.type;
-            return `
-              <tr class="border-b border-slate-100 dark:border-slate-800/60 last:border-0">
-                <td class="px-5 py-3">
-                  <div class="text-xs font-semibold text-slate-800 dark:text-slate-200 leading-snug">${action.title}</div>
-                  <div class="text-xs text-slate-400 mt-0.5">${typeLabel} · ${action.id}</div>
-                </td>
-                <td class="px-4 py-3 text-center text-xs text-slate-500 dark:text-slate-400 hidden sm:table-cell">${action.epoch}</td>
-                <td class="px-4 py-3 text-center">
-                  ${vote
-                    ? `<span class="px-2 py-0.5 rounded-full text-xs font-semibold ${VOTE_COLORS[vote] || ''}">${vote}</span>`
-                    : `<span class="px-2 py-0.5 rounded-full text-xs font-medium bg-slate-100 dark:bg-slate-800 text-slate-400 dark:text-slate-500">Missed</span>`
-                  }
-                </td>
+      ${actions.length ? `
+        <div class="overflow-x-auto">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th class="text-center w-14">Epoch</th>
+                <th>Governance action</th>
+                <th class="text-center">Vote</th>
+                <th class="text-right hidden md:table-cell">Cast</th>
               </tr>
-            `;
-          }).join('')}
-        </tbody>
-      </table>
-    </div>
-  `;
+            </thead>
+            <tbody>
+              ${actions.map(a => {
+                const v = voteMap[a.id];
+                return `
+                  <tr class="${v ? '' : 'bg-red-50/40 dark:bg-red-950/10'}">
+                    <td class="text-center tabular text-slate-500 dark:text-slate-400">${a.epoch}</td>
+                    <td>
+                      <div class="text-[13px] text-slate-700 dark:text-slate-200 leading-snug">${escapeHtml(a.short_title)}</div>
+                      <div class="mt-1">${actionTypePill(a.type)}</div>
+                    </td>
+                    <td class="text-center">${votePill(v?.vote)}</td>
+                    <td class="text-right hidden md:table-cell text-xs text-slate-400 whitespace-nowrap">
+                      ${v ? formatDate(v.voted_at) : '—'}
+                    </td>
+                  </tr>`;
+              }).join('')}
+            </tbody>
+          </table>
+        </div>` : emptyState('inbox', 'No actions in this window', 'Nothing was proposed during these epochs.')}
+    </section>`;
 }
 
-function participationHistoryTable(rows) {
+// ─── Reward history ───────────────────────────────────────────────────────────
+function rewardHistory(settled, localClaims) {
+  const rows = [
+    ...localClaims.map(c => ({
+      reference: c.claim_id,
+      period: c.window_label || `Epoch ${c.epoch}`,
+      when: c.confirmed_at,
+      amount: c.amount_lovelace,
+      tx: c.tx_hash,
+      type: c.type,
+      local: true,
+    })),
+    ...settled.map(p => ({
+      reference: p.claim_id,
+      period: p.window ? `Window ${p.window[0]}–${p.window[2]}` : `Epoch ${p.epoch}`,
+      when: p.confirmed_at,
+      amount: p.amount_lovelace,
+      tx: p.tx_hash,
+      type: p.type,
+      local: false,
+    })),
+  ].sort((a, b) => (b.when || '').localeCompare(a.when || ''));
+
+  return `
+    <section class="card overflow-hidden">
+      <div class="card-header">
+        <h2 class="text-sm font-bold text-slate-800 dark:text-slate-100">Reward history</h2>
+        <span class="text-xs text-slate-400">${rows.length} settled claim${rows.length === 1 ? '' : 's'}</span>
+      </div>
+      ${rows.length ? `
+        <div class="overflow-x-auto">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Reference</th>
+                <th class="hidden sm:table-cell">Window</th>
+                <th class="text-right">Amount</th>
+                <th class="hidden md:table-cell">Transaction</th>
+                <th class="text-right">Settled</th>
+              </tr>
+            </thead>
+            <tbody>
+              ${rows.map(r => `
+                <tr>
+                  <td>
+                    <div class="addr-chip text-slate-700 dark:text-slate-200">${escapeHtml(r.reference || '—')}</div>
+                    <div class="text-[11px] text-slate-400">${r.type === 'cc' ? 'Committee payout' : 'DRep payout'}${r.local ? ' · this session' : ''}</div>
+                  </td>
+                  <td class="hidden sm:table-cell text-xs text-slate-500 dark:text-slate-400 tabular whitespace-nowrap">${escapeHtml(r.period)}</td>
+                  <td class="text-right tabular font-semibold text-slate-800 dark:text-slate-100 whitespace-nowrap">${ada(r.amount)}</td>
+                  <td class="hidden md:table-cell">
+                    <a href="${explorer.tx(r.tx)}" target="_blank" rel="noopener"
+                       class="addr-chip text-brand-600 dark:text-brand-400 hover:underline inline-flex items-center gap-1">
+                      ${escapeHtml(shortId(r.tx, 12, 6))}<i data-lucide="external-link" class="w-3 h-3"></i>
+                    </a>
+                  </td>
+                  <td class="text-right text-xs text-slate-400 whitespace-nowrap">${formatDate(r.when)}</td>
+                </tr>`).join('')}
+            </tbody>
+          </table>
+        </div>` : emptyState('receipt', 'No settled rewards yet',
+          'Claims settled by this account will be listed here with their transaction references.')}
+    </section>`;
+}
+
+// ─── Participation history ────────────────────────────────────────────────────
+function participationHistory(rows) {
   if (!rows.length) {
     return `
-      <div class="px-5 py-8 text-center text-sm text-slate-400">
-        No multi-window participation history found for this profile.
-      </div>
-    `;
+      <section class="card overflow-hidden">
+        <div class="card-header"><h2 class="text-sm font-bold text-slate-800 dark:text-slate-100">Window history</h2></div>
+        ${emptyState('history', 'No prior windows', 'This account has no recorded history in earlier claim windows.')}
+      </section>`;
   }
 
   return `
-    <div class="overflow-x-auto">
-      <table class="w-full text-sm">
-        <thead>
-          <tr class="border-b border-slate-100 dark:border-slate-800">
-            <th class="text-left px-5 py-3 text-xs font-semibold text-slate-400 uppercase tracking-wider">Window</th>
-            <th class="text-left px-5 py-3 text-xs font-semibold text-slate-400 uppercase tracking-wider hidden md:table-cell">Epochs</th>
-            <th class="text-center px-4 py-3 text-xs font-semibold text-slate-400 uppercase tracking-wider">Participation</th>
-            <th class="text-right px-5 py-3 text-xs font-semibold text-slate-400 uppercase tracking-wider">Outcome</th>
-            <th class="text-right px-5 py-3 text-xs font-semibold text-slate-400 uppercase tracking-wider hidden lg:table-cell">Reward</th>
-          </tr>
-        </thead>
-        <tbody>
-          ${rows.map(row => `
-            <tr class="border-b border-slate-100 dark:border-slate-800/60 last:border-0">
-              <td class="px-5 py-3">
-                <div class="font-medium text-slate-700 dark:text-slate-300">${row.window_label}</div>
-                <div class="text-xs text-slate-400 mt-0.5 md:hidden">${row.epochs.join(', ')}</div>
-              </td>
-              <td class="px-5 py-3 text-slate-500 dark:text-slate-400 hidden md:table-cell">${row.epochs.join(', ')}</td>
-              <td class="px-4 py-3 text-center">
-                <span class="px-2 py-0.5 rounded-full text-xs font-semibold ${row.voted_actions === row.total_actions ? 'bg-emerald-100 dark:bg-emerald-900/40 text-emerald-700 dark:text-emerald-300' : 'bg-amber-100 dark:bg-amber-900/40 text-amber-700 dark:text-amber-300'}">
-                  ${row.voted_actions} / ${row.total_actions}
+    <section class="card overflow-hidden">
+      <div class="card-header">
+        <h2 class="text-sm font-bold text-slate-800 dark:text-slate-100">Window history</h2>
+      </div>
+      <div class="divide-y divide-slate-100 dark:divide-slate-800">
+        ${rows.map(r => {
+          const full = r.voted_actions === r.total_actions;
+          return `
+            <div class="px-4 py-3">
+              <div class="flex items-center justify-between gap-3 mb-1.5">
+                <span class="text-[13px] font-semibold text-slate-800 dark:text-slate-100">${escapeHtml(r.window_label)}</span>
+                ${outcomeTag(r)}
+              </div>
+              <div class="flex items-center justify-between gap-3 text-xs">
+                <span class="text-slate-400 tabular">
+                  <span class="${full ? 'text-emerald-600 dark:text-emerald-400 font-semibold' : 'text-amber-600 dark:text-amber-400 font-semibold'}">${r.voted_actions}</span>
+                  / ${r.total_actions} actions voted
                 </span>
-              </td>
-              <td class="px-5 py-3 text-right">
-                ${historyOutcomePill(row)}
-              </td>
-              <td class="px-5 py-3 text-right font-semibold text-slate-900 dark:text-slate-100 hidden lg:table-cell">${row.amount ? formatAda(row.amount) : '—'}</td>
-            </tr>
-          `).join('')}
-        </tbody>
-      </table>
-    </div>
-  `;
-}
-
-function rewardHistoryTable(payouts, sessionClaim) {
-  if (!payouts.length && !sessionClaim) {
-    return `
-      <div class="px-5 py-8 text-center text-sm text-slate-400">
-        No reward history found for this connected profile in the demo dataset.
+                <span class="tabular font-semibold text-slate-700 dark:text-slate-200">
+                  ${r.amount_lovelace ? ada(r.amount_lovelace) : '—'}
+                </span>
+              </div>
+              ${r.claim_id ? `<div class="addr-chip text-slate-400 mt-1">${escapeHtml(r.claim_id)}</div>` : ''}
+            </div>`;
+        }).join('')}
       </div>
-    `;
-  }
-
-  const rows = [];
-  if (sessionClaim) {
-    rows.push({
-      period: `Window ${OPEN_EPOCHS.join('-')}`,
-      dateLabel: 'This browser session',
-      typeLabel: 'Current demo claim',
-      amount: sessionClaim.amount,
-      ref: sessionClaim.txHash,
-      status: 'Demo claim',
-      statusClass: 'bg-emerald-100 dark:bg-emerald-900/40 text-emerald-700 dark:text-emerald-300',
-      destination: sessionClaim.destAddress || '—',
-    });
-  }
-
-  for (const payout of payouts) {
-    rows.push({
-      period: `Epoch ${payout.epoch}`,
-      dateLabel: formatHistoryDate(payout.timestamp),
-      typeLabel: payout.type === 'cc' ? 'CC member payout' : 'DRep payout',
-      amount: payout.amount,
-      ref: payout.tx_hash,
-      status: 'Paid',
-      statusClass: 'bg-brand-100 dark:bg-brand-900/40 text-brand-700 dark:text-brand-300',
-      destination: 'Historical payout',
-    });
-  }
-
-  return `
-    <div class="overflow-x-auto">
-      <table class="w-full text-sm">
-        <thead>
-          <tr class="border-b border-slate-100 dark:border-slate-800">
-            <th class="text-left px-5 py-3 text-xs font-semibold text-slate-400 uppercase tracking-wider">Period</th>
-            <th class="text-left px-5 py-3 text-xs font-semibold text-slate-400 uppercase tracking-wider hidden md:table-cell">Date</th>
-            <th class="text-left px-5 py-3 text-xs font-semibold text-slate-400 uppercase tracking-wider hidden sm:table-cell">Type</th>
-            <th class="text-right px-5 py-3 text-xs font-semibold text-slate-400 uppercase tracking-wider">Amount</th>
-            <th class="text-right px-5 py-3 text-xs font-semibold text-slate-400 uppercase tracking-wider">Status</th>
-            <th class="text-right px-5 py-3 text-xs font-semibold text-slate-400 uppercase tracking-wider hidden xl:table-cell">Reference</th>
-          </tr>
-        </thead>
-        <tbody>
-          ${rows.map(row => `
-            <tr class="border-b border-slate-100 dark:border-slate-800/60 last:border-0">
-              <td class="px-5 py-3">
-                <div class="font-medium text-slate-700 dark:text-slate-300">${row.period}</div>
-                <div class="text-xs text-slate-400 mt-0.5 xl:hidden">${row.destination}</div>
-              </td>
-              <td class="px-5 py-3 text-slate-500 dark:text-slate-400 hidden md:table-cell">${row.dateLabel}</td>
-              <td class="px-5 py-3 text-slate-500 dark:text-slate-400 hidden sm:table-cell">${row.typeLabel}</td>
-              <td class="px-5 py-3 text-right font-semibold text-slate-900 dark:text-slate-100">${formatAda(row.amount)}</td>
-              <td class="px-5 py-3 text-right">
-                <span class="px-2 py-0.5 rounded-full text-xs font-semibold ${row.statusClass}">${row.status}</span>
-              </td>
-              <td class="px-5 py-3 text-right hidden xl:table-cell">
-                <span class="addr-chip text-xs text-slate-400">${truncateAddress(row.ref, 8, 6)}</span>
-              </td>
-            </tr>
-          `).join('')}
-        </tbody>
-      </table>
-    </div>
-  `;
+    </section>`;
 }
 
-function historyOutcomePill(row) {
-  if (row.status === 'current') {
-    if (row.eligible) {
-      return `<span class="px-2 py-0.5 rounded-full text-xs font-semibold bg-brand-100 dark:bg-brand-900/40 text-brand-700 dark:text-brand-300">Current eligible</span>`;
-    }
-    return `<span class="px-2 py-0.5 rounded-full text-xs font-semibold bg-amber-100 dark:bg-amber-900/40 text-amber-700 dark:text-amber-300">${historyReasonLabel(row.ineligible_reason)}</span>`;
+function outcomeTag(r) {
+  if (r.status === 'current') {
+    return r.eligible
+      ? '<span class="pill bg-brand-100 text-brand-700 dark:bg-brand-900/40 dark:text-brand-300">Open</span>'
+      : `<span class="pill pill-abstain">${reasonLabel(r.ineligible_reason)}</span>`;
   }
-
-  if (row.eligible) {
-    return `<span class="px-2 py-0.5 rounded-full text-xs font-semibold bg-emerald-100 dark:bg-emerald-900/40 text-emerald-700 dark:text-emerald-300">Paid</span>`;
-  }
-
-  return `<span class="px-2 py-0.5 rounded-full text-xs font-semibold bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300">${historyReasonLabel(row.ineligible_reason)}</span>`;
+  return r.eligible
+    ? '<span class="pill pill-yes">Paid</span>'
+    : `<span class="pill pill-missed">${reasonLabel(r.ineligible_reason)}</span>`;
 }
 
-function historyReasonLabel(reason) {
-  if (reason === 'outside_top_200') return 'Outside top 200';
+function reasonLabel(reason) {
+  if (reason === 'outside_top_200') return 'Below cut-off';
   if (reason === 'incomplete_votes') return 'Missed actions';
   return 'No payout';
 }
 
-function buildHistoryStats(payouts, sessionClaim) {
-  const totalHistoricalRewards = payouts.reduce((sum, payout) => sum + (payout.amount || 0), 0);
-  return {
-    totalHistoricalRewards,
-    historicalPayoutCount: payouts.length,
-    latestPayout: payouts[0] || null,
-    sessionClaimAmount: sessionClaim?.amount || 0,
-  };
-}
-
-function currentWindowStatusLabel(elig, sessionClaim) {
-  if (sessionClaim) return 'Claimed';
-  if (!elig) return 'Not found';
-  if (elig.eligible) return 'Eligible';
-  return 'Ineligible';
-}
-
-function currentWindowStatusSubtext(elig, sessionClaim) {
-  if (sessionClaim) return `${formatAda(sessionClaim.amount)} recorded in this browser session`;
-  if (!elig) return 'Profile not found in the current rewards snapshot';
-  if (elig.eligible) return `${formatAda(elig.amount)} available for the open window`;
-  if (elig.ineligible_reason === 'outside_top_200') return `Ranked #${elig.rank}, outside top ${MAX_ELIGIBLE_DREPS}`;
-  if (elig.ineligible_reason === 'incomplete_votes') return `Voted ${elig.voted_actions}/${elig.total_actions} actions`;
-  return 'Did not meet the current window rules';
-}
-
-function readSessionClaim(stakeAddress) {
-  try {
-    const raw = sessionStorage.getItem(`claimed_${stakeAddress}`);
-    return raw ? JSON.parse(raw) : null;
-  } catch {
-    return null;
-  }
-}
-
-function formatHistoryDate(timestamp) {
-  if (!timestamp) return '—';
-  return timestamp.split('T')[0] || timestamp;
-}
-
-function capitalize(str) {
-  if (!str) return '';
-  return str.charAt(0).toUpperCase() + str.slice(1);
+// ─── Export ───────────────────────────────────────────────────────────────────
+function exportVotes(actions, voteMap, govId) {
+  const headers = ['epoch', 'action_id', 'title', 'type', 'vote', 'voted_at', 'tx_hash'];
+  const rows = actions.map(a => {
+    const v = voteMap[a.id];
+    return [a.epoch, a.id, a.title, a.type, v?.vote || 'NOT VOTED', v?.voted_at || '', v?.tx_hash || ''];
+  });
+  downloadFile(`voting-record-${shortId(govId || 'account', 12, 4)}.csv`,
+    toCsv(headers, rows), 'text/csv;charset=utf-8');
+  window.showToast?.('Voting record exported', 'success');
 }

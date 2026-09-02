@@ -1,219 +1,419 @@
-import { state }    from '../app.js?v=15';
-import { formatAda } from '../utils.js?v=15';
-import { DREP_POOL_PCT, CC_POOL_PCT, MAX_ELIGIBLE_DREPS,
-         PRINCIPAL_ADA, CURRENT_EPOCH, OPEN_EPOCH, OPEN_EPOCHS,
-         RESERVE_BALANCE_ADA } from '../config.js?v=15';
+import { state, snap, lookupAccount, openWalletDialog } from '../app.js';
+import { getClaim } from '../claims.js';
+import {
+  ada, adaExact, adaCompact, adaRound, formatInt, formatPct, formatCountdown,
+  formatDate, formatDateTime, relativeTime, escapeHtml, shortId, copyable, explorer,
+} from '../utils.js';
+import { metric, actionTypePill, tallyBar, poolSplitBar } from './shared.js';
 
 export function renderHome(app) {
-  const latestEpoch = state.epochs.find(e => e.epoch === OPEN_EPOCH);
-  const windowData = state.rankings?.window_521_523 || null;
-  const totalPoolAda = windowData?.total_pool_ada || 0;
-  const drepPoolAda = windowData?.drep_pool_ada || 0;
-  const ccPoolAda = windowData?.cc_pool_ada || 0;
-  const drepShareAda = windowData?.drep_share_ada || 0;
-  const ccShareAda = windowData?.cc_share_ada || 0;
-  const totalDistributed = state.epochs.reduce((s, e) => s + (e.ada_distributed || 0), 0);
+  const p = snap.programme;
+  const w = snap.window;
+  const eligibleTotal = (w.eligible_dreps || 0) + (w.eligible_cc || 0);
+  const settled = w.claims_settled || 0;
+  const settledPct = eligibleTotal ? (settled / eligibleTotal) * 100 : 0;
+
+  const recentClaims = [...state.payouts]
+    .filter(x => x.epoch === w.epochs?.[w.epochs.length - 1])
+    .sort((a, b) => (b.confirmed_at || '').localeCompare(a.confirmed_at || ''))
+    .slice(0, 6);
 
   app.innerHTML = `
-    <!-- Hero -->
-    <section class="hero-gradient text-white">
-      <div class="max-w-6xl mx-auto px-4 py-16 md:py-20">
-        <div class="max-w-2xl">
-          <div class="inline-flex items-center gap-2 bg-white/20 rounded-full px-3 py-1 text-sm font-medium mb-5">
-            <span class="w-2 h-2 bg-emerald-400 rounded-full animate-pulse"></span>
-            Epoch ${CURRENT_EPOCH} in progress — the current UI evaluates epochs ${OPEN_EPOCHS.join(', ')}
-          </div>
-          <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-4">
-            Governance<br/>Rewards Engine
-          </h1>
-          <p class="text-lg text-white/80 mb-8 max-w-lg">
-            Rewarding DReps and CC members who vote on every governance action, funded entirely by staking yields from a 75M ₳ treasury stake pool.
-          </p>
-          <div class="flex flex-wrap gap-3">
-            <a href="#claim" class="bg-white text-brand-700 font-semibold px-6 py-2.5 rounded-xl hover:bg-brand-50 transition-colors flex items-center gap-2">
-              <i data-lucide="coins" class="w-4 h-4"></i> Check Eligibility
-            </a>
-            <a href="#epochs" class="bg-white/15 text-white font-semibold px-6 py-2.5 rounded-xl hover:bg-white/25 transition-colors flex items-center gap-2">
-              <i data-lucide="calendar" class="w-4 h-4"></i> View Epochs
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
+    <div class="max-w-7xl mx-auto px-4 py-6 space-y-6">
 
-    <!-- Stats bar -->
-    <section class="bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-800">
-      <div class="max-w-6xl mx-auto px-4 py-6 grid grid-cols-2 md:grid-cols-4 gap-4">
-        ${statCard('Current Epoch', CURRENT_EPOCH.toString(), 'calendar', 'Voting in progress')}
-        ${statCard('Open Claim Epochs', OPEN_EPOCHS.length.toString(), 'unlock', `Epochs ${OPEN_EPOCHS[0]}–${OPEN_EPOCHS[OPEN_EPOCHS.length-1]}`)}
-        ${statCard('Reserve Balance', formatAda(RESERVE_BALANCE_ADA), 'piggy-bank', 'Accumulated surplus')}
-        ${statCard('Total Distributed', formatAda(totalDistributed), 'trending-up', 'Across all epochs')}
-      </div>
-    </section>
+      ${personalPanel()}
 
-    <!-- Reward breakdown -->
-    <section class="max-w-6xl mx-auto px-4 py-12">
-      <h2 class="text-2xl font-bold mb-2 text-slate-900 dark:text-slate-100">Reward Structure</h2>
-      <p class="text-slate-500 dark:text-slate-400 mb-8">
-        Equal shares from the current 3-epoch reward pool, derived from the generated epoch yields and bundled vote snapshot.
-      </p>
-
-      <!-- Pool split visual -->
-      <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-6 mb-6">
-        <div class="flex items-center justify-between mb-3">
-          <span class="text-sm font-semibold text-slate-700 dark:text-slate-300">3-Epoch Reward Pool</span>
-          <span class="text-lg font-bold text-slate-900 dark:text-slate-100">${formatAda(totalPoolAda)}</span>
-        </div>
-        <div class="flex rounded-xl overflow-hidden h-5 mb-3">
-          <div class="bg-brand-500 flex items-center justify-center text-white text-xs font-bold" style="width:${DREP_POOL_PCT}%">${DREP_POOL_PCT}%</div>
-          <div class="bg-violet-500 flex items-center justify-center text-white text-xs font-bold" style="width:${CC_POOL_PCT}%">${CC_POOL_PCT}%</div>
-        </div>
-        <div class="flex gap-4 text-xs text-slate-500 dark:text-slate-400">
-          <span class="flex items-center gap-1.5"><span class="w-2.5 h-2.5 rounded bg-brand-500 inline-block"></span>DRep pool — ${formatAda(drepPoolAda)}</span>
-          <span class="flex items-center gap-1.5"><span class="w-2.5 h-2.5 rounded bg-violet-500 inline-block"></span>CC pool — ${formatAda(ccPoolAda)}</span>
-        </div>
-      </div>
-
-      <div class="grid md:grid-cols-2 gap-6 mb-12">
-        <!-- DRep card -->
-        <div class="stat-card bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-6">
-          <div class="flex items-start justify-between mb-4">
-            <div class="w-12 h-12 bg-brand-100 dark:bg-brand-900/40 rounded-xl flex items-center justify-center">
-              <i data-lucide="vote" class="w-6 h-6 text-brand-600 dark:text-brand-400"></i>
+      <!-- Window header -->
+      <section class="card overflow-hidden">
+        <div class="grid lg:grid-cols-[1.35fr_1fr]">
+          <div class="p-6 border-b lg:border-b-0 lg:border-r border-slate-100 dark:border-slate-800">
+            <div class="flex items-center gap-2 mb-3">
+              <span class="pill bg-emerald-100 text-emerald-700 dark:bg-emerald-900/40 dark:text-emerald-300">
+                <span class="status-dot status-dot-live"></span> Claims open
+              </span>
+              <span class="text-xs text-slate-400">${escapeHtml(w.label || '')}</span>
             </div>
-            <div class="text-right">
-              <div class="text-xs text-slate-400 mb-0.5">equal share of ${DREP_POOL_PCT}%</div>
-              <span class="text-3xl font-bold text-brand-600 dark:text-brand-400">~${drepShareAda} ₳</span>
+            <h1 class="text-2xl font-bold tracking-tight text-slate-900 dark:text-slate-50 mb-2">
+              Epochs ${w.epochs?.join(', ')} are ready to claim
+            </h1>
+            <p class="text-sm text-slate-500 dark:text-slate-400 leading-relaxed max-w-xl mb-5">
+              ${formatInt(w.eligible_dreps)} DReps and ${formatInt(w.eligible_cc)} committee members voted on
+              all ${w.total_actions} governance actions in this window. Each takes an equal share of the
+              ${adaCompact(w.total_pool_lovelace)} pool generated by the treasury stake pool.
+            </p>
+            <div class="flex flex-wrap gap-2.5">
+              <a href="#claim" class="btn-primary text-sm h-10 px-5">
+                <i data-lucide="hand-coins" class="w-4 h-4"></i> Check eligibility
+              </a>
+              <a href="#explorer" class="btn-secondary text-sm h-10 px-4">
+                <i data-lucide="table-2" class="w-4 h-4"></i> Open the snapshot
+              </a>
             </div>
           </div>
-          <h3 class="text-lg font-semibold mb-1">DRep Reward</h3>
-          <p class="text-slate-500 dark:text-slate-400 text-sm mb-4">Top ${MAX_ELIGIBLE_DREPS} DReps by voting power who voted on <strong>every</strong> governance action in the 3-epoch window share ${DREP_POOL_PCT}% of the pool equally.</p>
-          <ul class="space-y-2 text-sm">
-            ${bullet(`Must vote on all governance actions across epochs ${OPEN_EPOCHS.join(', ')}`)}
-            ${bullet(`Top ${MAX_ELIGIBLE_DREPS} by voting power among those who qualify`)}
-            ${bullet(`All ${MAX_ELIGIBLE_DREPS} qualifying DReps receive the exact same payout`)}
-            ${bullet(`If fewer than ${MAX_ELIGIBLE_DREPS} qualify, the eligible DReps split the full DRep pool among themselves`)}
-            ${bullet('One claim per window — no partial credit for missed actions')}
-          </ul>
-        </div>
-        <!-- CC card -->
-        <div class="stat-card bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-6">
-          <div class="flex items-start justify-between mb-4">
-            <div class="w-12 h-12 bg-violet-100 dark:bg-violet-900/40 rounded-xl flex items-center justify-center">
-              <i data-lucide="scale" class="w-6 h-6 text-violet-600 dark:text-violet-400"></i>
+
+          <div class="p-6 bg-slate-50/70 dark:bg-slate-900/50">
+            <div class="flex items-baseline justify-between mb-1.5">
+              <span class="section-title">Claim progress</span>
+              <span class="text-xs text-slate-400 tabular">${formatPct(settledPct, 0)}</span>
             </div>
-            <div class="text-right">
-              <div class="text-xs text-slate-400 mb-0.5">equal share of ${CC_POOL_PCT}%</div>
-              <span class="text-3xl font-bold text-violet-600 dark:text-violet-400">~${ccShareAda.toLocaleString()} ₳</span>
+            <div class="h-2 rounded-full bg-slate-200 dark:bg-slate-800 overflow-hidden mb-2">
+              <div class="h-full rounded-full bg-emerald-500 transition-all" style="width:${settledPct.toFixed(1)}%"></div>
             </div>
+            <p class="text-xs text-slate-500 dark:text-slate-400 mb-5">
+              <strong class="text-slate-800 dark:text-slate-100 tabular">${formatInt(settled)}</strong>
+              of ${formatInt(eligibleTotal)} eligible participants have settled
+              (${adaCompact(w.claims_settled_lovelace)} paid out).
+            </p>
+
+            <dl class="space-y-2.5 text-xs">
+              ${detailRow('Window closed', formatDateTime(w.closed_at))}
+              ${detailRow('Claim deadline', `${formatDate(w.claim_deadline_at)} · end of epoch ${w.claim_deadline_epoch}`)}
+              ${detailRow('Time remaining', `<span class="font-semibold text-amber-600 dark:text-amber-400" data-countdown="${w.claim_deadline_at}" data-seconds="1">${formatCountdown(w.claim_deadline_at, { withSeconds: true })}</span>`)}
+              ${detailRow('Unclaimed at deadline', 'Returns to the programme reserve')}
+            </dl>
           </div>
-          <h3 class="text-lg font-semibold mb-1">CC Member Reward</h3>
-          <p class="text-slate-500 dark:text-slate-400 text-sm mb-4">Constitutional Committee members who voted on <strong>every</strong> governance action in the 3-epoch window share ${CC_POOL_PCT}% of the pool equally.</p>
-          <ul class="space-y-2 text-sm">
-            ${bullet(`Must vote on all governance actions across epochs ${OPEN_EPOCHS.join(', ')}`)}
-            ${bullet('All qualifying CC members receive the exact same payout')}
-            ${bullet('If fewer than 7 qualify, the eligible CC members split the full CC pool among themselves')}
-            ${bullet('Vote direction (Yes/No/Abstain) does not affect eligibility')}
-            ${bullet('One claim per window — no partial credit for missed actions')}
-          </ul>
+        </div>
+      </section>
+
+      <!-- Key numbers -->
+      <section class="grid grid-cols-2 lg:grid-cols-4 gap-3">
+        ${metric({
+          label: 'Reward pool', value: adaRound(w.total_pool_lovelace), icon: 'wallet-cards', tone: 'brand',
+          sub: `Yield from epochs ${w.epochs?.join(', ')}`,
+        })}
+        ${metric({
+          label: 'DRep share', value: ada(w.drep_share_lovelace), icon: 'vote', tone: 'brand',
+          sub: `Equal split among ${formatInt(w.eligible_dreps)} DReps`,
+        })}
+        ${metric({
+          label: 'Committee share', value: ada(w.cc_share_lovelace), icon: 'scale', tone: 'violet',
+          sub: `Equal split among ${formatInt(w.eligible_cc)} members`,
+        })}
+        ${metric({
+          label: 'Programme reserve', value: adaCompact(snap.totals.reserve_balance_lovelace), icon: 'piggy-bank', tone: 'emerald',
+          sub: `${formatInt(snap.totals.epochs_recorded)} epochs recorded`,
+        })}
+      </section>
+
+      <div class="grid lg:grid-cols-[1.4fr_1fr] gap-6 items-start">
+        <div class="space-y-6">
+          ${actionsCard()}
+          ${eligibilityCards()}
+        </div>
+        <div class="space-y-6">
+          ${poolCard()}
+          ${treasuryCard()}
+          ${recentClaimsCard(recentClaims)}
         </div>
       </div>
 
-      <!-- How it works -->
-      <h2 class="text-2xl font-bold mb-2 text-slate-900 dark:text-slate-100">How It Works</h2>
-      <p class="text-slate-500 dark:text-slate-400 mb-8">A self-sustaining yield engine — no ongoing treasury requests needed.</p>
-      <div class="grid md:grid-cols-3 gap-6 mb-12">
-        ${step(1, 'Treasury Bootstrap', `75M ₳ from the Cardano Treasury is delegated to a dedicated stake pool. In the current window, the app sums the generated rewards from epochs ${OPEN_EPOCHS.join(', ')} into a live 3-epoch pool of ${formatAda(totalPoolAda)}.`, 'landmark', 'bg-blue-100 dark:bg-blue-900/40 text-blue-600 dark:text-blue-400')}
-        ${step(2, 'Snapshot & Eligibility', `The bundled snapshot for epochs ${OPEN_EPOCHS.join(', ')} determines eligibility. DReps and CC members who voted on every governance action qualify. Top ${MAX_ELIGIBLE_DREPS} DReps share ${DREP_POOL_PCT}% of the pool; eligible CC members share ${CC_POOL_PCT}%.`, 'camera', 'bg-amber-100 dark:bg-amber-900/40 text-amber-600 dark:text-amber-400')}
-        ${step(3, 'Claim Your Equal Share', 'Connect your wallet or enter your stake address. If eligible, the current prototype shows your fixed share, collects a payout address, and records a demo claim in-browser with a placeholder transaction hash.', 'wallet', 'bg-emerald-100 dark:bg-emerald-900/40 text-emerald-600 dark:text-emerald-400')}
+      ${howItWorks()}
+    </div>`;
+
+  app.querySelector('#home-connect')?.addEventListener('click', () => openWalletDialog());
+}
+
+// ─── Connected-account panel ──────────────────────────────────────────────────
+function personalPanel() {
+  const w = snap.window;
+
+  if (!state.wallet) {
+    return `
+      <section class="card card-pad flex flex-wrap items-center gap-4 justify-between">
+        <div class="flex items-center gap-3 min-w-0">
+          <span class="w-9 h-9 rounded-lg bg-slate-100 dark:bg-slate-800 flex items-center justify-center shrink-0">
+            <i data-lucide="wallet" class="w-4 h-4 text-slate-400"></i>
+          </span>
+          <div class="min-w-0">
+            <p class="text-sm font-semibold text-slate-800 dark:text-slate-100">Connect to see your position</p>
+            <p class="text-xs text-slate-500 dark:text-slate-400">
+              Look up eligibility for window ${w.epochs?.join('–')} with a wallet, DRep ID or stake address.
+            </p>
+          </div>
+        </div>
+        <button id="home-connect" class="btn-primary text-sm h-9 px-4">
+          <i data-lucide="wallet" class="w-4 h-4"></i> Connect wallet
+        </button>
+      </section>`;
+  }
+
+  const record = lookupAccount(state.wallet.stakeAddress);
+  const claim = getClaim(state.wallet.stakeAddress, snap.windowId);
+  const label = state.wallet.name || shortId(state.wallet.govId || state.wallet.stakeAddress, 16, 8);
+
+  let tone, icon, headline, body, action;
+  if (claim) {
+    tone = 'emerald'; icon = 'check-circle-2';
+    headline = `Claimed ${ada(claim.amount_lovelace)}`;
+    body = `Settled ${relativeTime(claim.confirmed_at)} · reference ${claim.claim_id}`;
+    action = `<a href="#profile" class="btn-secondary text-sm h-9 px-4">View receipt</a>`;
+  } else if (record?.eligible) {
+    tone = 'brand'; icon = 'sparkles';
+    headline = `${ada(record.amount_lovelace)} available to claim`;
+    body = `Voted ${record.voted_actions} of ${record.total_actions} actions${record.rank ? ` · rank ${formatInt(record.rank)}` : ''}`;
+    action = `<a href="#claim" class="btn-primary text-sm h-9 px-4"><i data-lucide="hand-coins" class="w-4 h-4"></i> Claim now</a>`;
+  } else if (record) {
+    tone = 'amber'; icon = 'alert-triangle';
+    headline = 'Not eligible for this window';
+    body = record.ineligible_reason === 'outside_top_200'
+      ? `Voted every action but placed ${formatInt(record.participation_rank)} of ${formatInt(snap.window.full_participation_dreps)}, outside the top ${formatInt(snap.programme.max_eligible_dreps)}`
+      : `Voted ${record.voted_actions} of ${record.total_actions} governance actions`;
+    action = `<a href="#profile" class="btn-secondary text-sm h-9 px-4">See details</a>`;
+  } else {
+    tone = 'slate'; icon = 'help-circle';
+    headline = 'Not found in this snapshot';
+    body = 'This stake key was not a registered DRep or committee member during the window.';
+    action = `<a href="#docs" class="btn-secondary text-sm h-9 px-4">Eligibility rules</a>`;
+  }
+
+  const ring = {
+    emerald: 'bg-emerald-50 dark:bg-emerald-950/30 border-emerald-200 dark:border-emerald-900/50',
+    brand:   'bg-brand-50 dark:bg-brand-950/30 border-brand-200 dark:border-brand-900/50',
+    amber:   'bg-amber-50 dark:bg-amber-950/30 border-amber-200 dark:border-amber-900/50',
+    slate:   'bg-slate-50 dark:bg-slate-900 border-slate-200 dark:border-slate-800',
+  }[tone];
+  const iconTone = {
+    emerald: 'text-emerald-600 dark:text-emerald-400',
+    brand:   'text-brand-600 dark:text-brand-400',
+    amber:   'text-amber-600 dark:text-amber-400',
+    slate:   'text-slate-400',
+  }[tone];
+
+  return `
+    <section class="rounded-xl border ${ring} px-5 py-4 flex flex-wrap items-center gap-4 justify-between">
+      <div class="flex items-center gap-3.5 min-w-0">
+        <span class="w-10 h-10 rounded-lg bg-white/70 dark:bg-slate-900/60 flex items-center justify-center shrink-0">
+          <i data-lucide="${icon}" class="w-5 h-5 ${iconTone}"></i>
+        </span>
+        <div class="min-w-0">
+          <p class="text-[15px] font-bold text-slate-900 dark:text-slate-50 leading-tight">${escapeHtml(headline)}</p>
+          <p class="text-xs text-slate-500 dark:text-slate-400 mt-0.5">${escapeHtml(body)}</p>
+          <p class="addr-chip text-slate-400 mt-1 truncate">${escapeHtml(label)}</p>
+        </div>
       </div>
+      ${action}
+    </section>`;
+}
 
-      <!-- Epoch example -->
-      ${latestEpoch ? exampleSection(latestEpoch) : ''}
+// ─── Cards ────────────────────────────────────────────────────────────────────
+function detailRow(label, value) {
+  return `
+    <div class="flex items-baseline justify-between gap-4">
+      <dt class="text-slate-400 shrink-0">${escapeHtml(label)}</dt>
+      <dd class="text-right text-slate-700 dark:text-slate-200 font-medium">${value}</dd>
+    </div>`;
+}
 
-      <!-- CTA -->
-      <div class="hero-gradient rounded-2xl p-8 text-white text-center">
-        <h3 class="text-2xl font-bold mb-2">Ready to claim?</h3>
-        <p class="text-white/75 mb-6">The current rewards snapshot covers epochs ${OPEN_EPOCHS.join(', ')}. Vote on all governance actions in the window to qualify for your equal share.</p>
-        <a href="#claim" class="inline-flex items-center gap-2 bg-white text-brand-700 font-semibold px-8 py-3 rounded-xl hover:bg-brand-50 transition-colors">
-          <i data-lucide="coins" class="w-4 h-4"></i> Check My Eligibility
+function actionsCard() {
+  const actions = snap.windowActions;
+  return `
+    <section class="card overflow-hidden">
+      <div class="card-header">
+        <div>
+          <h2 class="text-sm font-bold text-slate-800 dark:text-slate-100">Governance actions in this window</h2>
+          <p class="text-xs text-slate-400 mt-0.5">Every one of these ${actions.length} actions must be voted on to qualify.</p>
+        </div>
+        <a href="#explorer" class="text-xs font-medium text-brand-600 dark:text-brand-400 hover:underline whitespace-nowrap">
+          Full ledger →
         </a>
       </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="border-t border-slate-200 dark:border-slate-800 mt-8">
-      <div class="max-w-6xl mx-auto px-4 py-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-slate-500 dark:text-slate-400">
-        <div class="flex items-center gap-2">
-          <i data-lucide="shield-check" class="w-4 h-4 text-brand-500"></i>
-          Governance Rewards Engine — Cardano
-        </div>
-        <div class="flex gap-4">
-          <a href="#transparency" class="hover:text-brand-500 transition-colors">Transparency</a>
-          <a href="#epochs" class="hover:text-brand-500 transition-colors">Epoch History</a>
-        </div>
+      <div class="divide-y divide-slate-100 dark:divide-slate-800">
+        ${actions.map(a => `
+          <div class="px-5 py-3 flex items-start gap-3">
+            <span class="text-[11px] font-bold text-slate-300 dark:text-slate-600 tabular w-8 shrink-0 pt-0.5">${a.epoch}</span>
+            <div class="min-w-0 flex-1">
+              <p class="text-[13px] font-medium text-slate-800 dark:text-slate-100 leading-snug">${escapeHtml(a.short_title)}</p>
+              <div class="flex items-center gap-2 mt-1.5 flex-wrap">
+                ${actionTypePill(a.type)}
+                ${tallyBar(a.tally)}
+              </div>
+            </div>
+            <a href="${explorer.govAction(a.id)}" target="_blank" rel="noopener"
+               class="text-slate-300 hover:text-brand-500 dark:text-slate-600 dark:hover:text-brand-400 shrink-0 pt-0.5"
+               title="View ${a.id} on Cardanoscan">
+              <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+            </a>
+          </div>`).join('')}
       </div>
-    </footer>
-  `;
+    </section>`;
 }
 
-function statCard(label, value, icon, sub) {
+function eligibilityCards() {
+  const w = snap.window;
+  const p = snap.programme;
   return `
-    <div class="stat-card bg-slate-50 dark:bg-slate-800 rounded-xl p-4 flex items-center gap-4">
-      <div class="w-10 h-10 bg-brand-100 dark:bg-brand-900/40 rounded-lg flex items-center justify-center flex-shrink-0">
-        <i data-lucide="${icon}" class="w-5 h-5 text-brand-600 dark:text-brand-400"></i>
-      </div>
-      <div>
-        <div class="text-xs text-slate-500 dark:text-slate-400">${label}</div>
-        <div class="text-xl font-bold text-slate-900 dark:text-slate-100">${value}</div>
-        <div class="text-xs text-slate-400 dark:text-slate-500">${sub}</div>
-      </div>
-    </div>
-  `;
+    <section class="grid md:grid-cols-2 gap-4">
+      ${roleCard({
+        role: 'DRep',
+        icon: 'vote',
+        accent: 'brand',
+        share: w.drep_share_lovelace,
+        pct: p.drep_pool_pct,
+        pool: w.drep_pool_lovelace,
+        eligible: w.eligible_dreps,
+        of: `${formatInt(w.registered_dreps)} registered`,
+        rules: [
+          `Vote on all ${w.total_actions} governance actions in the window`,
+          `Rank in the top ${formatInt(p.max_eligible_dreps)} by delegated voting power`,
+          'Vote direction does not affect eligibility',
+          'Unfilled slots roll into the programme reserve',
+        ],
+      })}
+      ${roleCard({
+        role: 'Committee member',
+        icon: 'scale',
+        accent: 'violet',
+        share: w.cc_share_lovelace,
+        pct: p.cc_pool_pct,
+        pool: w.cc_pool_lovelace,
+        eligible: w.eligible_cc,
+        of: `${p.committee_size} seats`,
+        rules: [
+          `Vote on all ${w.total_actions} governance actions in the window`,
+          'Hold an active committee seat at the snapshot block',
+          'No ranking cut-off applies to the committee',
+          'Unfilled seats roll into the programme reserve',
+        ],
+      })}
+    </section>`;
 }
 
-function bullet(text) {
-  return `<li class="flex items-start gap-2 text-slate-600 dark:text-slate-300">
-    <i data-lucide="check" class="w-4 h-4 text-emerald-500 mt-0.5 flex-shrink-0"></i>
-    <span>${text}</span>
-  </li>`;
-}
+function roleCard({ role, icon, accent, share, pct, pool, eligible, of, rules }) {
+  const tint = accent === 'violet'
+    ? 'bg-violet-100 text-violet-600 dark:bg-violet-900/40 dark:text-violet-400'
+    : 'bg-brand-100 text-brand-600 dark:bg-brand-900/40 dark:text-brand-400';
+  const value = accent === 'violet'
+    ? 'text-violet-600 dark:text-violet-400'
+    : 'text-brand-600 dark:text-brand-400';
 
-function step(n, title, desc, icon, colorClass) {
   return `
-    <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-6">
-      <div class="flex items-center gap-3 mb-3">
-        <div class="w-10 h-10 ${colorClass} rounded-xl flex items-center justify-center">
-          <i data-lucide="${icon}" class="w-5 h-5"></i>
+    <div class="card card-pad">
+      <div class="flex items-start justify-between gap-3 mb-4">
+        <span class="w-9 h-9 rounded-lg ${tint} flex items-center justify-center">
+          <i data-lucide="${icon}" class="w-4.5 h-4.5"></i>
+        </span>
+        <div class="text-right">
+          <div class="text-2xl font-bold ${value} tabular leading-none">${ada(share)}</div>
+          <div class="text-[11px] text-slate-400 mt-1">per participant</div>
         </div>
-        <span class="text-xs font-bold text-slate-400 dark:text-slate-500 uppercase tracking-wider">Step ${n}</span>
       </div>
-      <h3 class="font-semibold text-slate-900 dark:text-slate-100 mb-2">${title}</h3>
-      <p class="text-sm text-slate-500 dark:text-slate-400 leading-relaxed">${desc}</p>
-    </div>
-  `;
+      <h3 class="text-sm font-bold text-slate-800 dark:text-slate-100">${role} reward</h3>
+      <p class="text-xs text-slate-500 dark:text-slate-400 mt-1 mb-3">
+        ${pct}% of the pool — ${adaCompact(pool)} — split equally among
+        ${formatInt(eligible)} qualifying of ${of}.
+      </p>
+      <ul class="space-y-1.5">
+        ${rules.map(r => `
+          <li class="flex items-start gap-2 text-xs text-slate-600 dark:text-slate-300">
+            <i data-lucide="check" class="w-3.5 h-3.5 text-emerald-500 shrink-0 mt-px"></i>
+            <span class="leading-relaxed">${escapeHtml(r)}</span>
+          </li>`).join('')}
+      </ul>
+    </div>`;
 }
 
-function exampleSection(epoch) {
+function poolCard() {
+  const w = snap.window;
+  const p = snap.programme;
   return `
-    <div class="bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-6 mb-12">
-      <h3 class="font-semibold text-slate-900 dark:text-slate-100 mb-4 flex items-center gap-2">
-        <i data-lucide="bar-chart-2" class="w-4 h-4 text-brand-500"></i>
-        Epoch ${epoch.epoch} — Example Breakdown
-      </h3>
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm">
-        ${miniStat('Rewards generated', formatAda(epoch.rewards_generated))}
-        ${miniStat('DReps rewarded', epoch.dreps_rewarded + ' eligible')}
-        ${miniStat('CC members rewarded', epoch.cc_rewarded + ' eligible')}
-        ${miniStat('Added to reserve', formatAda(epoch.reserve_added))}
+    <section class="card card-pad">
+      <div class="flex items-baseline justify-between mb-3">
+        <h2 class="text-sm font-bold text-slate-800 dark:text-slate-100">Pool allocation</h2>
+        <span class="text-sm font-bold text-slate-900 dark:text-slate-50 tabular">${adaRound(w.total_pool_lovelace)}</span>
       </div>
-    </div>
-  `;
+      ${poolSplitBar(w.drep_pool_lovelace, w.cc_pool_lovelace, p.drep_pool_pct, p.cc_pool_pct)}
+      <dl class="mt-4 pt-4 border-t border-slate-100 dark:border-slate-800 space-y-2 text-xs">
+        ${detailRow('Exact DRep share', `<span class="addr-chip">${adaExact(w.drep_share_lovelace)}</span>`)}
+        ${detailRow('Exact committee share', `<span class="addr-chip">${adaExact(w.cc_share_lovelace)}</span>`)}
+        ${detailRow('Vote records', formatInt(w.vote_records))}
+        ${detailRow('Snapshot block', formatInt(w.snapshot_block))}
+      </dl>
+    </section>`;
 }
 
-function miniStat(label, value) {
-  return `<div>
-    <div class="text-xs text-slate-400 dark:text-slate-500 mb-0.5">${label}</div>
-    <div class="font-semibold text-slate-800 dark:text-slate-200">${value}</div>
-  </div>`;
+function treasuryCard() {
+  const pool = snap.programme.stake_pool || {};
+  return `
+    <section class="card card-pad">
+      <h2 class="text-sm font-bold text-slate-800 dark:text-slate-100 mb-1">Funding source</h2>
+      <p class="text-xs text-slate-500 dark:text-slate-400 leading-relaxed mb-4">
+        The principal is never spent. Rewards come only from the staking yield it produces, so the
+        programme needs no recurring treasury withdrawal.
+      </p>
+      <div class="rounded-lg border border-slate-200 dark:border-slate-800 p-3.5">
+        <div class="flex items-center gap-2.5 mb-3">
+          <span class="px-1.5 py-0.5 rounded bg-slate-900 dark:bg-slate-100 text-white dark:text-slate-900 text-[11px] font-bold tracking-wide">
+            ${escapeHtml(pool.ticker || 'POOL')}
+          </span>
+          <span class="text-xs font-medium text-slate-700 dark:text-slate-200 truncate">${escapeHtml(pool.name || '')}</span>
+        </div>
+        <dl class="space-y-2 text-xs">
+          ${detailRow('Delegated', adaCompact(pool.delegated_lovelace))}
+          ${detailRow('Saturation', formatPct(pool.saturation_pct))}
+          ${detailRow('Lifetime ROA', formatPct(pool.lifetime_roa_pct, 2))}
+          ${detailRow('Blocks minted', formatInt(pool.blocks_lifetime))}
+        </dl>
+        <div class="mt-3 pt-3 border-t border-slate-100 dark:border-slate-800 flex items-center justify-between gap-2">
+          ${copyable(pool.pool_id, { display: shortId(pool.pool_id, 12, 6), className: 'text-slate-500' })}
+          <a href="${explorer.pool(pool.pool_id || '')}" target="_blank" rel="noopener"
+             class="text-[11px] font-medium text-brand-600 dark:text-brand-400 hover:underline whitespace-nowrap">
+            Cardanoscan <i data-lucide="external-link" class="w-3 h-3 inline-block -mt-0.5"></i>
+          </a>
+        </div>
+      </div>
+    </section>`;
+}
+
+function recentClaimsCard(claims) {
+  return `
+    <section class="card overflow-hidden">
+      <div class="card-header">
+        <h2 class="text-sm font-bold text-slate-800 dark:text-slate-100">Recent settlements</h2>
+        <a href="#explorer" class="text-xs font-medium text-brand-600 dark:text-brand-400 hover:underline">All →</a>
+      </div>
+      <div class="divide-y divide-slate-100 dark:divide-slate-800">
+        ${claims.map(c => `
+          <div class="px-4 py-2.5 flex items-center justify-between gap-3">
+            <div class="min-w-0">
+              <div class="addr-chip text-slate-600 dark:text-slate-300 truncate">${escapeHtml(c.claim_id)}</div>
+              <div class="text-[11px] text-slate-400 mt-0.5">
+                ${c.type === 'cc' ? 'Committee' : 'DRep'} · <span data-reltime="${c.confirmed_at}">${relativeTime(c.confirmed_at)}</span>
+              </div>
+            </div>
+            <span class="text-xs font-semibold text-slate-800 dark:text-slate-100 tabular whitespace-nowrap">${ada(c.amount_lovelace)}</span>
+          </div>`).join('')}
+      </div>
+    </section>`;
+}
+
+function howItWorks() {
+  const w = snap.window;
+  const p = snap.programme;
+  return `
+    <section>
+      <h2 class="text-sm font-bold text-slate-800 dark:text-slate-100 mb-1">How a window works</h2>
+      <p class="text-xs text-slate-500 dark:text-slate-400 mb-4">
+        Three epochs of voting, one snapshot, one claim.
+      </p>
+      <div class="grid md:grid-cols-4 gap-3">
+        ${stepCard(1, 'Yield accrues', `${adaCompact(p.principal_lovelace)} stays delegated to ${p.stake_pool?.ticker}. Its staking rewards across three epochs form the pool.`, 'landmark')}
+        ${stepCard(2, 'Window closes', `At the end of epoch ${w.epochs?.[2]} the ledger is read at block ${formatInt(w.snapshot_block)} and the vote record is frozen.`, 'camera')}
+        ${stepCard(3, 'Eligibility is fixed', `Anyone who voted on all ${w.total_actions} actions qualifies. DReps are then cut to the top ${formatInt(p.max_eligible_dreps)}.`, 'list-checks')}
+        ${stepCard(4, 'Claims settle', `Qualifying participants claim their equal share before epoch ${w.claim_deadline_epoch}. Anything unclaimed returns to the reserve.`, 'send')}
+      </div>
+    </section>`;
+}
+
+function stepCard(n, title, body, icon) {
+  return `
+    <div class="card card-pad">
+      <div class="flex items-center gap-2.5 mb-2.5">
+        <span class="w-7 h-7 rounded-lg bg-slate-100 dark:bg-slate-800 flex items-center justify-center">
+          <i data-lucide="${icon}" class="w-3.5 h-3.5 text-slate-500 dark:text-slate-400"></i>
+        </span>
+        <span class="text-[10px] font-bold uppercase tracking-wider text-slate-400">Step ${n}</span>
+      </div>
+      <h3 class="text-[13px] font-semibold text-slate-800 dark:text-slate-100 mb-1">${escapeHtml(title)}</h3>
+      <p class="text-xs text-slate-500 dark:text-slate-400 leading-relaxed">${escapeHtml(body)}</p>
+    </div>`;
 }

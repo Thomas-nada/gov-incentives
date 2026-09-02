@@ -1,5 +1,5 @@
 {
-  "_note": "Keyed by stake address. eligible=true = voted on ALL actions in the current vote ledger for window 521-523.",
+  "_note": "Keyed by stake address. eligible=true means the actor voted on every action in the window.",
   "_window": {
     "epochs": [
       521,
@@ -7,13 +7,13 @@
       523
     ],
     "total_actions": 11,
-    "total_pool_ada": 84146,
-    "drep_pool_ada": 79097,
-    "cc_pool_ada": 5049,
+    "total_pool_lovelace": 90842116637,
+    "drep_pool_lovelace": 85391589639,
+    "cc_pool_lovelace": 5450526998,
     "eligible_dreps": 200,
     "eligible_cc": 5,
-    "drep_share_ada": 395,
-    "cc_share_ada": 721
+    "drep_share_lovelace": 426957948,
+    "cc_share_lovelace": 778646714
   },
   "stake1ux7fe7j9hpuflnnjgmflzf66e83htkfqjulyyg9u9mvs0rcg5qvgp": {
     "type": "drep",
@@ -21,21 +21,16 @@
     "voted_all": true,
     "voted_actions": 11,
     "total_actions": 11,
-    "voting_power": 8240000,
-    "drep_id": "drep1yx7fe7j9hpuflnnjgmflzf66e83htkfqjulyg9u9mvs0rcg5abcd",
-    "rank": 7,
-    "amount": 395,
-    "claimed": false
-  },
-  "stake1uydlj8mhqxjr84mgsgzwf5ljhsyvcrfynaz5zqv4wn4kqxcjtlfcq": {
-    "type": "cc",
-    "eligible": true,
-    "voted_all": true,
-    "voted_actions": 11,
-    "total_actions": 11,
-    "cc_credential": "cc_hot1q8xntrwl2pnkvr4kxvmqp7ynl35h7fjnap8qx4j7ldyv8c2k01",
-    "amount": 721,
-    "claimed": false
+    "voting_power_lovelace": 8240000000000,
+    "delegators": 405,
+    "registered_epoch": 443,
+    "name": "Ledger Commons",
+    "drep_id": "drep1yx7fe7j9hpuflnnjgmflzf66e83htkfqjulyg9u9mvs0rcg5qhx7n2vm4e",
+    "rank": 24,
+    "participation_rank": 12,
+    "eligible_pool_size": 200,
+    "ineligible_reason": null,
+    "amount_lovelace": 426957948
   },
   "stake1u8fnjkm3pq9xa7wv4l5e6d0strgyc4hz3wp8qv4xd9r5jk2n3p6qs": {
     "type": "drep",
@@ -43,11 +38,16 @@
     "voted_all": true,
     "voted_actions": 11,
     "total_actions": 11,
-    "voting_power": 380000,
-    "drep_id": "drep1y8fnjkm3pq9xa7wv4l5e6d0strgyc4hz3wp8qv4xd9r5jk2nabcd",
-    "rank": 45,
-    "amount": 395,
-    "claimed": false
+    "voting_power_lovelace": 380000000000,
+    "delegators": 173,
+    "registered_epoch": 458,
+    "name": "Stake & Signal",
+    "drep_id": "drep1y8fnjkm3pq9xa7wv4l5e6d0strgyc4hz3wp8qv4xd9r5jk2nq7wl0ekxp",
+    "rank": 150,
+    "participation_rank": 65,
+    "eligible_pool_size": 200,
+    "ineligible_reason": null,
+    "amount_lovelace": 426957948
   },
   "stake1uxk3n5d8r7gm2pq9wl4v6zjfahcts5e3y8md4xl7pnqr2w9fk5j8p": {
     "type": "drep",
@@ -55,11 +55,16 @@
     "voted_all": true,
     "voted_actions": 11,
     "total_actions": 11,
-    "voting_power": 32000,
-    "drep_id": "drep1yxk3n5d8r7gm2pq9wl4v6zjfahcts5e3y8md4xl7pnqr2w9fabcd",
-    "rank": 112,
-    "amount": 395,
-    "claimed": false
+    "voting_power_lovelace": 32000000000,
+    "delegators": 73,
+    "registered_epoch": 465,
+    "name": "Ouroboros Guild",
+    "drep_id": "drep1yxk3n5d8r7gm2pq9wl4v6zjfahcts5e3y8md4xl7pnqr2w9fqm2v8dlrz",
+    "rank": 408,
+    "participation_rank": 144,
+    "eligible_pool_size": 200,
+    "ineligible_reason": null,
+    "amount_lovelace": 426957948
   },
   "stake1u4wml9nq7rhx5p3kd8g2a6vj4etsycf3mz7xu5nd8lk4r9p2q6w5t": {
     "type": "drep",
@@ -67,12 +72,16 @@
     "voted_all": true,
     "voted_actions": 11,
     "total_actions": 11,
-    "voting_power": 2450,
-    "drep_id": "drep1y4wml9nq7rhx5p3kd8g2a6vj4etsycf3mz7xu5nd8lk4r9p2abcd",
-    "rank": 201,
+    "voting_power_lovelace": 2450000000,
+    "delegators": 10,
+    "registered_epoch": 441,
+    "name": "Nightfall Delegate",
+    "drep_id": "drep1y4wml9nq7rhx5p3kd8g2a6vj4etsycf3mz7xu5nd8lk4r9p2qs6dgx4vh",
+    "rank": 897,
+    "participation_rank": 229,
+    "eligible_pool_size": 200,
     "ineligible_reason": "outside_top_200",
-    "amount": 0,
-    "claimed": false
+    "amount_lovelace": 0
   },
   "stake1uzg9kl5nm4qrwx7p3dv2a0scyft6e3jh5xu9md7k4r8p2n6qw5j3e": {
     "type": "drep",
@@ -80,12 +89,30 @@
     "voted_all": false,
     "voted_actions": 7,
     "total_actions": 11,
-    "voting_power": 49403,
-    "drep_id": "drep1yzg9kl5nm4qrwx7p3dv2a0scyft6e3jh5xu9md7k4r8p2n6abcd",
-    "rank": null,
+    "voting_power_lovelace": 49403000000,
+    "delegators": 42,
+    "registered_epoch": 450,
+    "name": "Quorum Watch",
+    "drep_id": "drep1yzg9kl5nm4qrwx7p3dv2a0scyft6e3jh5xu9md7k4r8p2n6q0f8vzmrt",
+    "rank": 345,
+    "participation_rank": null,
+    "eligible_pool_size": 200,
     "ineligible_reason": "incomplete_votes",
-    "amount": 0,
-    "claimed": false
+    "amount_lovelace": 0
+  },
+  "stake1uydlj8mhqxjr84mgsgzwf5ljhsyvcrfynaz5zqv4wn4kqxcjtlfcq": {
+    "type": "cc",
+    "eligible": true,
+    "voted_all": true,
+    "voted_actions": 11,
+    "total_actions": 11,
+    "name": "Northern Ledger Council",
+    "region": "Nordic",
+    "term_end_epoch": 594,
+    "cc_credential": "cc_hot1q8xntrwl2pnkvr4kxvmqp7ynl35h7fjnap8qx4j7ldyv8c2kq9m04t",
+    "ineligible_reason": null,
+    "eligible_pool_size": 5,
+    "amount_lovelace": 778646714
   },
   "stake1u9r3kfg4mn5pq8wl7x2d0vjycts6e4zh3wp9qv5xd8r4jk3n2p7qm": {
     "type": "cc",
@@ -93,9 +120,12 @@
     "voted_all": false,
     "voted_actions": 9,
     "total_actions": 11,
-    "cc_credential": "cc_hot1q9r3kfg4mn5pq8wl7x2d0vjycts6e4zh3wp9qv5xd8r4jk3abcd",
+    "name": "Cardano Civic Trust",
+    "region": "Global",
+    "term_end_epoch": 611,
+    "cc_credential": "cc_hot1q9r3kfg4mn5pq8wl7x2d0vjycts6e4zh3wp9qv5xd8r4jk3q7v2ynz",
     "ineligible_reason": "incomplete_votes",
-    "amount": 0,
-    "claimed": false
+    "eligible_pool_size": 5,
+    "amount_lovelace": 0
   }
 }

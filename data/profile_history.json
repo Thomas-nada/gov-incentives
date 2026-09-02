@@ -1,7 +1,7 @@
 {
   "stake1ux7fe7j9hpuflnnjgmflzf66e83htkfqjulyyg9u9mvs0rcg5qvgp": [
     {
-      "window_label": "Closed window ending epoch 522",
+      "window_label": "Window 520-522",
       "epochs": [
         520,
         521,
@@ -12,13 +12,16 @@
       "eligible": true,
       "voted_actions": 11,
       "total_actions": 11,
-      "amount": 398,
+      "amount_lovelace": 350563098,
       "ineligible_reason": null,
       "type": "drep",
+      "claim_id": "GRC-522-00001",
+      "tx_hash": "c2fd6667b7bae850f378dfe85f186314393028612618395a0a5d6e355b20f9ba",
+      "settled_at": "2026-08-28T18:08:24Z",
       "sort_order": 522
     },
     {
-      "window_label": "Closed window ending epoch 519",
+      "window_label": "Window 517-519",
       "epochs": [
         517,
         518,
@@ -27,15 +30,18 @@
       "payout_epoch": 519,
       "status": "paid",
       "eligible": true,
-      "voted_actions": 11,
-      "total_actions": 11,
-      "amount": 393,
+      "voted_actions": 9,
+      "total_actions": 9,
+      "amount_lovelace": 361160910,
       "ineligible_reason": null,
       "type": "drep",
+      "claim_id": "GRC-519-00026",
+      "tx_hash": "05eb77bcfed3285eb3db1bf84ce74bd7dbc0f70adf5d06ce898a2899dc75865e",
+      "settled_at": "2026-08-12T08:27:13Z",
       "sort_order": 519
     },
     {
-      "window_label": "Closed window ending epoch 516",
+      "window_label": "Window 514-516",
       "epochs": [
         514,
         515,
@@ -44,15 +50,18 @@
       "payout_epoch": 516,
       "status": "paid",
       "eligible": true,
-      "voted_actions": 11,
-      "total_actions": 11,
-      "amount": 411,
+      "voted_actions": 10,
+      "total_actions": 10,
+      "amount_lovelace": 354665523,
       "ineligible_reason": null,
       "type": "drep",
+      "claim_id": "GRC-516-00051",
+      "tx_hash": "06018e7a746eef4dc5663a54ccb2ed5b6aa9461bb1b0ee6c68686a74ececa305",
+      "settled_at": "2026-07-29T21:31:05Z",
       "sort_order": 516
     },
     {
-      "window_label": "Closed window ending epoch 513",
+      "window_label": "Window 511-513",
       "epochs": [
         511,
         512,
@@ -61,15 +70,18 @@
       "payout_epoch": 513,
       "status": "paid",
       "eligible": true,
-      "voted_actions": 7,
-      "total_actions": 7,
-      "amount": 350,
+      "voted_actions": 6,
+      "total_actions": 6,
+      "amount_lovelace": 432567616,
       "ineligible_reason": null,
       "type": "drep",
+      "claim_id": "GRC-513-00076",
+      "tx_hash": "584c6f0e7b75abf93eed35d514c70706dea4ba65f644d3235d6faab3605acf64",
+      "settled_at": "2026-07-13T01:30:57Z",
       "sort_order": 513
     },
     {
-      "window_label": "Closed window ending epoch 510",
+      "window_label": "Window 508-510",
       "epochs": [
         508,
         509,
@@ -78,15 +90,18 @@
       "payout_epoch": 510,
       "status": "paid",
       "eligible": true,
-      "voted_actions": 6,
-      "total_actions": 6,
-      "amount": 410,
+      "voted_actions": 9,
+      "total_actions": 9,
+      "amount_lovelace": 411923442,
       "ineligible_reason": null,
       "type": "drep",
+      "claim_id": "GRC-510-00101",
+      "tx_hash": "c23835d8fe0dbe660c79134f4013defb322d4aa09fdc254136a7f2609bd41883",
+      "settled_at": "2026-06-29T14:09:48Z",
       "sort_order": 510
     },
     {
-      "window_label": "Current window 521-523",
+      "window_label": "Window 521-523",
       "epochs": [
         521,
         522,
@@ -97,15 +112,18 @@
       "eligible": true,
       "voted_actions": 11,
       "total_actions": 11,
-      "amount": 395,
+      "amount_lovelace": 426957948,
       "ineligible_reason": null,
       "type": "drep",
+      "claim_id": null,
+      "tx_hash": null,
+      "settled_at": null,
       "sort_order": 1523
     }
   ],
   "stake1u8fnjkm3pq9xa7wv4l5e6d0strgyc4hz3wp8qv4xd9r5jk2n3p6qs": [
     {
-      "window_label": "Closed window ending epoch 522",
+      "window_label": "Window 520-522",
       "epochs": [
         520,
         521,
@@ -116,13 +134,16 @@
       "eligible": true,
       "voted_actions": 11,
       "total_actions": 11,
-      "amount": 398,
+      "amount_lovelace": 350563098,
       "ineligible_reason": null,
       "type": "drep",
+      "claim_id": "GRC-522-00002",
+      "tx_hash": "baeb79e0dd93db9ce51ba784e5783ce1218bb358dba719667d2af5a7e29afc34",
+      "settled_at": "2026-08-30T10:21:43Z",
       "sort_order": 522
     },
     {
-      "window_label": "Closed window ending epoch 519",
+      "window_label": "Window 517-519",
       "epochs": [
         517,
         518,
@@ -131,223 +152,18 @@
       "payout_epoch": 519,
       "status": "paid",
       "eligible": true,
-      "voted_actions": 11,
-      "total_actions": 11,
-      "amount": 393,
-      "ineligible_reason": null,
-      "type": "drep",
-      "sort_order": 519
-    },
-    {
-      "window_label": "Closed window ending epoch 516",
-      "epochs": [
-        514,
-        515,
-        516
-      ],
-      "payout_epoch": 516,
-      "status": "paid",
-      "eligible": true,
-      "voted_actions": 11,
-      "total_actions": 11,
-      "amount": 411,
-      "ineligible_reason": null,
-      "type": "drep",
-      "sort_order": 516
-    },
-    {
-      "window_label": "Closed window ending epoch 513",
-      "epochs": [
-        511,
-        512,
-        513
-      ],
-      "payout_epoch": 513,
-      "status": "not_paid",
-      "eligible": false,
-      "voted_actions": 6,
-      "total_actions": 7,
-      "amount": 0,
-      "ineligible_reason": "incomplete_votes",
-      "type": "drep",
-      "sort_order": 513
-    },
-    {
-      "window_label": "Closed window ending epoch 510",
-      "epochs": [
-        508,
-        509,
-        510
-      ],
-      "payout_epoch": 510,
-      "status": "paid",
-      "eligible": true,
-      "voted_actions": 6,
-      "total_actions": 6,
-      "amount": 410,
-      "ineligible_reason": null,
-      "type": "drep",
-      "sort_order": 510
-    },
-    {
-      "window_label": "Current window 521-523",
-      "epochs": [
-        521,
-        522,
-        523
-      ],
-      "payout_epoch": 523,
-      "status": "current",
-      "eligible": true,
-      "voted_actions": 11,
-      "total_actions": 11,
-      "amount": 395,
-      "ineligible_reason": null,
-      "type": "drep",
-      "sort_order": 1523
-    }
-  ],
-  "stake1uxk3n5d8r7gm2pq9wl4v6zjfahcts5e3y8md4xl7pnqr2w9fk5j8p": [
-    {
-      "window_label": "Closed window ending epoch 522",
-      "epochs": [
-        520,
-        521,
-        522
-      ],
-      "payout_epoch": 522,
-      "status": "paid",
-      "eligible": true,
-      "voted_actions": 11,
-      "total_actions": 11,
-      "amount": 398,
-      "ineligible_reason": null,
-      "type": "drep",
-      "sort_order": 522
-    },
-    {
-      "window_label": "Closed window ending epoch 519",
-      "epochs": [
-        517,
-        518,
-        519
-      ],
-      "payout_epoch": 519,
-      "status": "paid",
-      "eligible": true,
-      "voted_actions": 11,
-      "total_actions": 11,
-      "amount": 393,
-      "ineligible_reason": null,
-      "type": "drep",
-      "sort_order": 519
-    },
-    {
-      "window_label": "Closed window ending epoch 516",
-      "epochs": [
-        514,
-        515,
-        516
-      ],
-      "payout_epoch": 516,
-      "status": "not_paid",
-      "eligible": false,
       "voted_actions": 9,
-      "total_actions": 11,
-      "amount": 0,
-      "ineligible_reason": "incomplete_votes",
-      "type": "drep",
-      "sort_order": 516
-    },
-    {
-      "window_label": "Closed window ending epoch 513",
-      "epochs": [
-        511,
-        512,
-        513
-      ],
-      "payout_epoch": 513,
-      "status": "paid",
-      "eligible": true,
-      "voted_actions": 7,
-      "total_actions": 7,
-      "amount": 350,
+      "total_actions": 9,
+      "amount_lovelace": 361160910,
       "ineligible_reason": null,
       "type": "drep",
-      "sort_order": 513
-    },
-    {
-      "window_label": "Closed window ending epoch 510",
-      "epochs": [
-        508,
-        509,
-        510
-      ],
-      "payout_epoch": 510,
-      "status": "paid",
-      "eligible": true,
-      "voted_actions": 6,
-      "total_actions": 6,
-      "amount": 410,
-      "ineligible_reason": null,
-      "type": "drep",
-      "sort_order": 510
-    },
-    {
-      "window_label": "Current window 521-523",
-      "epochs": [
-        521,
-        522,
-        523
-      ],
-      "payout_epoch": 523,
-      "status": "current",
-      "eligible": true,
-      "voted_actions": 11,
-      "total_actions": 11,
-      "amount": 395,
-      "ineligible_reason": null,
-      "type": "drep",
-      "sort_order": 1523
-    }
-  ],
-  "stake1u4wml9nq7rhx5p3kd8g2a6vj4etsycf3mz7xu5nd8lk4r9p2q6w5t": [
-    {
-      "window_label": "Closed window ending epoch 522",
-      "epochs": [
-        520,
-        521,
-        522
-      ],
-      "payout_epoch": 522,
-      "status": "paid",
-      "eligible": true,
-      "voted_actions": 11,
-      "total_actions": 11,
-      "amount": 398,
-      "ineligible_reason": null,
-      "type": "drep",
-      "sort_order": 522
-    },
-    {
-      "window_label": "Closed window ending epoch 519",
-      "epochs": [
-        517,
-        518,
-        519
-      ],
-      "payout_epoch": 519,
-      "status": "not_paid",
-      "eligible": false,
-      "voted_actions": 11,
-      "total_actions": 11,
-      "amount": 0,
-      "ineligible_reason": "outside_top_200",
-      "type": "drep",
+      "claim_id": "GRC-519-00027",
+      "tx_hash": "4534fe14b94b121847f48701ebe021d7f04fce39e2b613f8ca3257e7dc690675",
+      "settled_at": "2026-08-12T20:24:48Z",
       "sort_order": 519
     },
     {
-      "window_label": "Closed window ending epoch 516",
+      "window_label": "Window 514-516",
       "epochs": [
         514,
         515,
@@ -356,327 +172,18 @@
       "payout_epoch": 516,
       "status": "paid",
       "eligible": true,
-      "voted_actions": 11,
-      "total_actions": 11,
-      "amount": 411,
+      "voted_actions": 10,
+      "total_actions": 10,
+      "amount_lovelace": 354665523,
       "ineligible_reason": null,
       "type": "drep",
+      "claim_id": "GRC-516-00052",
+      "tx_hash": "8c51b0dbbe41975015afdfd9c4e8ea4df5aa20cded8b412ccd96f12494526e74",
+      "settled_at": "2026-07-28T08:39:30Z",
       "sort_order": 516
     },
     {
-      "window_label": "Closed window ending epoch 513",
-      "epochs": [
-        511,
-        512,
-        513
-      ],
-      "payout_epoch": 513,
-      "status": "not_paid",
-      "eligible": false,
-      "voted_actions": 7,
-      "total_actions": 7,
-      "amount": 0,
-      "ineligible_reason": "outside_top_200",
-      "type": "drep",
-      "sort_order": 513
-    },
-    {
-      "window_label": "Closed window ending epoch 510",
-      "epochs": [
-        508,
-        509,
-        510
-      ],
-      "payout_epoch": 510,
-      "status": "paid",
-      "eligible": true,
-      "voted_actions": 6,
-      "total_actions": 6,
-      "amount": 410,
-      "ineligible_reason": null,
-      "type": "drep",
-      "sort_order": 510
-    },
-    {
-      "window_label": "Current window 521-523",
-      "epochs": [
-        521,
-        522,
-        523
-      ],
-      "payout_epoch": 523,
-      "status": "current",
-      "eligible": false,
-      "voted_actions": 11,
-      "total_actions": 11,
-      "amount": 0,
-      "ineligible_reason": "outside_top_200",
-      "type": "drep",
-      "sort_order": 1523
-    }
-  ],
-  "stake1uzg9kl5nm4qrwx7p3dv2a0scyft6e3jh5xu9md7k4r8p2n6qw5j3e": [
-    {
-      "window_label": "Closed window ending epoch 522",
-      "epochs": [
-        520,
-        521,
-        522
-      ],
-      "payout_epoch": 522,
-      "status": "not_paid",
-      "eligible": false,
-      "voted_actions": 7,
-      "total_actions": 11,
-      "amount": 0,
-      "ineligible_reason": "incomplete_votes",
-      "type": "drep",
-      "sort_order": 522
-    },
-    {
-      "window_label": "Closed window ending epoch 519",
-      "epochs": [
-        517,
-        518,
-        519
-      ],
-      "payout_epoch": 519,
-      "status": "paid",
-      "eligible": true,
-      "voted_actions": 11,
-      "total_actions": 11,
-      "amount": 393,
-      "ineligible_reason": null,
-      "type": "drep",
-      "sort_order": 519
-    },
-    {
-      "window_label": "Closed window ending epoch 516",
-      "epochs": [
-        514,
-        515,
-        516
-      ],
-      "payout_epoch": 516,
-      "status": "not_paid",
-      "eligible": false,
-      "voted_actions": 7,
-      "total_actions": 11,
-      "amount": 0,
-      "ineligible_reason": "incomplete_votes",
-      "type": "drep",
-      "sort_order": 516
-    },
-    {
-      "window_label": "Closed window ending epoch 513",
-      "epochs": [
-        511,
-        512,
-        513
-      ],
-      "payout_epoch": 513,
-      "status": "paid",
-      "eligible": true,
-      "voted_actions": 7,
-      "total_actions": 7,
-      "amount": 350,
-      "ineligible_reason": null,
-      "type": "drep",
-      "sort_order": 513
-    },
-    {
-      "window_label": "Closed window ending epoch 510",
-      "epochs": [
-        508,
-        509,
-        510
-      ],
-      "payout_epoch": 510,
-      "status": "not_paid",
-      "eligible": false,
-      "voted_actions": 2,
-      "total_actions": 6,
-      "amount": 0,
-      "ineligible_reason": "incomplete_votes",
-      "type": "drep",
-      "sort_order": 510
-    },
-    {
-      "window_label": "Current window 521-523",
-      "epochs": [
-        521,
-        522,
-        523
-      ],
-      "payout_epoch": 523,
-      "status": "current",
-      "eligible": false,
-      "voted_actions": 7,
-      "total_actions": 11,
-      "amount": 0,
-      "ineligible_reason": "incomplete_votes",
-      "type": "drep",
-      "sort_order": 1523
-    }
-  ],
-  "stake1uydlj8mhqxjr84mgsgzwf5ljhsyvcrfynaz5zqv4wn4kqxcjtlfcq": [
-    {
-      "window_label": "Closed window ending epoch 522",
-      "epochs": [
-        520,
-        521,
-        522
-      ],
-      "payout_epoch": 522,
-      "status": "paid",
-      "eligible": true,
-      "voted_actions": 11,
-      "total_actions": 11,
-      "amount": 727,
-      "ineligible_reason": null,
-      "type": "cc",
-      "sort_order": 522
-    },
-    {
-      "window_label": "Closed window ending epoch 519",
-      "epochs": [
-        517,
-        518,
-        519
-      ],
-      "payout_epoch": 519,
-      "status": "paid",
-      "eligible": true,
-      "voted_actions": 11,
-      "total_actions": 11,
-      "amount": 718,
-      "ineligible_reason": null,
-      "type": "cc",
-      "sort_order": 519
-    },
-    {
-      "window_label": "Closed window ending epoch 516",
-      "epochs": [
-        514,
-        515,
-        516
-      ],
-      "payout_epoch": 516,
-      "status": "paid",
-      "eligible": true,
-      "voted_actions": 11,
-      "total_actions": 11,
-      "amount": 749,
-      "ineligible_reason": null,
-      "type": "cc",
-      "sort_order": 516
-    },
-    {
-      "window_label": "Closed window ending epoch 513",
-      "epochs": [
-        511,
-        512,
-        513
-      ],
-      "payout_epoch": 513,
-      "status": "paid",
-      "eligible": true,
-      "voted_actions": 7,
-      "total_actions": 7,
-      "amount": 638,
-      "ineligible_reason": null,
-      "type": "cc",
-      "sort_order": 513
-    },
-    {
-      "window_label": "Closed window ending epoch 510",
-      "epochs": [
-        508,
-        509,
-        510
-      ],
-      "payout_epoch": 510,
-      "status": "paid",
-      "eligible": true,
-      "voted_actions": 6,
-      "total_actions": 6,
-      "amount": 748,
-      "ineligible_reason": null,
-      "type": "cc",
-      "sort_order": 510
-    },
-    {
-      "window_label": "Current window 521-523",
-      "epochs": [
-        521,
-        522,
-        523
-      ],
-      "payout_epoch": 523,
-      "status": "current",
-      "eligible": true,
-      "voted_actions": 11,
-      "total_actions": 11,
-      "amount": 721,
-      "ineligible_reason": null,
-      "type": "cc",
-      "sort_order": 1523
-    }
-  ],
-  "stake1u9r3kfg4mn5pq8wl7x2d0vjycts6e4zh3wp9qv5xd8r4jk3n2p7qm": [
-    {
-      "window_label": "Closed window ending epoch 522",
-      "epochs": [
-        520,
-        521,
-        522
-      ],
-      "payout_epoch": 522,
-      "status": "paid",
-      "eligible": true,
-      "voted_actions": 11,
-      "total_actions": 11,
-      "amount": 727,
-      "ineligible_reason": null,
-      "type": "cc",
-      "sort_order": 522
-    },
-    {
-      "window_label": "Closed window ending epoch 519",
-      "epochs": [
-        517,
-        518,
-        519
-      ],
-      "payout_epoch": 519,
-      "status": "not_paid",
-      "eligible": false,
-      "voted_actions": 9,
-      "total_actions": 11,
-      "amount": 0,
-      "ineligible_reason": "incomplete_votes",
-      "type": "cc",
-      "sort_order": 519
-    },
-    {
-      "window_label": "Closed window ending epoch 516",
-      "epochs": [
-        514,
-        515,
-        516
-      ],
-      "payout_epoch": 516,
-      "status": "paid",
-      "eligible": true,
-      "voted_actions": 11,
-      "total_actions": 11,
-      "amount": 749,
-      "ineligible_reason": null,
-      "type": "cc",
-      "sort_order": 516
-    },
-    {
-      "window_label": "Closed window ending epoch 513",
+      "window_label": "Window 511-513",
       "epochs": [
         511,
         512,
@@ -686,14 +193,383 @@
       "status": "not_paid",
       "eligible": false,
       "voted_actions": 5,
-      "total_actions": 7,
-      "amount": 0,
+      "total_actions": 6,
+      "amount_lovelace": 0,
       "ineligible_reason": "incomplete_votes",
-      "type": "cc",
+      "type": "drep",
+      "claim_id": null,
+      "tx_hash": null,
+      "settled_at": null,
       "sort_order": 513
     },
     {
-      "window_label": "Closed window ending epoch 510",
+      "window_label": "Window 508-510",
+      "epochs": [
+        508,
+        509,
+        510
+      ],
+      "payout_epoch": 510,
+      "status": "paid",
+      "eligible": true,
+      "voted_actions": 9,
+      "total_actions": 9,
+      "amount_lovelace": 411923442,
+      "ineligible_reason": null,
+      "type": "drep",
+      "claim_id": "GRC-510-00102",
+      "tx_hash": "34f99ee9575aa0fb5cf4d5bfaf439eff56e13899afdec4dd9b9b88b36d886fb6",
+      "settled_at": "2026-06-29T10:19:51Z",
+      "sort_order": 510
+    },
+    {
+      "window_label": "Window 521-523",
+      "epochs": [
+        521,
+        522,
+        523
+      ],
+      "payout_epoch": 523,
+      "status": "current",
+      "eligible": true,
+      "voted_actions": 11,
+      "total_actions": 11,
+      "amount_lovelace": 426957948,
+      "ineligible_reason": null,
+      "type": "drep",
+      "claim_id": null,
+      "tx_hash": null,
+      "settled_at": null,
+      "sort_order": 1523
+    }
+  ],
+  "stake1uxk3n5d8r7gm2pq9wl4v6zjfahcts5e3y8md4xl7pnqr2w9fk5j8p": [
+    {
+      "window_label": "Window 520-522",
+      "epochs": [
+        520,
+        521,
+        522
+      ],
+      "payout_epoch": 522,
+      "status": "paid",
+      "eligible": true,
+      "voted_actions": 11,
+      "total_actions": 11,
+      "amount_lovelace": 350563098,
+      "ineligible_reason": null,
+      "type": "drep",
+      "claim_id": "GRC-522-00003",
+      "tx_hash": "e48152fda9647e13920defa88ef7d67f75366ab4d875a3703c27754a318101ce",
+      "settled_at": "2026-08-30T21:26:52Z",
+      "sort_order": 522
+    },
+    {
+      "window_label": "Window 517-519",
+      "epochs": [
+        517,
+        518,
+        519
+      ],
+      "payout_epoch": 519,
+      "status": "paid",
+      "eligible": true,
+      "voted_actions": 9,
+      "total_actions": 9,
+      "amount_lovelace": 361160910,
+      "ineligible_reason": null,
+      "type": "drep",
+      "claim_id": "GRC-519-00028",
+      "tx_hash": "998c5761090d610407aa53d3ee1f1798288656c76c6d4d10c9ca5d03cc2b3e76",
+      "settled_at": "2026-08-12T13:28:48Z",
+      "sort_order": 519
+    },
+    {
+      "window_label": "Window 514-516",
+      "epochs": [
+        514,
+        515,
+        516
+      ],
+      "payout_epoch": 516,
+      "status": "not_paid",
+      "eligible": false,
+      "voted_actions": 8,
+      "total_actions": 10,
+      "amount_lovelace": 0,
+      "ineligible_reason": "incomplete_votes",
+      "type": "drep",
+      "claim_id": null,
+      "tx_hash": null,
+      "settled_at": null,
+      "sort_order": 516
+    },
+    {
+      "window_label": "Window 511-513",
+      "epochs": [
+        511,
+        512,
+        513
+      ],
+      "payout_epoch": 513,
+      "status": "paid",
+      "eligible": true,
+      "voted_actions": 6,
+      "total_actions": 6,
+      "amount_lovelace": 432567616,
+      "ineligible_reason": null,
+      "type": "drep",
+      "claim_id": "GRC-513-00077",
+      "tx_hash": "ba41ad5bb171db3dc0d86a2e775111faf53aceaeaa91cf346e7ab097e03d48f0",
+      "settled_at": "2026-07-13T14:47:44Z",
+      "sort_order": 513
+    },
+    {
+      "window_label": "Window 508-510",
+      "epochs": [
+        508,
+        509,
+        510
+      ],
+      "payout_epoch": 510,
+      "status": "paid",
+      "eligible": true,
+      "voted_actions": 9,
+      "total_actions": 9,
+      "amount_lovelace": 411923442,
+      "ineligible_reason": null,
+      "type": "drep",
+      "claim_id": "GRC-510-00103",
+      "tx_hash": "68546ec9b252958174d968ca5dbd0528dee486e00ad121858287ad91338df1f2",
+      "settled_at": "2026-06-30T01:31:31Z",
+      "sort_order": 510
+    },
+    {
+      "window_label": "Window 521-523",
+      "epochs": [
+        521,
+        522,
+        523
+      ],
+      "payout_epoch": 523,
+      "status": "current",
+      "eligible": true,
+      "voted_actions": 11,
+      "total_actions": 11,
+      "amount_lovelace": 426957948,
+      "ineligible_reason": null,
+      "type": "drep",
+      "claim_id": null,
+      "tx_hash": null,
+      "settled_at": null,
+      "sort_order": 1523
+    }
+  ],
+  "stake1u4wml9nq7rhx5p3kd8g2a6vj4etsycf3mz7xu5nd8lk4r9p2q6w5t": [
+    {
+      "window_label": "Window 520-522",
+      "epochs": [
+        520,
+        521,
+        522
+      ],
+      "payout_epoch": 522,
+      "status": "paid",
+      "eligible": true,
+      "voted_actions": 11,
+      "total_actions": 11,
+      "amount_lovelace": 350563098,
+      "ineligible_reason": null,
+      "type": "drep",
+      "claim_id": "GRC-522-00004",
+      "tx_hash": "a8f992c8808d8adfda8ac46d14eb46e626080cca5f64bff291c6d3003f0f1df2",
+      "settled_at": "2026-08-30T12:33:26Z",
+      "sort_order": 522
+    },
+    {
+      "window_label": "Window 517-519",
+      "epochs": [
+        517,
+        518,
+        519
+      ],
+      "payout_epoch": 519,
+      "status": "not_paid",
+      "eligible": false,
+      "voted_actions": 9,
+      "total_actions": 9,
+      "amount_lovelace": 0,
+      "ineligible_reason": "outside_top_200",
+      "type": "drep",
+      "claim_id": null,
+      "tx_hash": null,
+      "settled_at": null,
+      "sort_order": 519
+    },
+    {
+      "window_label": "Window 514-516",
+      "epochs": [
+        514,
+        515,
+        516
+      ],
+      "payout_epoch": 516,
+      "status": "paid",
+      "eligible": true,
+      "voted_actions": 10,
+      "total_actions": 10,
+      "amount_lovelace": 354665523,
+      "ineligible_reason": null,
+      "type": "drep",
+      "claim_id": "GRC-516-00053",
+      "tx_hash": "88fd619f00b56336041f8622a24b22a6fd46433da17fb165d3fa3f0f30bcef8f",
+      "settled_at": "2026-07-30T12:59:15Z",
+      "sort_order": 516
+    },
+    {
+      "window_label": "Window 511-513",
+      "epochs": [
+        511,
+        512,
+        513
+      ],
+      "payout_epoch": 513,
+      "status": "not_paid",
+      "eligible": false,
+      "voted_actions": 6,
+      "total_actions": 6,
+      "amount_lovelace": 0,
+      "ineligible_reason": "outside_top_200",
+      "type": "drep",
+      "claim_id": null,
+      "tx_hash": null,
+      "settled_at": null,
+      "sort_order": 513
+    },
+    {
+      "window_label": "Window 508-510",
+      "epochs": [
+        508,
+        509,
+        510
+      ],
+      "payout_epoch": 510,
+      "status": "paid",
+      "eligible": true,
+      "voted_actions": 9,
+      "total_actions": 9,
+      "amount_lovelace": 411923442,
+      "ineligible_reason": null,
+      "type": "drep",
+      "claim_id": "GRC-510-00104",
+      "tx_hash": "83a45a1ff98a82b4408caf850bce84d4a129a347473156201c207c596a6da086",
+      "settled_at": "2026-06-28T00:25:46Z",
+      "sort_order": 510
+    },
+    {
+      "window_label": "Window 521-523",
+      "epochs": [
+        521,
+        522,
+        523
+      ],
+      "payout_epoch": 523,
+      "status": "current",
+      "eligible": false,
+      "voted_actions": 11,
+      "total_actions": 11,
+      "amount_lovelace": 0,
+      "ineligible_reason": "outside_top_200",
+      "type": "drep",
+      "claim_id": null,
+      "tx_hash": null,
+      "settled_at": null,
+      "sort_order": 1523
+    }
+  ],
+  "stake1uzg9kl5nm4qrwx7p3dv2a0scyft6e3jh5xu9md7k4r8p2n6qw5j3e": [
+    {
+      "window_label": "Window 520-522",
+      "epochs": [
+        520,
+        521,
+        522
+      ],
+      "payout_epoch": 522,
+      "status": "not_paid",
+      "eligible": false,
+      "voted_actions": 7,
+      "total_actions": 11,
+      "amount_lovelace": 0,
+      "ineligible_reason": "incomplete_votes",
+      "type": "drep",
+      "claim_id": null,
+      "tx_hash": null,
+      "settled_at": null,
+      "sort_order": 522
+    },
+    {
+      "window_label": "Window 517-519",
+      "epochs": [
+        517,
+        518,
+        519
+      ],
+      "payout_epoch": 519,
+      "status": "paid",
+      "eligible": true,
+      "voted_actions": 9,
+      "total_actions": 9,
+      "amount_lovelace": 361160910,
+      "ineligible_reason": null,
+      "type": "drep",
+      "claim_id": "GRC-519-00029",
+      "tx_hash": "aae3c2cddc6c23d9d7f1a4fe6b2901a29613ebe396502a57bdeef7391a242ace",
+      "settled_at": "2026-08-15T16:15:41Z",
+      "sort_order": 519
+    },
+    {
+      "window_label": "Window 514-516",
+      "epochs": [
+        514,
+        515,
+        516
+      ],
+      "payout_epoch": 516,
+      "status": "not_paid",
+      "eligible": false,
+      "voted_actions": 6,
+      "total_actions": 10,
+      "amount_lovelace": 0,
+      "ineligible_reason": "incomplete_votes",
+      "type": "drep",
+      "claim_id": null,
+      "tx_hash": null,
+      "settled_at": null,
+      "sort_order": 516
+    },
+    {
+      "window_label": "Window 511-513",
+      "epochs": [
+        511,
+        512,
+        513
+      ],
+      "payout_epoch": 513,
+      "status": "paid",
+      "eligible": true,
+      "voted_actions": 6,
+      "total_actions": 6,
+      "amount_lovelace": 432567616,
+      "ineligible_reason": null,
+      "type": "drep",
+      "claim_id": "GRC-513-00078",
+      "tx_hash": "bc9b51885f3299da72e515f6b6f48aae5653b4daacb53d6d09197baabd6978cf",
+      "settled_at": "2026-07-14T00:04:03Z",
+      "sort_order": 513
+    },
+    {
+      "window_label": "Window 508-510",
       "epochs": [
         508,
         509,
@@ -702,15 +578,262 @@
       "payout_epoch": 510,
       "status": "not_paid",
       "eligible": false,
-      "voted_actions": 4,
-      "total_actions": 6,
-      "amount": 0,
+      "voted_actions": 5,
+      "total_actions": 9,
+      "amount_lovelace": 0,
       "ineligible_reason": "incomplete_votes",
-      "type": "cc",
+      "type": "drep",
+      "claim_id": null,
+      "tx_hash": null,
+      "settled_at": null,
       "sort_order": 510
     },
     {
-      "window_label": "Current window 521-523",
+      "window_label": "Window 521-523",
+      "epochs": [
+        521,
+        522,
+        523
+      ],
+      "payout_epoch": 523,
+      "status": "current",
+      "eligible": false,
+      "voted_actions": 7,
+      "total_actions": 11,
+      "amount_lovelace": 0,
+      "ineligible_reason": "incomplete_votes",
+      "type": "drep",
+      "claim_id": null,
+      "tx_hash": null,
+      "settled_at": null,
+      "sort_order": 1523
+    }
+  ],
+  "stake1uydlj8mhqxjr84mgsgzwf5ljhsyvcrfynaz5zqv4wn4kqxcjtlfcq": [
+    {
+      "window_label": "Window 520-522",
+      "epochs": [
+        520,
+        521,
+        522
+      ],
+      "payout_epoch": 522,
+      "status": "paid",
+      "eligible": true,
+      "voted_actions": 11,
+      "total_actions": 11,
+      "amount_lovelace": 639324799,
+      "ineligible_reason": null,
+      "type": "cc",
+      "claim_id": "GRC-522-00005",
+      "tx_hash": "af45ed7ed4ac17a33de1f8431e90fa60236e4d76397037e17c959f4202ca1d18",
+      "settled_at": "2026-08-30T21:46:32Z",
+      "sort_order": 522
+    },
+    {
+      "window_label": "Window 517-519",
+      "epochs": [
+        517,
+        518,
+        519
+      ],
+      "payout_epoch": 519,
+      "status": "paid",
+      "eligible": true,
+      "voted_actions": 9,
+      "total_actions": 9,
+      "amount_lovelace": 658652116,
+      "ineligible_reason": null,
+      "type": "cc",
+      "claim_id": "GRC-519-00030",
+      "tx_hash": "9c45405e2dc870a606943ce63ca17225f218af9dd74dd966e08560ff9025e635",
+      "settled_at": "2026-08-15T22:28:24Z",
+      "sort_order": 519
+    },
+    {
+      "window_label": "Window 514-516",
+      "epochs": [
+        514,
+        515,
+        516
+      ],
+      "payout_epoch": 516,
+      "status": "paid",
+      "eligible": true,
+      "voted_actions": 10,
+      "total_actions": 10,
+      "amount_lovelace": 646806426,
+      "ineligible_reason": null,
+      "type": "cc",
+      "claim_id": "GRC-516-00054",
+      "tx_hash": "6f3969424ceb98e2e2af5c366aa574f62b114f8d9f6eded888f600a86b0f6e49",
+      "settled_at": "2026-07-31T02:13:17Z",
+      "sort_order": 516
+    },
+    {
+      "window_label": "Window 511-513",
+      "epochs": [
+        511,
+        512,
+        513
+      ],
+      "payout_epoch": 513,
+      "status": "paid",
+      "eligible": true,
+      "voted_actions": 6,
+      "total_actions": 6,
+      "amount_lovelace": 788877112,
+      "ineligible_reason": null,
+      "type": "cc",
+      "claim_id": "GRC-513-00079",
+      "tx_hash": "0d15aa84a3c77e14d06347e6521af2760d8a989b6d432944241885601e529565",
+      "settled_at": "2026-07-13T07:54:45Z",
+      "sort_order": 513
+    },
+    {
+      "window_label": "Window 508-510",
+      "epochs": [
+        508,
+        509,
+        510
+      ],
+      "payout_epoch": 510,
+      "status": "paid",
+      "eligible": true,
+      "voted_actions": 9,
+      "total_actions": 9,
+      "amount_lovelace": 751228163,
+      "ineligible_reason": null,
+      "type": "cc",
+      "claim_id": "GRC-510-00105",
+      "tx_hash": "b36f3f7e4f271b58d9cda13a3fc4924a89405849b2006bd451c3fedbf3230c0a",
+      "settled_at": "2026-06-30T22:54:30Z",
+      "sort_order": 510
+    },
+    {
+      "window_label": "Window 521-523",
+      "epochs": [
+        521,
+        522,
+        523
+      ],
+      "payout_epoch": 523,
+      "status": "current",
+      "eligible": true,
+      "voted_actions": 11,
+      "total_actions": 11,
+      "amount_lovelace": 778646714,
+      "ineligible_reason": null,
+      "type": "cc",
+      "claim_id": null,
+      "tx_hash": null,
+      "settled_at": null,
+      "sort_order": 1523
+    }
+  ],
+  "stake1u9r3kfg4mn5pq8wl7x2d0vjycts6e4zh3wp9qv5xd8r4jk3n2p7qm": [
+    {
+      "window_label": "Window 520-522",
+      "epochs": [
+        520,
+        521,
+        522
+      ],
+      "payout_epoch": 522,
+      "status": "paid",
+      "eligible": true,
+      "voted_actions": 11,
+      "total_actions": 11,
+      "amount_lovelace": 639324799,
+      "ineligible_reason": null,
+      "type": "cc",
+      "claim_id": "GRC-522-00006",
+      "tx_hash": "1b09910b7453104710f52c590b99d6c5f64cefb42b9baf5592a883aca43c6e12",
+      "settled_at": "2026-08-29T09:20:35Z",
+      "sort_order": 522
+    },
+    {
+      "window_label": "Window 517-519",
+      "epochs": [
+        517,
+        518,
+        519
+      ],
+      "payout_epoch": 519,
+      "status": "not_paid",
+      "eligible": false,
+      "voted_actions": 7,
+      "total_actions": 9,
+      "amount_lovelace": 0,
+      "ineligible_reason": "incomplete_votes",
+      "type": "cc",
+      "claim_id": null,
+      "tx_hash": null,
+      "settled_at": null,
+      "sort_order": 519
+    },
+    {
+      "window_label": "Window 514-516",
+      "epochs": [
+        514,
+        515,
+        516
+      ],
+      "payout_epoch": 516,
+      "status": "paid",
+      "eligible": true,
+      "voted_actions": 10,
+      "total_actions": 10,
+      "amount_lovelace": 646806426,
+      "ineligible_reason": null,
+      "type": "cc",
+      "claim_id": "GRC-516-00055",
+      "tx_hash": "2b9b18833bfa18569ae6ace8721377b3f4985522519ad9621550ce54f0239e41",
+      "settled_at": "2026-07-30T10:16:18Z",
+      "sort_order": 516
+    },
+    {
+      "window_label": "Window 511-513",
+      "epochs": [
+        511,
+        512,
+        513
+      ],
+      "payout_epoch": 513,
+      "status": "not_paid",
+      "eligible": false,
+      "voted_actions": 4,
+      "total_actions": 6,
+      "amount_lovelace": 0,
+      "ineligible_reason": "incomplete_votes",
+      "type": "cc",
+      "claim_id": null,
+      "tx_hash": null,
+      "settled_at": null,
+      "sort_order": 513
+    },
+    {
+      "window_label": "Window 508-510",
+      "epochs": [
+        508,
+        509,
+        510
+      ],
+      "payout_epoch": 510,
+      "status": "not_paid",
+      "eligible": false,
+      "voted_actions": 7,
+      "total_actions": 9,
+      "amount_lovelace": 0,
+      "ineligible_reason": "incomplete_votes",
+      "type": "cc",
+      "claim_id": null,
+      "tx_hash": null,
+      "settled_at": null,
+      "sort_order": 510
+    },
+    {
+      "window_label": "Window 521-523",
       "epochs": [
         521,
         522,
@@ -721,9 +844,12 @@
       "eligible": false,
       "voted_actions": 9,
       "total_actions": 11,
-      "amount": 0,
+      "amount_lovelace": 0,
       "ineligible_reason": "incomplete_votes",
       "type": "cc",
+      "claim_id": null,
+      "tx_hash": null,
+      "settled_at": null,
       "sort_order": 1523
     }
   ]
